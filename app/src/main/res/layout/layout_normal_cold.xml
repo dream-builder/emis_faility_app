@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/layout_normal_cold"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/layoutborderblack"
+    android:layout_margin="5dp">
+
+    <!--Symptom 57 Segment-->
+    <RelativeLayout
+        android:id="@+id/childcaresymptom57Segement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/childcaresymptom57checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/childcaresymptom57TextviewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/childcaresymptom57"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_toRightOf="@id/childcaresymptom57checkbox"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

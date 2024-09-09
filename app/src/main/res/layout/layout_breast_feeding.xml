@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_breast_feeding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/layoutborderblack"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/childcaresymptom37TextviewLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#92b6dc"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/childcaresymptom37"
+        android:textColor="@color/text_color"
+        android:textSize="20sp" />
+
+    <!--Symptom 38 Segment-->
+    <RelativeLayout
+        android:id="@+id/childcaresymptom38Segement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft='5dp'
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:id="@+id/childcaresymptom38TextviewLabel"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/childcaresymptom38"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_toRightOf="@id/childcaresymptom38TextviewLabel"
+            android:id="@+id/childcaresymptom38RadioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_weight="4"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <RadioButton
+                android:id="@+id/childcaresymptom38RadioGroupYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:text="@string/general_yes" />
+
+            <RadioButton
+                android:id="@+id/childcaresymptom38RadioGroupNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/general_no" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <!--Symptom 39 Segment-->
+    <LinearLayout
+        android:id="@+id/childcaresymptom39MasterSegement"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/childcaresymptom39TextviewLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/childcaresymptom39"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
+
+
+        <RadioGroup
+            android:id="@+id/childcaresymptom39RadioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <RadioButton
+                style="@android:style/Widget.CompoundButton.CheckBox"
+                android:id="@+id/childcaresymptom39RadioGroupOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:text="@string/childcaresymptom40" />
+
+            <RadioButton
+                style="@android:style/Widget.CompoundButton.CheckBox"
+                android:id="@+id/childcaresymptom39RadioGroupTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/childcaresymptom41" />
+
+            <RadioButton
+                style="@android:style/Widget.CompoundButton.CheckBox"
+                android:id="@+id/childcaresymptom39RadioGroupThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/childcaresymptom42" />
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+    <!--Symptom 40 Segment-->
+    <LinearLayout
+        android:id="@+id/childcaresymptom40MasterSegement"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/childcaresymptom40TextviewLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/childcaresymptom43"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/childcaresymptom40RadioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <RadioButton
+                style="@android:style/Widget.CompoundButton.CheckBox"
+                android:id="@+id/childcaresymptom40RadioGroupYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:text="@string/childcaresymptom44" />
+
+            <RadioButton
+                style="@android:style/Widget.CompoundButton.CheckBox"
+                android:id="@+id/childcaresymptom40RadioGroupNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/childcaresymptom45" />
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+    <!--Symptom 41 Segment-->
+    <LinearLayout
+        android:id="@+id/childcaresymptom41MasterSegement"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/childcaresymptom41TextviewLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/childcaresymptom105"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/childcaresymptom41RadioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <RadioButton
+                style="@android:style/Widget.CompoundButton.CheckBox"
+                android:id="@+id/childcaresymptom41RadioGroupOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:text="@string/childcaresymptom46" />
+
+            <RadioButton
+                style="@android:style/Widget.CompoundButton.CheckBox"
+                android:id="@+id/childcaresymptom41RadioGroupTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/childcaresymptom47" />
+
+            <RadioButton
+                style="@android:style/Widget.CompoundButton.CheckBox"
+                android:id="@+id/childcaresymptom41RadioGroupThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/childcaresymptom48" />
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

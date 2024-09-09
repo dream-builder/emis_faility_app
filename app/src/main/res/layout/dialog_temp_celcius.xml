@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/layoutbordersimple"
+    android:padding="5dp">
+
+    <!--Temp Input Segment-->
+    <LinearLayout
+        android:id="@+id/temp_in_celsius_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/temp_label"
+            android:text="@string/temperature"
+            android:textSize="20sp"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/temp_celsius_value"
+            android:inputType="numberDecimal"
+            android:textSize="20sp"
+            android:paddingLeft="2sp"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:maxLength="4"
+            android:background="@drawable/edittext_round"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/temp_celsius_label"
+            android:text="@string/temp_celsius"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

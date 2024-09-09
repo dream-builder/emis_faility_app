@@ -1,0 +1,642 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10sp"
+    android:orientation="vertical"
+    android:background="@drawable/fragmentborder"
+    android:id = "@+id/fp_client_info_layout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ScrollFPClientInfo"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/fp_clients_info_layout"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/screeningTitleLayout"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                style="@style/rowHeading">
+
+                <TextView
+                    android:id="@+id/screeningTextView"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:text="@string/screening_exam"
+                    android:layout_width="fill_parent"
+                    android:textColor="#FFFFFF"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/fpAnemia"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:padding="2sp">
+                <TextView
+                    android:id="@+id/fpAnemiaLabel"
+                    android:text="@string/anemia_mandatory"
+                    android:textSize="20sp"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"/>
+                <Spinner
+                    android:id="@+id/fpAnemiaSpinner"
+                    android:inputType="text"
+                    android:textSize="20sp"
+                    android:paddingLeft="2sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/Anemia_Dropdown_Full"
+                    android:background="@drawable/gradient_spinner"/>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/fpJaundiceLayout" android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:padding="2sp">
+                <TextView
+                    android:id="@+id/fpJaundiceLabel"
+                    android:text="@string/jaundice_mandatory"
+                    android:textSize="20sp"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"/>
+                <Spinner
+                    android:id="@+id/fpJaundiceSpinner"
+                    android:inputType="text"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_spinner"
+                    android:entries="@array/Jaundice_Edima_Dropdown"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fpBloodPressure"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:padding="2sp">
+                <TextView
+                    android:id="@+id/fpBloodPressureLabel"
+                    android:text="@string/blood_pressure_mandatory"
+                    android:textSize="20sp"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"/>
+                <EditText
+                    android:id="@+id/fpBloodPressureValueSystolic"
+                    android:inputType="number"
+                    android:textSize="20sp"
+                    android:paddingLeft="2sp"
+                    android:layout_width="80sp"
+                    android:layout_height="wrap_content"
+                    android:maxLength="3"
+                    android:background="@drawable/edittext_round"/>
+                <TextView
+                    android:id="@+id/fpBloodPressureLabelMid"
+                    android:text=" / "
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"/>
+                <EditText
+                    android:id="@+id/fpBloodPressureValueDiastolic"
+                    android:inputType="number"
+                    android:textSize="20sp"
+                    android:paddingLeft="2sp"
+                    android:layout_width="80sp"
+                    android:layout_height="wrap_content"
+                    android:maxLength="3"
+                    android:background="@drawable/edittext_round"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fpBreastCondition"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+
+                <TextView
+                    android:id="@+id/fpBreastConditionLabel"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/breast_exam_mandatory"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/fpBreastConditionSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/gradient_spinner"
+                    android:entries="@array/Injectable_Breast_Condition_DropDown"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/fpCervixLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:padding="2sp">
+                <TextView
+                    android:id="@+id/fpCervixLabel"
+                    android:text="@string/cervix"
+                    android:textSize="20sp"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"/>
+                <Spinner
+                    android:id="@+id/fpCervixSpinner"
+                    android:inputType="text"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_spinner"
+                    android:entries="@array/Abnormality_Dropdown"/>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/fpMenstruationLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:padding="2sp">
+                <TextView
+                    android:id="@+id/fpMenstruationLabel"
+                    android:text="@string/hematuria"
+                    android:textSize="20sp"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"/>
+                <Spinner
+                    android:id="@+id/fpMenstruationSpinner"
+                    android:inputType="text"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_spinner"
+                    android:entries="@array/Abnormality_Dropdown"/>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/fpVaginalWallLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:padding="2sp">
+                <TextView
+                    android:id="@+id/fpVaginalWallLabel"
+                    android:text="@string/vaginal_wall"
+                    android:textSize="20sp"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"/>
+                <Spinner
+                    android:id="@+id/fpVaginalWallSpinner"
+                    android:inputType="text"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_spinner"
+                    android:entries="@array/VaginalWall_DropDown"/>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/fpCervicitisLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:padding="2sp">
+                <TextView
+                    android:id="@+id/fpCervicitisLabel"
+                    android:text="@string/cervicitis"
+                    android:textSize="20sp"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"/>
+                <Spinner
+                    android:id="@+id/fpCervicitisSpinner"
+                    android:inputType="text"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_spinner"
+                    android:entries="@array/YesNoLong_Dropdown"/>
+            </LinearLayout>
+            
+            <!--cervicalErosion-->
+            <LinearLayout android:id="@+id/fpErosionLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:padding="2sp">
+                <TextView
+                    android:id="@+id/fpErosionLabel"
+                    android:text="@string/cervical_erosion"
+                    android:textSize="20sp"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"/>
+                <Spinner
+                    android:id="@+id/fpErosionSpinner"
+                    android:inputType="text"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_spinner"
+                    android:entries="@array/YesNoLong_Dropdown"/>
+            </LinearLayout>
+            
+            <!--cervicalPolyp-->
+            <LinearLayout android:id="@+id/fpPolypLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:padding="2sp">
+                <TextView
+                    android:id="@+id/fpPolypLabel"
+                    android:text="@string/cervical_polyp"
+                    android:textSize="20sp"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"/>
+                <Spinner
+                    android:id="@+id/fpPolypSpinner"
+                    android:inputType="text"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_spinner"
+                    android:entries="@array/YesNoLong_Dropdown"/>
+            </LinearLayout>
+            
+            <!--Contact Bleeding-->
+            <LinearLayout android:id="@+id/fpContactBleedingLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:padding="2sp">
+                <TextView
+                    android:id="@+id/fpContactBleedingLabel"
+                    android:text="@string/contact_bleeding"
+                    android:textSize="20sp"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"/>
+                <Spinner
+                    android:id="@+id/fpContactBleedingSpinner"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_spinner"
+                    android:entries="@array/YesNo_Dropdown"/>
+            </LinearLayout>
+            
+            <!--Uterus Size-->
+            <LinearLayout
+                android:id="@+id/fpUterusSizeLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+
+                <TextView
+                    android:id="@+id/fpUterusSizeTextView"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/uterus_size"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/fpUterusSizeSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/gradient_spinner"
+                    android:entries="@array/Uterus_Shape_DropDown"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fpUterusShapeLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+
+                <TextView
+                    android:id="@+id/fpUterusShapeTextView"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/uterus_shape"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/fpUterusShapeSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/gradient_spinner"
+                    android:entries="@array/Uterus_Shape_DropDown"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+            <!--uterus position Condition segment...........................................-->
+            <LinearLayout
+                android:id="@+id/fpUterusPositionLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+
+                <TextView
+                    android:id="@+id/fpUterusPositionTextView"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/uterus_position"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/fpUterusPositionSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/gradient_spinner"
+                    android:entries="@array/Uterus_Position_DropDown"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <!--uterus movement segment.............................-->
+            <LinearLayout
+                android:id="@+id/fpUterusMovementLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+
+                <TextView
+                    android:id="@+id/fpUterusMovementTextView"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/uterus_movement"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/fpUterusMovementSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/gradient_spinner"
+                    android:entries="@array/Uterus_Movement_DropDown"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <!--uterus movement pain segment.............................-->
+            <LinearLayout
+                android:id="@+id/fpUterusMovementPainLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+
+                <TextView
+                    android:id="@+id/fpUterusMovementPainTextView"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/uterus_movement_pain"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/fpUterusMovementPainSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/gradient_spinner"
+                    android:entries="@array/Uterus_Movement_Pain_DropDown"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <!--fornix segment.............................-->
+            <LinearLayout
+                android:id="@+id/fpFornixLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+
+                <TextView
+                    android:id="@+id/fpFornixTextView"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fornix"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/fpFornixSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/gradient_spinner"
+                    android:entries="@array/CloseOpen_Dropdown"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <!--is currently pregnant segment.............................-->
+            <LinearLayout
+                android:id="@+id/fpIsCurrentlyPregnantLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+
+                <TextView
+                    android:id="@+id/fpIsCurrentlyPregnantLabel"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/is_currently_pregnant"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/fpIsCurrentlyPregnantSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/gradient_spinner"
+                    android:entries="@array/YesNo_Dropdown"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/fpUrineSugarLayout" 
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginTop="5sp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layoutbordersimple"
+                    android:padding="2sp">
+                <TextView
+                    android:id="@+id/fpUrineSugarLabel"
+                    android:text="@string/urine_test_sugar"
+                    android:textSize="20sp"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"/>
+                <Spinner
+                    android:id="@+id/fpUrineSugarSpinner"
+                    android:inputType="text"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_spinner"
+                    android:entries="@array/Urine_Test_Dropdown"/>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/fpHemoglobin" android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:padding="2sp">
+                <TextView
+                    android:id="@+id/fpHemoglobinLabel"
+                    android:text="@string/hemoglobin"
+                    android:textSize="20sp"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"/>
+                <EditText
+                    android:id="@+id/fpHemoglobinValue"
+                    android:inputType="number"
+                    android:textSize="20sp"
+                    android:paddingLeft="2sp"
+                    android:layout_width="70sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_round"/>
+                <TextView
+                    android:id="@+id/fpHemoglobinLabelp"
+                    android:text=" %"
+                    android:textSize="25sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"/>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/fpExamNextButtonLayout"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="10sp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:id="@+id/fpExamSubmitButton"
+                    android:paddingRight="10sp"
+                    android:paddingLeft="2sp"
+                    android:background="@drawable/button_style"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

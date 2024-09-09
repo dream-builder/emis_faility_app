@@ -1,0 +1,216 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="1sp"
+        style="@style/rowStyle1"
+        android:background="@drawable/fragmentborder">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/death_info"
+            android:id="@+id/ancHistoryLabel"
+            style="@style/rowHeading"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:id="@+id/deathLLInfo"
+            android:layout_marginLeft="1sp"
+            android:layout_marginRight="1sp"
+            android:layout_marginTop="1sp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layoutbordersimple"
+            android:padding="1sp">
+            <TextView
+                android:id="@+id/deathTVLabel"
+                android:text="@string/death_info"
+                android:textSize="20dp"
+                android:layout_width="220dp"
+                android:layout_height="50px"
+                android:layout_marginLeft="5sp"
+                android:textColor="@color/text_color"
+                android:layout_gravity="center"/>
+            <RadioGroup
+                android:id="@+id/deathRGSaveModify"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/deathRBSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reserve"
+                    android:textSize="20dp"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/deathRBModify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/change"
+                    android:textSize="20dp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/deathLLDeathType"
+            android:layout_marginLeft="1sp"
+            android:layout_marginRight="1sp"
+            android:layout_marginTop="1sp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layoutbordersimple"
+            android:padding="2sp">
+            <CheckBox
+                android:id="@+id/deathCBMother"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="@string/mother_death"/>
+            <CheckBox
+                android:id="@+id/deathCBNewborn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="@string/child_death"/>
+            <Spinner
+                android:id="@+id/deathSpChildNo"
+                android:layout_width="70sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:background="@drawable/gradient_spinner"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/deathLLDate"
+            android:layout_marginLeft="1sp"
+            android:layout_marginRight="1sp"
+            android:layout_marginTop="1sp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layoutbordersimple"
+            android:layout_gravity="center_horizontal"
+            android:padding="2sp">
+            <TextView
+                android:id="@+id/deathLbDate"
+                android:text="@string/date"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:textColor="@color/text_color"
+                android:layout_gravity="center" />
+            <EditText
+                android:id="@+id/deathETDate"
+                android:inputType="date"
+                android:enabled="false"
+                android:hint="dd/mm/yyyy"
+                android:paddingLeft="2sp"
+                android:layout_marginLeft="10sp"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_round"
+                android:layout_gravity="center" />
+
+            <ImageButton
+                android:id="@+id/deathIMBDatePicker"
+                android:layout_marginLeft="10sp"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:onClick="pickDate"
+                android:src="@drawable/calendar_icon"
+                android:layout_gravity="center" />
+            <TextView
+                android:id="@+id/deathTVPlace"
+                android:text="@string/place"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:textColor="@color/text_color"
+                android:layout_gravity="center" />
+
+            <Spinner
+                android:id="@+id/deathSPlace"
+                android:layout_width="170sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:entries="@array/FacilityPlace_DropDown"
+                android:prompt="@string/delivery_place"
+                android:background="@drawable/gradient_spinner" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/deathLLButton"
+            android:layout_marginLeft="1sp"
+            android:layout_marginRight="1sp"
+            android:layout_marginTop="1sp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layoutbordersimple">
+
+            <TextView
+                android:id="@+id/death_place_label"
+                android:layout_marginLeft="5sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/history_cause"
+                android:textSize="20sp"
+                android:textColor="@color/text_color"
+                android:layout_gravity="center"/>
+
+            <Spinner
+                android:id="@+id/deathSPReason"
+                android:layout_width="170sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:entries="@array/DeathReason_DropDown"
+                android:background="@drawable/gradient_spinner"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/deathLLButtons"
+            android:layout_marginLeft="1sp"
+            android:layout_marginRight="1sp"
+            android:layout_marginTop="1sp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layoutbordersimple">
+            <Button
+                android:id="@+id/deathBnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Report Death"
+                android:onClick="reportDeath"/>
+            <Button
+                android:id="@+id/deathBnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:onClick="cancelActivity"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

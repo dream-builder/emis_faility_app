@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/layout_fever_not_maleria_2_months"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/layoutborderblack"
+    android:layout_margin="5dp"
+    >
+
+    <!--Symptom 91 Segment-->
+    <RelativeLayout
+        android:id="@+id/childcaresymptom91Segement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/childcaresymptom91checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:clickable="false"
+            android:enabled="false"
+            android:text="@string/childcaresymptom81"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <!--<TextView
+            android:id="@+id/childcaresymptom91TextviewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/childcaresymptom81"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_toRightOf="@id/childcaresymptom91checkbox"
+            android:layout_marginTop="10dp"/>-->
+
+    </RelativeLayout>
+
+    <!--Symptom 92 Segment-->
+    <RelativeLayout
+        android:id="@+id/childcaresymptom92Segement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/childcaresymptom92checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/childcaresymptom92TextviewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/childcaresymptom87"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_toRightOf="@id/childcaresymptom92checkbox"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+    <!--Symptom 93 Segment-->
+    <RelativeLayout
+        android:id="@+id/childcaresymptom93Segement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/childcaresymptom93checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/childcaresymptom93TextviewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/childcaresymptom89"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_toRightOf="@id/childcaresymptom93checkbox"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+    <!--Symptom 94 Segment-->
+    <RelativeLayout
+        android:id="@+id/childcaresymptom94Segement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/childcaresymptom94checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/childcaresymptom94TextviewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/childcaresymptom90"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_toRightOf="@id/childcaresymptom94checkbox"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

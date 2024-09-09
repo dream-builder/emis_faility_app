@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/treatment_details"
+    android:background="@drawable/fragmentborder">
+
+    <RelativeLayout
+        android:id="@+id/llTreatmentDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@style/rowHeading0">
+        <TextView
+            android:id="@+id/tvTreatmentDetails"
+            android:layout_centerVertical="true"
+            android:text="@string/treatment_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+
+
+        <TextView
+            android:id="@+id/tvTreatmentDetailsQuantity"
+            android:text="@string/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lvTreatmentDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+
+</LinearLayout>

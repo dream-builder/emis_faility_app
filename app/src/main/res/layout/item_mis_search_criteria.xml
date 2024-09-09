@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView android:id="@+id/textViewMISReportHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="@color/text_color"
+        android:text="রিপোর্ট"
+        android:layout_marginBottom="5dp"/>
+
+    <LinearLayout android:id="@+id/linearLayoutMisFirstHeader"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layoutbordersimple">
+
+        <RadioGroup android:id="@+id/misSearchCriteria2RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="পরিদর্শন অনুযায়ী"
+                android:checked="true"
+                android:id="@+id/misVisitRadioButton" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="আদর্শ সময়কাল অনুযায়ী"
+                android:id="@+id/misStandardRadioButton" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layoutbordersimple">
+
+        <RadioGroup android:id="@+id/misSearchCriteriaRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="তারিখ অনুযায়ী"
+                android:id="@+id/misDateRadioButton" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="মাস অনুযায়ী"
+                android:id="@+id/misMonthRadioButton" />
+        </RadioGroup>
+
+        <RelativeLayout android:id="@+id/misMonthLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_black"
+            android:visibility="gone">
+            <!--month  segment...........................................-->
+            <LinearLayout
+                android:id="@+id/misMonthPickerLayout"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4sp">
+                <TextView
+                    android:id="@+id/misMonthTextView"
+                    android:text="মাস"
+                    android:paddingRight="2sp"
+                    android:paddingLeft="2sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:layout_gravity="center" />
+                <EditText
+                    android:id="@+id/misMonthEditText"
+                    android:hint=""
+                    android:paddingLeft="2sp"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:background="@drawable/edittext_round"
+                    android:layout_gravity="center" />
+
+                <ImageButton
+                    android:id="@+id/misMonthPickerButton"
+                    android:layout_marginLeft="10sp"
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:onClick="pickDate"
+                    android:src="@drawable/calendar_icon"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/misDateLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_black"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/misStartDatePickerLayout"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4sp">
+                <TextView
+                    android:id="@+id/misStartDateTextView"
+                    android:text="শুরুর তারিখ"
+                    android:paddingRight="2sp"
+                    android:paddingLeft="2sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:layout_gravity="center" />
+                <EditText
+                    android:id="@+id/misStartDateEditText"
+                    android:hint=""
+                    android:paddingLeft="2sp"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:background="@drawable/edittext_round"
+                    android:layout_gravity="center" />
+
+                <ImageButton
+                    android:id="@+id/misStartDatePickerButton"
+                    android:layout_marginLeft="10sp"
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:onClick="pickDate"
+                    android:src="@drawable/calendar_icon"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/misEndDatePickerLayout"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/misStartDatePickerLayout"
+
+                android:padding="4sp">
+                <TextView
+                    android:id="@+id/misEndDateTextView"
+                    android:text="শেষ তারিখ"
+                    android:paddingRight="2sp"
+                    android:paddingLeft="2sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:layout_gravity="center" />
+                <EditText
+                    android:id="@+id/misEndDateEditText"
+                    android:hint=""
+                    android:paddingLeft="2sp"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:background="@drawable/edittext_round"
+                    android:layout_gravity="center" />
+
+                <ImageButton
+                    android:id="@+id/misEndDatePickerButton"
+                    android:layout_marginLeft="10sp"
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:onClick="pickDate"
+                    android:src="@drawable/calendar_icon"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="দেখুন"
+            android:onClick="sendMisRequest"
+            android:id="@+id/button"/>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/cadetblue"
+        android:textColor="@color/white"
+        android:layout_margin="3dp"
+        android:text="রিপোর্ট সমন্বয় ও সাবমিট করতে এখানে ক্লিক করুন"
+        android:onClick="submitMIS3"
+        android:id="@+id/buttonSubmit" />
+
+</LinearLayout>

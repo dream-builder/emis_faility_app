@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutNRCAgeNext"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="20dp"
+    android:padding="10dp"
+    android:background="@drawable/layoutbordersimple"
+    android:orientation="horizontal">
+
+
+
+    <EditText
+        android:id="@+id/Clients_AgeMonth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/edittext_round"
+        android:ellipsize="start"
+        android:inputType="number"
+        android:maxLength="2"
+        android:paddingLeft="2dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/TextViewClientsAgeMonth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="2sp"
+        android:text="@string/NRCClientsAgeMonth"
+        android:textColor="@color/text_color"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/Clients_AgeDay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/edittext_round"
+        android:ellipsize="start"
+        android:inputType="number"
+        android:maxLength="2"
+        android:paddingLeft="2dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/TextViewClientsAgeDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingRight="5dp"
+        android:text="@string/NRCClientsAgeDate"
+        android:textColor="@color/text_color"
+        android:textSize="20sp" />
+</LinearLayout>

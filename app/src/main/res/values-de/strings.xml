@@ -1,0 +1,1278 @@
+<resources>
+    <string name="planet_prompt">Choose a planet</string>
+
+    <string name = "app_name">eMIS</string>
+    <string name = "dr_prompt">Select One</string>
+    <string name = "title_activity_second">SecondActivity</string>
+    <string name = "action_settings">"Settings"</string>
+    <string name = "appTitle">Union Health &#38; Family Planning Center</string>
+    <string name = "providerLabel">"ID "</string>
+    <string name = "providerPassLabel">"Password "</string>
+    <string name = "clientIdLabel">"Client ID :"</string>
+    <string name = "providerHint">"Union Health &#38; Family Planning Info Registration"</string>
+    <string name = "providerPassHint">"Union Health &#38; Family Planning Info Registration"</string>
+    <string name = "ClientsIntroFragment">"Client&#39;s Detail"</string>
+    <string name = "ProviderPlaceTittle">"Service Place"</string>
+    <string name = "ProviderPlaceTip">"Select service location type of today:"</string>
+    <string name = "PlaceFacility">Union Health &#38; Family Planning Center</string>
+    <string name = "PlaceSatellite">Satellite Clinic</string>
+    <string name = "title_confirmation">"Confirm"</string>
+    <string name = "ClientsName">"Name "</string>
+    <string name = "ClientsNameHint">"Client Name"</string>
+    <string name = "ClientsAge">"Age "</string>
+    <string name = "ClientsHusband">"Spouse "</string>
+    <string name = "ClientsFather">"Father&#39;s Name"</string>
+    <string name = "ClientsMother">"Mother&#39;s Name"</string>
+    <string name = "ClientsDist">"Dist."</string>
+    <string name = "ClientsSex">"Gender:"</string>
+    <string name = "ClientsUpazila">"Sub District"</string>
+    <string name = "ClientsUnion">"Union"</string>
+    <string name = "ClientsVillage">"Village"</string>
+    <string name = "ClientsWordNo">"Ward No"</string>
+    <string name = "ClientsUniteNo">"Unit No"</string>
+    <string name = "ClientsHouseNo">"House/GR/HoldingNo"</string>
+    <string name = "ClientsCoupleNo">"Elco No"</string>
+    <string name = "ClientsMobileNo">"Mobile"</string>
+
+    <string name = "service_type">"Service Type: "</string>
+    <string name = "between">" From "</string>
+
+    <!-- NRC Deatils -->
+
+    <string name = "NRCClientsName">"* Name: "</string>
+    <string name = "NRCClientsAge">"* Age:"</string>
+    <string name = "NRCClientsDOB">"* Date of Birth:"</string>
+    <string name = "NRCClientsDOBUnknown">"Not Known"</string>
+    <string name = "NRCClientsFather">"* Father&#39;s Name:"</string>
+    <string name = "NRCClientsMother">"* Mother&#39;s Name:"</string>
+    <string name = "NRCClientsDist">"* District:"</string>
+    <string name = "NRCClientsSex">"* Gender:"</string>
+    <string name = "NRCClientsUpazila">"* Sub district:"</string>
+    <string name = "NRCClientsUnion">"* Union:"</string>
+    <string name = "NRCClientsVillage">"* Village:"</string>
+    <string name = "NRCClientsUnknown">"নাই"</string>
+    <string name = "NRCClientsChild">"Child:"</string>
+    <string name = "NRCClientsHHOtherMember">"খানার অন্যান্য সদস্যের তথ্য:"</string>
+    <string name = "NRCClientsHHMemberName">"সদস্যের নাম:"</string>
+    <string name = "NRCClientsHHMemberAge">"সদস্যের বয়স:"</string>
+    <string name = "NRCClientsHHMemberSex">"সদস্যের লিঙ্গ:"</string>
+    <string name = "NRCClientsMemberCount">"খানার সদস্য সংখ্যা:"</string>
+    <string name = "NRCClientsNID">"জাতীয় পরিচয়পত্র নম্বর:"</string>
+    <string name = "NRCClientsNIDNotHavingReason">"জাতীয় পরিচয় পত্র নম্বর না থাকলে কেন নাই?:"</string>
+    <string name = "NRCClientsBRID">"জন্ম নিবন্ধন নম্বর:"</string>
+    <string name = "NRCClientsBRIDNotHavingReason">"জন্ম নিবন্ধন নম্বর না থাকলে কেন নাই?:"</string>
+    <string name = "NRCClientsMobile2">"মোবাইল নম্বর-২:"</string>
+    <string name = "NRCClientsMaritalStatus">"বৈবাহিক অবস্থা:"</string>
+    <string name = "NRCClientsEducation">"শিক্ষাগত যোগ্যতা:"</string>
+    <string name = "NRCClientsReligion">"ধর্ম:"</string>
+    <string name = "NRCClientsNationality">"বাংলাদেশী নাগরিক"</string>
+    <string name = "NRCClientsProfession">"পেশা:"</string>
+    <string name = "NRCClientsAgeDate">"Day"</string>
+    <string name = "NRCClientsAgeMonth">"Month"</string>
+    <string name = "NRCClientsAgeYear">"Year"</string>
+
+    <string name = "reg_no">"Reg No:"</string>
+    <string name = "ClientsInfoFragment">"Client&#39;s Detail</string>
+    <string name = "LMPDate">"*LMP Date:"</string>
+    <string name = "LMPDateNormal">"LMP Date:"</string>
+    <string name = "LikelyLMPDate">"Approximate LMP Date:"</string>
+    <string name = "pick_time">Pick time</string>
+    <string name = "selectdate">Pick time</string>
+    <string name = "DeliveryDate">"*EDD Date:"</string>
+    <string name = "Clients_Para">"*Para:"</string>
+    <string name = "Clients_Gravida">"*Gravida:"</string>
+    <string name = "Client_Son_Num">"Son:"</string>
+    <string name = "Client_Daughter_Num">"Daughter:"</string>
+    <string name = "TextViewLive_child_Num">"*Live Child Number:"</string>
+    <string name = "TextViewLive_child_Num_Not_Mandatory">"Live Child Number:"</string>
+    <string name = "TextViewLast_child_Age">"*Age of Last Child:"</string>
+    <string name = "TextViewLast_child_Age_Not_Mandatory">"Age of Last Child:"</string>
+    <string name = "Last_child_Feeded_Breastmilk_only">"ছোট সন্তান কি শুধুমাত্র বুকের দুধ খায়?:"</string>
+    <string name = "Age_of_last_child_year">"Year"</string>
+    <string name = "Age_of_last_child_mont">"Month"</string>
+    <string name = "Clients_Hight_feet">"Feet"</string>
+    <string name = "Clients_Hight_Inch">"Inch"</string>
+    <string name = "Clients_Hight">"Height:"</string>
+    <string name = "Clients_Blood_Group">"Blood Group:"</string>
+    <string name = "Clients_TT_Tika">"TT Immunization:"</string>
+    <string name = "Privious_History">"Previous Pregnancy History:"</string>
+    <string name = "bleeding">"Bleeding (antenatal or post-natal)"</string>
+    <string name = "give_birth_as_dead">"H/O Still Birth"</string>
+    <string name = "newborn_die_within_48hours">"Newborn death within 48 hours of birth"</string>
+    <string name = "swelling_legs_or_whole_body">"Edema in legs or whole body"</string>
+    <string name = "with_convulsion_senseless">"Eclampsia or Repeated Convulsions"</string>
+    <string name = "caesar">"Cesarian Section/ Forceps Delivery/ Vacuum Extraction"</string>
+    <string name = "clientInfoMissing">গর্ভ সংক্রান্ত তথ্য অনুপস্থিত, দয়া করে প্রথমে গর্ভ সংক্রান্ত তথ্য দিন</string>
+    <string name = "ANCWarning">গর্ভকালীন সেবা প্রযোজ্য নয়</string>
+    <string name = "NewANCWarning">নতুন গর্ভকালীন সেবা প্রযোজ্য নয়। </string>
+    <string name = "DeliveryWarning">প্রসবকালীন সেবা প্রযোজ্য নয় </string>
+    <string name = "PNCWarning">প্রসবের তথ্য অনুপস্থিত। অনুগ্রহ করে \nপ্রসবোত্তর সেবার পূর্বে প্রসবের তথ্য নিন। </string>
+    <string name="PNCMotherdead">মা মৃত্যু বরন করায় এই সেবা তার জন্য প্রযোজ্য নয়</string>
+    <string name = "PNCWarning_PAC">গর্ভপাত হওয়ায় প্রসবোত্তর সেবা প্রযোজ্য নয়।</string>
+    <string name = "PACWarning">গর্ভপাত পরবর্তী সেবা প্রযোজ্য নয়  </string>
+    <string name = "FPWarning">পরিবার পরিকল্পনা সেবা প্রযোজ্য নয়</string>
+    <string name = "GeneralSaveWarning">দয়া করে তারকা (*) চিহ্নিত ঘর গুলি পূরণ করে পুনরায় save চাপুন </string>
+    <string name = "PillEligibilityWarning">পিল সেবা এই সেবাগ্রহিতা জন্য উপযুক্ত নয়, দয়া করে অন্য সেবা নির্বাচন করুন</string>
+    <string name = "NoNewbornWarning">নবজাতক সংক্রান্ত তথ্য় অনুপস্থিত।\n এই ফর্ম থেকে বের হবার পূর্বে নবজাতকের তথ্য দিন। </string>
+    <string name = "DeliverySavePrompt">দয়া করে সংগৃহিত তথ্য যাচাই করুন, নিশ্চিত করে CONFIRM চাপুন</string>
+    <string name = "DeliveryWithoutPregnancyPrompt">গর্ভ সংক্রান্ত তথ্য অনুপস্থিত।\n তথ্য ব্যতীত সেবা দিতে OK চাপুন ফেরত যেতে CANCEL চাপুন</string>
+    <string name = "ServiceDeletionWarning">সাবধান!  সেবা গ্রহনের তথ্য DELETE করতে \n OK চাপুন ফেরত যেতে CANCEL চাপুন</string>
+    <string name = "StartPACfromDeliveryMessage">গর্ভপাতের তথ্য উপস্থিত। গর্ভপাত পরবর্তী সেবা দিতে OK চাপুন, ফিরে যেতে CANCEL চাপুন </string>
+    <string name = "OutcomeDate">তারিখ </string>
+    <string name = "OutcomePlace">স্থান </string>
+    <string name = "expressDeliveryBanner">প্রসবের তারিখ দিন </string>
+    <string name = "lmpOptionalDailog">যদি শেষ মাসিকের তারিখ জানা যায় </string>
+    <string name = "loginWaitRequest">দুঃখিত, দয়া করে ৫ সেকেন্ড অপেক্ষা করে আবার চেষ্টা করুণ </string>
+    <string name = "passwordResetRequest">পাসওয়ার্ড নতুন করে নিতে আপনার উর্ধত্বন কর্তৃপক্ষের সাথে যোগাযোগ করুন। </string>
+    <string name = "reportedDeath">এই ব্যক্তি কে মৃত রিপোর্ট করা হয়েছে</string>
+    <string name = "notRreportedDeath">এই ব্যক্তি কে মৃত রিপোর্ট করা হয়নি</string>
+    <string name = "SatellitePlanningSubmitPrompt">Do you want to SUBMIT? If sure press CONFIRM, otherwise press CANCEL. </string>
+    <string name = "SatelliteNameWarning">দয়া করে সকল স্যাটেলাইটের সঠিক নাম দিন</string>
+    <string name = "FWANameWarning">পরিবার কল্যাণ সহকারির নাম দিন</string>
+    <string name = "FWAIDWarning">পরিবার কল্যাণ সহকারির আইডি দিন</string>
+    <string name = "SatellitePlanningAddInfo">স্যাটেলাইটের তথ্য পরিবর্তন করতে এডিট মোড অন করুন এবং নিশ্চিত হয়ে SUBMIT করুন</string>
+    <string name = "SatellitePlanningEditInfo">যে স্যাটেলাইটের তথ্য পরিবর্তন করতে চান সে তারিখে টাচ করে Delete করুন। তারপর যে তারিখে স্যাটেলাইট করতে চান সে তারিখে টাচ করে স্যাটেলাইটটি Add করুন। তারপর নিশ্চিত হয়ে Submit করুন। </string>
+    <string name = "hasCurrentFpMethod_mandatory">*বর্তমানে কোন পদ্ধতি  ব্যবহার করছেন কিনা?</string>
+    <string name = "hasCurrentFpMethod">*বর্তমানে কোন পদ্ধতি  ব্যবহার করছেন কিনা?</string>
+    <string name = "hasPACHistory">গর্ভপাতের ইতিহাস আছে কিনা?</string>
+    <string name = "hasMRHistory">এম আর করা হয়েছে কিনা?</string>
+    <string name = "painAtMenstruation">মাসিকের সময় ব্যথা হয় কিনা?</string>
+    <string name = "last_mr_date">শেষ এম. আর. এর তারিখ</string>
+    <string name = "last_delivery_date">শেষ প্রসবের তারিখ</string>
+    <string name = "marriage_date">বিবাহের তারিখঃ</string>
+    <string name = "last_pac_date">শেষ গর্ভপাতের তারিখ</string>
+    <string name = "duration">স্থায়ীত্বকালঃ</string>
+    <string name = "day">দিন</string>
+    <string name = "cycle">চক্রঃ</string>
+    <string name = "menstruation_amount">রক্তস্রাবের পরিমাণঃ</string>
+    <string name = "ask_count">কতবার?</string>
+    <string name = "pregnancy_status">গর্ভাবস্থাঃ</string>
+    <string name = "pregnant">গর্ভবতী</string>
+    <string name = "not_pregnant">গর্ভবতী নয়</string>
+
+    <string name="general_yes">"হ্যাঁ"</string>
+    <string name="general_no">"না"</string>
+    <string name="general_treatment">"চিকিৎসা:"</string>
+    <string name="general_advice">"পরামর্শ:"</string>
+    <string name="general_refer">"রেফার:"</string>
+    <string name="general_facility_name">"কেন্দ্রের নাম:"</string>
+    <string name="general_cause">"	কারণ:"</string>
+    <string name="pnc_m_poridorshan">পরিদর্শন</string>
+    <string name="pnc_m_date">সেবাগ্রহনের তারিখ:</string>
+
+    <string name="anc_service">"Antenatal Care ( ANC )"</string>
+    <string name="delivery_service">"Delivery"</string>
+    <string name="pnc_service">Postnatal Care ( PNC )</string>
+    <string name="gp_service">General Patient Service</string>
+    <string name="delivery_related_info">"প্রসব সংক্রান্ত তথ্য"</string>
+    <string name="delivery_place">"*প্রসবের স্থান:"</string>
+    <string name="delivery_date">"*প্রসবের তারিখ:"</string>
+    <string name="delivery_time">"সময়:"</string>
+    <string name="delivery_type">"*প্রসবের ধরণ:"</string>
+    <string name="service_center_name">"সেবাকেন্দ্রের নাম:"</string>
+    <string name="admission_date">"আগমনের তারিখ:"</string>
+    <string name="ward">"ওয়ার্ড:"</string>
+    <string name="bed">"শয্যা:"</string>
+    <string name="delivery_result">"প্রসবের ফলাফল:"</string>
+    <string name="min_delivery_result">"ফলাফল:"</string>
+    <string name="live_born">"জীবিত জন্ম:"</string>
+    <string name="dead_born">"মৃত জন্ম:"</string>
+    <string name="dead_born_fresh">"ফ্রেশ:"</string>
+    <string name="dead_born_macerated">"ম্যাসারেটেড:"</string>
+    <string name="child_sex">"লিঙ্গ:"</string>
+    <string name="not_detected">"সনাক্ত করা যাই নি :"</string>
+    <string name="amtsl">"প্রসবের তৃতীয় ধাপের সক্রিয় ব্যবস্থাপনায় (AMTSL) যা অনুসরণ করা হয়েছে:"</string>
+    <string name="oxytocin">"প্রসবের ১ মিনিটের মধ্যে অক্সিটোসিন প্রয়োগ"</string>
+    <string name="traction">"গর্ভফুল প্রসবের জন্য নাভিরজ্জুতে নিয়ন্ত্রিত টান"</string>
+    <string name="massage">"জরায়ু ম্যাসাজ"</string>
+    <string name="epcotomi">"ইপিসিওটমি করা হয়েছে? "</string>
+    <string name="oxytocinGiven">"অক্সিটোসিন না থাকলে মিসোপ্রোস্টল খাওয়ানো হয়েছে?"</string>
+    <string name="providerName">"প্রসব সম্পাদনকারীর নাম:"</string>
+    <string name="providerSelfLabel">"আমি প্রসব সম্পাদনকারী"</string>
+    <string name="providerSelfValue">" আমি নিজে"</string>
+    <string name="providerTitle">"পদবী:"</string>
+    <string name="deliveryComplication">"প্রসব সংক্রান্ত জটিলতা:"</string>
+    <string name="bloodLoss">"অতিরিক্ত রক্তক্ষরণ"</string>
+    <string name="delayedDelivery">"Prolonged labor"</string>
+    <string name="blockedDelivery">"Obstructed labor"</string>
+    <string name="blockedPlacenta">"Retained Placenta"</string>
+    <string name="heavyHeadache">"প্রচন্ড মাথা ব্যাথা"</string>
+    <string name="blurryVision">" চোখে ঝাপসা দেখা "</string>
+    <string name="onlyHead">"মাথা ছাড়া অন্য কোন অঙ্গ বের হওয়া"</string>
+    <string name="convulsion">"খিচুঁনি "</string>
+    <string name="deliveryExtra">"অন্যান্য"</string>
+    <string name="newborn_add">"নবজাতক\nসংযোজন"</string>
+    <string name="death_fresh_add">"মৃত জন্ম \nসংযোজন: ফ্রেশ"</string>
+    <string name="death_macerated_add">"মৃত জন্ম \nসংযোজন:ম্যাসারেটেড"</string>
+
+    <string name="client_status">"গ্রহীতার অবস্থাঃ "</string>
+    <string name="is_new_client">"নতুন গ্রহীতা?: "</string>
+    <string name="new_client">"নতুন"</string>
+    <string name="old_client">"পুরাতন"</string>
+
+    <string name="providerSelfRemover">" আমি খুলেছি"</string>
+
+    <string name="pill_condom_history">"গর্ভ নিরোধক খাবার বড়ি, কনডম সেবার ইতিহাস"</string>
+
+    <string name="anc_title">" ANC Info "</string>
+    <string name="visit">"Visit:"</string>
+    <string name="other_source">Other Source</string>
+    <string name="service_date">"*Visit Date:"</string>
+    <string name="blood_presser">"Blood Pressure (mmHg):"</string>
+    <string name="blood_pressure_mandatory">"*Blood Pressure (mmHg):"</string>
+    <string name="weight">"Weight (Kg):"</string>
+    <string name="pulse">"Pulse:"</string>
+    <string name="edema">"Edema:"</string>
+    <string name="uterus_height">"Uterus Height (Week):"</string>
+    <string name="heart_speed">"FHR (bpm):"</string>
+    <string name="fetal_presentation">"Fetal Presentation:"</string>
+    <string name="anemia">"Anemia:"</string>
+    <string name="anemia_mandatory">"*Anemia:"</string>
+    <string name="hemoglobin">"Hemoglobin:"</string>
+    <string name="abdomen">"পেট :"</string>
+    <string name="lungs">"ফুসফুস : "</string>
+    <string name="liver">"লিভার : "</string>
+    <string name="splin">"প্লীহা :"</string>
+    <string name="tonsil">"টনসিল: "</string>
+    <string name="jaundice">"Jaundice:"</string>
+    <string name="jaundice_mandatory">"*Jaundice:"</string>
+    <string name="other">"Miscellaneous:"</string>
+    <string name="urine_test_sugar">"Urine Test (Sugar):"</string>
+    <string name="urine_test_albumin">"Urine Test (Albumin):"</string>
+    <string name="complication">"Complications:"</string>
+    <string name="physicalExamination">দৈহিক পরীক্ষা </string>
+    <string name="drawback">"Problems:"</string>
+    <string name="gp_drawback">"অসুবিধা/উপসর্গ:"</string>
+    <string name="disease">"Disease:"</string>
+    <string name="treatment">"Treatment:"</string>
+    <string name="treatment_label">"Treatment"</string>
+    <string name="quantity">"পরিমাণ"</string>
+    <string name="advice">"Advice:"</string>
+    <string name="refer">"Refer:"</string>
+    <string name="center_name">"*Name of Center:"</string>
+    <string name="reason">"*Reason:"</string>
+    <string name="refer_reason">"*রেফারের কারণ:"</string>
+    <string name="pnc_title">"প্রসবোত্তর সেবা"</string>
+    <string name="pncInfo_mother">"বর্তমান সেবার তথ্য: মা"</string>
+    <string name="temperature">"তাপমাত্রা:"</string>
+    <string name="temperature_mandatory">"*তাপমাত্রা:"</string>
+    <string name="breast_condition">"স্তনের অবস্থা:"</string>
+    <string name="breast_exam_mandatory">"*স্তন পরীক্ষা:"</string>
+    <string name="cervix_involution">"জরায়ুর ইনভলিউশন:"</string>
+
+    <string name="perineum">"পেরিনিয়াম:"</string>
+    <string name="family_planning_methods">"পরিবার পরিকল্পনা পদ্ধতি\n(পরামর্শ / পদ্ধতি প্রদান):"</string>
+    <string name="family_planning_methods_2">"পরিবার পরিকল্পনা পদ্ধতি "</string>
+    <string name="family_planning_methods_2_mandatory">"*পরিবার পরিকল্পনা পদ্ধতি "</string>
+    <string name="cervix">"জরায়ুমুখ:"</string>
+    <string name="hearts">"হৃদপিন্ড:"</string>
+    <string name="vaginal_wall">"যোনিপথের দেয়াল:"</string>
+    <string name="cervicitis">"জরায়ু মুখে ঘা বা পুঁজ:"</string>
+    <string name="pac_uterus_height">"জরায়ুর উচ্চতা :"</string>
+
+    <string name="visitDate">"সেবাগ্রহনের তারিখ:"</string>
+    <string name="bpSystolic">"রক্তচাপ (মিঃ মিঃ মার্কারি) :"</string>
+    <string name="breastCondition">"স্তনের অবস্থা:"</string>
+    <string name="uterusInvolution">"জরায়ুর ইনভলিউশন:"</string>
+    <string name="hematuria">"স্রাব/ রক্তস্রাব:"</string>
+    <string name="serviceSource">"পরিবার পরিকল্পনা পদ্ধতি\n(পরামর্শ / পদ্ধতি প্রদান) :"</string>
+    <string name="referCenterName">"কেন্দ্রের নাম :"</string>
+    <string name="referReason">"Reason:"</string>
+
+    <string name="fp_methods">"পদ্ধতিঃ "</string>
+    <string name="fp_methods_mandatory">"*পদ্ধতিঃ "</string>
+    <string name="visit_reason_mandatory">"*পরিদর্শনের কারণঃ "</string>
+
+    <string name="pncInfo_child">"বর্তমান সেবার তথ্য: সন্তান "</string>
+    <string name="new_born">" নবজাতক: "</string>
+    <string name="breath_per_minute">" শ্বাস (মিনিটে কতবার): "</string>
+    <string name="breath_per_minute_mandatory">"*শ্বাস (মিনিটে কতবার): "</string>
+    <string name="complicationsign">" অসুবিধা: "</string>
+
+    <string name="detail">" বিস্তারিত "</string>
+    <string name="fixed">"নির্ধারিত"</string>
+    <string name="fixed_followup">"নির্ধারিত ফলোআপ"</string>
+    <string name="unfixed">"অনির্ধারিত"</string>
+    <string name="unfixed_followup">"অনির্ধারিত ফলোআপ"</string>
+
+    <string name="followup1">"ফলোআপ ১"</string>
+    <string name="followup2">"ফলোআপ ২"</string>
+    <string name="followup3">"ফলোআপ ৩"</string>
+
+    <string name="only_breast_feeding">" শুধুমাত্র বুকের দুধ খাওয়ানো:"</string>
+    <string name="delevery_service">"প্রসবকালীন সেবা "</string>
+    <string name="delevery_related_info">"প্রসব সংক্রান্ত তথ্য "</string>
+    <string name="newborn_related_info">"নবজাতক সংক্রান্ত তথ্য "</string>
+    <string name="newborn_spinner_label">"নবজাতকের তথ্য চেক অথবা হালনাগাদ করতে নিচের ড্রপডাউন থেকে নির্দিষ্ট সন্তান নির্বাচন করুন"</string>
+    <string name="child">"সন্তান: "</string>
+    <string name="son">"*ছেলে"</string>
+    <string name="daughter">"* মেয়ে "</string>
+    <string name="born_weight">"জন্ম ওজন (কেজি):"</string>
+    <string name="premature_birth_before_37_weeks_full">"অপরিণত জন্ম: "</string>
+    <string name="week"> " সপ্তাহ " </string>
+    <string name="wipe_within_one_minute">"১ মিনিটের মধ্যে মোছানো হয়েছে:"</string>
+    <string name="resastation">"রিসাসসিটেশন:"</string>
+    <string name="stimulation">" স্টিমুলেশন"</string>
+    <string name="bag_n_mask">"ব্যাগ ও মাস্ক ব্যবহার "</string>
+    <string name="placenta_cutting">"নাড়ি কাটার পর নাড়িতে ৭.১% ক্লোরহেক্সিডিন দ্রবন ব্যবহার করা হয়েছে:"</string>
+    <string name="fitted_with_mother_skin">"নাড়ি কাটার পর মায়ের ত্বকে নবজাতককে লাগানো হয়েছে:"</string>
+    <string name="breast_feeding">"জন্মের ১ ঘন্টার মধ্যে বুকের দুধ খাওয়ানো হয়েছে:"</string>
+
+    <string name="title_activity_anc">Antenatal Care </string>
+    <string name="title_activity_gp"> General Patient Service </string>
+    <string name="title_activity_minimum_delivery">পূর্ববর্তী গর্ভ সংক্রান্ত তথ্য </string>
+    <string name="title_activity_delevery">" প্রসবকালীন সেবা "</string>
+    <string name="title_activity_pnc">প্রসবোত্তর সেবা</string>
+
+    <string name="Visit1">Visit 1</string>
+    <string name="Visit2">Visit 2</string>
+    <string name="Visit3">Visit 3</string>
+    <string name="Visit4">Visit 4</string>
+
+    <string name="history_visit1">Visit</string>
+    <string name="history_date">সেবাগ্রহনের তারিখ:</string>
+    <string name="history_temp">তাপমাত্রা:</string>
+    <string name="history_b_pressure">রক্তচাপ (মিঃ মিঃ মার্কারি)</string>
+    <string name="history_b_lack">রক্তস্বল্পতা / হিমোগ্লোবিন:</string>
+    <string name="history_breast">স্তনের অবস্থা:</string>
+    <string name="history_involution">জরায়ুর ইনভলিউশন:</string>
+    <string name="history_bleeding">স্রাব/ রক্তস্রাব:</string>
+    <string name="history_perineum">পেরিনিয়াম:</string>
+    <string name="history_plan">পরিবার পরিকল্পনা পদ্ধতি(পরামর্শ / পদ্ধতি প্রদান):</string>
+    <string name="history_trouble">অসুবিধা:</string>
+    <string name="history_disease">রোগ:</string>
+    <string name="history_treatment">চিকিৎসা:</string>
+    <string name="history_consult">পরামর্শ:</string>
+    <string name="history_refer">রেফার:</string>
+    <string name="history_c_name">কেন্দ্রের নাম:</string>
+    <string name="history_cause">কারণ:</string>
+    <string name="child_refer">রেফার </string>
+    <string name="death_info">মৃত্যু সংক্রান্ত তথ্য: </string>
+    <string name="reserve">সংরক্ষণ  </string>
+    <string name="change">পরিবর্তন </string>
+    <string name="mother_death">মাতৃ মৃত্যু  </string>
+    <string name="child_death">নবজাতক মৃত্যু</string>
+    <string name="date">Date </string>
+    <string name="place">স্থান </string>
+    <string name="abortionPlace">গর্ভপাতের স্থান: </string>
+    <string name="pac_abdomen"> পেট </string>
+
+    <string name="title_activity_nrc">NRCActivity</string>
+    <string name="mr_service">এম আর সেবা</string>
+    <string name="pac_service">Post Abortion Care ( PAC )</string>
+    <string name="death_service">Death </string>
+    <string name="implant_service">ইমপ্ল্যান্ট </string>
+    <string name="implant_followup_service">ইমপ্ল্যান্ট ফলোআপ</string>
+    <string name="report">রিপোর্ট</string>
+    <string name="title_activity_delivery_newborn">DeliveryNewbornActivity</string>
+    <string name="title_activity_death">DeathActivity</string>
+    <string name="title_activity_pac">গর্ভপাত পরবর্তী সেবা</string>
+    <string name="title_activity_advsearch">ADVSearchActivity</string>
+
+    <string name="title_activity_pc">গর্ভ নিরোধক খাবার বড়ি , কনডম সেবা</string>
+    <string name="title_pc">পিল, কনডম সেবা</string>
+    <string name="title_IUD"> আই.ইউ.ডি (IUD) সেবা</string>
+    <string name="title_injectables">ইঞ্জেকটেবলস সেবা</string>
+    <string name="title_Implant">ইমপ্ল্যান্ট সেবা</string>
+    <string name="title_change">পরিবর্তন</string>
+    <string name="NotReadyYet">সামনের সংস্করণ থেকে পাওয়া যাবে</string>
+    <string name="pillLabel"> খাবার বড়ির নাম :</string>
+    <string name="pillLabel_mandatory">*খাবার বড়ির নাম :</string>
+    <string name="leftReasonLabel"> ছেড়ে দেবার কারন :</string>
+    <string name="leftReasonLabel_mandatory">*ছেড়ে দেবার কারন :</string>
+    <string name="pcOtherLabel"> অন্য পদ্ধতি :</string>
+    <string name="pcOtherLabel_mandatory">*অন্য পদ্ধতি :</string>
+    <string name="amount"> পরিমাণ :</string>
+    <string name="amount_mandatory">*পরিমাণ :</string>
+    <string name="pillUnit"> চক্র</string>
+    <string name="condomUnit"> পিস</string>
+    <string name="screening">বাছাইকরণ উপযুক্ততা যাচাই </string>
+    <string name="screening_counselling">পরিবার পরিকল্পনা পদ্ধতি ভিত্তিক কাউন্সেলিং</string>
+    <string name="screening_exam">শারীরিক/পিভি/ল্যাবরেটরী পরীক্ষা</string>
+    <string name="MNCHservice"> MNC Service </string>
+    <string name="FPservice"> Family Planning</string>
+    <string name="GPservice"> General Patient </string>
+    <string name="ChildCareservice"> Child Care Services </string>
+    <string name="reEntry"> দয়া করে পুনরায় এন্ট্রি দিন</string>
+
+    <string name="left_reason"> ছেড়ে দিয়েছেন </string>
+    <string name="other_method">  অন্য পদ্ধতি নিয়েছেন </string>
+
+
+    <string name="topTextInjectableServiceHistory">ইঞ্জেকটেবলস সেবার ইতিহাস</string>
+    <string name="injection_due_dose_date_text">"ইনজেকশন ডিউ ডোজের তারিখঃ"</string>
+    <string name="injection_next_dose_date_text">পরবর্তী ভিজিটের ডিউ ডোজের তারিখঃ</string>
+    <string name="injection_actual_dose_date_text">"*ইনজেকশন প্রদানের  প্রকৃত তারিখ:"</string>
+    <string name="injection_name_text">ইনজেকশনের নামঃ</string>
+    <string name="uterus_size">"জরায়ুর আকার:"</string>
+    <string name="uterus_shape">"জরায়ুর আকৃতি:"</string>
+    <string name="uterus_position">"জরায়ুর অবস্থান:"</string>
+    <string name="uterus_movement">"জরায়ুর নড়াচড়া:"</string>
+    <string name="uterus_movement_pain">"জরায়ু নাড়ানোর সময় ব্যাথা:"</string>
+    <string name="fornix">"যোনির উর্ধপার্শ্ব(ফরনিক্স):"</string>
+    <string name="cervical_polyp">"পলিপ:"</string>
+    <string name="cervical_erosion">"ইরোশন:"</string>
+    <string name="contact_bleeding">"জরায়ু মুখ স্পর্শ করা মাত্র রক্তপাত:"</string>
+    <string name="side_effect">"পার্শ্বপ্রতিক্রিয়া:"</string>
+
+    <!--Injectable Services Texts-->
+    <string name="topTextIudService">আইইউডি সেবা</string>
+    <string name="topTextImplantService">ইমপ্ল্যান্ট সেবা</string>
+    <string name="topTextIudFollowup">আইইউডি ফলোআপ</string>
+    <string name="topTextImplantFollowup">ইমপ্ল্যান্ট ফলোআপ</string>
+    <string name="topTextIUDServiceHistory">আইইউডি ফলোআপ সেবার ইতিহাস</string>
+    <string name="topTextImplantServiceHistory">ইমপ্ল্যান্ট ফলোআপ সেবার ইতিহাস</string>
+    <string name="followup">"ফলোআপ :"</string>
+    <string name="iud_type">আইইউডি\'র প্রকার:</string>
+    <string name="implant_type">*ইমপ্ল্যান্ট\'র প্রকার:</string>
+    <string name="iud_implant_date">*আইইউডি প্রয়োগের তারিখ:</string>
+    <string name="implant_implant_date">*ইমপ্ল্যান্ট প্রয়োগের তারিখ:</string>
+    <string name="iud_client_allowance">গ্রহীতার ভাতার পরিমাণ:</string>
+    <string name="iud_companion_name">আনয়নকারীর নাম:</string>
+    <string name="iud_companion_allowance">আনয়নকারীর ভাতার পরিমাণ:</string>
+    <string name="iud_companion_address">আনয়নকারীর ঠিকানা:</string>
+    <string name="iud_is_after_delivery">প্রসব পরবর্তী আইইউডি</string>
+    <string name="implant_is_after_delivery">প্রসব পরবর্তী ইমপ্ল্যান্ট</string>
+    <string name="iud_attendant">প্রয়োগকারী:</string>
+    <string name="iud_attendant_myself">আমি প্রয়োগকারী:</string>
+    <string name="implant_attendant_myself">আমি প্রয়োগকারী:</string>
+    <string name="iud_attendant_name">প্রয়োগকারীর নাম:</string>
+    <string name="implant_attendant_name">প্রয়োগকারীর নাম:</string>
+    <string name="iud_attendant_designation">প্রয়োগকারীর পদবী:</string>
+    <string name="implant_attendant_designation">প্রয়োগকারীর পদবী:</string>
+    <string name="iud_attendant_allowance">প্রয়োগকারীর ভাতা:</string>
+    <string name="iud_followup_allowance">ফলোআপ ভাতা:</string>
+    <string name="implant_followup_allowance">ফলোআপ ভাতা:</string>
+    <string name="followup_date">*ফলোআপ সম্পাদনের তারিখ:</string>
+    <string name="client_name">গ্রহীতার নাম:</string>
+    <string name="management">ব্যবস্থা:</string>
+    <string name="followup_attendant_name">ফলোআপ সম্পাদনকারীর নাম:</string>
+    <string name="followup_attendant">ফলোআপ সম্পাদনকারী:</string>
+    <string name="followup_attendant_myself">আমি ফলোআপ সম্পাদনকারী</string>
+    <string name="iud_is_remove">খুলে ফেলা হয়েছে:</string>
+    <string name="implant_is_remove">খুলে ফেলা হয়েছে:</string>
+    <string name="iud_remover_name">যিনি খুলেছেন তার নাম:</string>
+    <string name="implant_remover_name">যিনি খুলেছেন তার নাম:</string>
+    <string name="iud_remover_designation">যিনি খুলেছেন তার পদবী:</string>
+    <string name="implant_remover_designation">যিনি খুলেছেন তার পদবী:</string>
+    <string name="iud_remove_reason">খুলে ফেলার কারণ:</string>
+    <string name="implant_remove_reason">খুলে ফেলার কারণ:</string>
+    <string name="iud_remove_date">খুলে ফেলার তারিখ:</string>
+    <string name="implant_remove_date">খুলে ফেলার তারিখ:</string>
+    <string name="monitoring_officer_name">তদারককারী কর্মকর্তার নাম:</string>
+    <string name="monitoring_officer_comment">তদারককারী কর্মকর্তার মন্তব্য:</string>
+    <string name="fp_method_is_given">জন্ম নিয়ন্ত্রণ পদ্ধতি দেয়া হয়েছে:</string>
+
+    <!--MIS report header Texts-->
+    <string name="mis_service_type_text">"সেবার ধরণ"</string>
+    <string name="mis_fwc_text">"কেন্দ্র"</string>
+    <string name="mis_satelite_text">"স্যাটেলাইট"</string>
+    <string name="mis_total_text">"মোট"</string>
+    <string name="mis_rph_text">"প্রজনন স্বাস্থ্য সেবা"</string>
+    <string name="mis_delivery_normal_text">"স্বাভাবিক"</string>
+    <string name="mis_delivery_caesarian_text">"সিজারিয়ান"</string>
+    <string name="mis_delivery_amtsl_text">"প্রসবের তৃতীয় ধাপের সক্রিয় ব্যবস্থাপনা (AMTSL) অনুসরণ করে প্রসব করানো"</string>
+    <string name="mis_delivery_live_text">"জীবিত জন্ম"</string>
+    <string name="mis_delivery_still_text">"মৃত জন্ম"</string>
+    <string name="mis_pnc_visit1_text">"পরিদর্শন-১ (২৪ ঘন্টার মধ্যে)"</string>
+    <string name="mis_pnc_visit2_text">"পরিদর্শন-২ (২-৩ দিনের  মধ্যে)"</string>
+    <string name="mis_pnc_visit3_text">"পরিদর্শন-৩ (৭-১৪ দিনের মধ্যে)"</string>
+    <string name="mis_pnc_visit4_text">"পরিদর্শন-৪ (৪২-৪৮ দিনের মধ্যে)"</string>
+    <string name="mis_pac_text">"গর্ভপাত পরবর্তী সেবা প্রদানের সংখ্যা"</string>
+    <string name="mis_pnc_mother_fp_text">"প্রসব পরবর্তী পরিবার পরিকল্পনা পদ্ধতি প্রদানের সংখ্যা"</string>
+    <string name="mis_refer_text">"রেফার"</string>
+    <string name="mis_refer_complicacy_text">"গর্ভকালীন, প্রসবকালীন ও প্রসবোত্তর জটিলতার সংখ্যা"</string>
+    <string name="mis_refer_eclampsia_text">"একলাম্পসিয়া রোগীকে MgSO4 ইনজেকশন প্রদানের সংখ্যা"</string>
+    <string name="mis_refer_complicacy_newborn_text">"নবজাতকের জটিলতার জন্য প্রেরণের সংখ্যা"</string>
+    <string name="mis_newborn_text">"নবজাতক"</string>
+    <string name="mis_mother_text">"মা"</string>
+    <string name="mis_anc_visit1_text">" পরিদর্শন-১ (৪ মাসের মধ্যে)"</string>
+    <string name="mis_anc_visit2_text">"পরিদর্শন-২ (৬ মাসের মধ্যে)"</string>
+    <string name="mis_anc_visit3_text">"পরিদর্শন-৩ (৮ মাসের মধ্যে)"</string>
+    <string name="mis_anc_visit4_text">"পরিদর্শন-৪ (৯ম মাসে)"</string>
+    <string name="mis_visit1_text">"পরিদর্শন-১"</string>
+    <string name="mis_visit2_text">"পরিদর্শন-২"</string>
+    <string name="mis_visit3_text">"পরিদর্শন-৩"</string>
+    <string name="mis_visit4_text">"পরিদর্শন-৪"</string>
+    <string name="mis_anc_service">"গর্ভকালীন সেবা "</string>
+    <string name="mis_anc_service_report">"গর্ভকালীন \nসেবা "</string>
+    <string name="mis_delivery_service">"প্রসবকালীন সেবা "</string>
+    <string name="mis_pnc_service">"প্রসবোত্তর সেবা "</string>
+
+    <string name="diabetes">"ডায়াবেটিস :"</string>
+    <string name="breast_lump">স্তনে চাকাঃ </string>
+
+    <string name="pv_exam">পিভি পরীক্ষা</string>
+    <string name="window_period">উইন্ডো পিরিয়ড</string>
+
+    <string name="companion_allowance_given">আনয়নকারীকে ভাতা দেয়া হয়েছে</string>
+    <string name="client_allowance_given">গ্রহীতাকে ভাতা দেয়া হয়েছে</string>
+    <string name="client_followup_allowance_given">গ্রহীতাকে ফলোআপ ভাতা দেয়া হয়েছে</string>
+    <string name="attendant_allowance_given">প্রয়োগকারীকে ভাতা দেয়া হয়েছে</string>
+
+    <string name="is_currently_pregnant">"বর্তমানে গর্ভবতী কিনা?:</string>
+
+    <string name="regular">"নিয়মিত"</string>
+    <string name="irregular">"অনিয়মিত"</string>
+    <string name="normal">"স্বাভাবিক"</string>
+    <string name="not_normal">"স্বাভাবিক নয়"</string>
+
+    <string name="pill_sukhi">খাবার  বড়ি(সুখী)</string>
+    <string name="pill_apon">খাবার  বড়ি(আপন)</string>
+    <string name="pill_other">খাবার  বড়ি(অন্যান্য)</string>
+    <string name="injection">ইনজেকশন</string>
+    <string name="injection_dmpa">ইনজেকশন (ডিএমপিএ)</string>
+    <string name="implant">ইমপ্ল্যান্ট</string>
+    <string name="implant_implanon">ইমপ্ল্যান্ট(ইমপ্ল্যানন)</string>
+    <string name="implant_jadelle">ইমপ্ল্যান্ট(জ্যাডেল)</string>
+    <string name="iud">আই ইউ ডি</string>
+    <string name="condom">কনডম</string>
+    <string name="pm_male">স্থায়ী পদ্ধতি (এনএসভি)</string>
+    <string name="pm_female">স্থায়ী পদ্ধতি (টিউবেকটমি)</string>
+
+
+    <string name="choose_lang_text">Select Your Language</string>
+    <string name="helpline">Forget Your Password?</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_tutorial">Online Course on eMIS Facility eRegister</string>
+
+    <string name="exit">LOGOUT</string>
+    <string name="search_here">Search From Here</string>
+    <string name="unknown_date">Date Unknown</string>
+    <string name="okay_text">Ok</string>
+
+    <string name="invalid_newBorn_weight">"বাচ্চার ওজন ৯ কেজির বেশি হতে পারবে না"</string>
+    <string name="low_newBorn_weight">"বাচ্চার ওজন ২ কেজি বা এর কম হলে অবশ্যই রেফার করতে হবে।"</string>
+    <string name="invalid_pncChild_weight">"বাচ্চার ওজন ১০ কেজির বেশি হতে পারবে না"</string>
+    <string name="invalid_temperature">"অস্বাভাবিক তাপমাত্রা!"</string>
+
+    <string name="invalid_last_delivery_date">"শেষ প্রসবের তারিখ শেষ সন্তানের বয়সেরও আগের কোন তারিখ হওয়া সম্ভব নয়"</string>
+
+    <string name="red_notification_explanation">"যে সমস্ত সেবাগ্রহীতার ফলোআপের সময় হয়েছে, কিন্তু ফলোআপ করতে আসে নি এবং যাদেরকে ফোন ও করা হয় নি তাদের সংখ্যা "</string>
+    <string name="green_notification_explanation">"যে সমস্ত সেবাগ্রহীতার ফলোআপের সময় হয়েছে, কিন্তু ফলোআপ করতে আসে নি  তাদের সংখ্যা "</string>
+    <string name="risky_pregnancy_reference">" -Age of pregnant woman (&#60;18 years or &#62;35 years)\n"
+                        "-Primigravida/ Multipara (more than 3 children)\n"
+                        "-Height of pregnant woman (less than 145cm/4 ft. 10 in)\n"
+                        "-Age of last child &#60;2 years\n"
+                        "-H/O Antenatal Bleeding/ Post Natal Bleeding/ Retained Placenta in previous pregnancies\n"
+                        "-H/O Still Birth or Newborn death in previous pregnancies\n"
+                        "-H/O Cesarian Section/ Forceps Delivery/ Vacuum Extraction\n"
+                        "\n\n\n"
+                        "**Source: Union Health &#38; Family Welfare Center Direction Guideline, (Re Print September, 2014), Page-47 "</string>
+
+    <string name="para_gravida_info">"প্যারাঃ সর্বমোট পূর্ববর্তী গর্ভ খালাসের (গর্ভকাল ৭ মাসের অধিক) সংখ্যা লিখুন\n"
+                        "গ্রাভিডাঃ বর্তমান ও অতীতের সকল গর্ভধারণের (গর্ভকাল বিবাচনা না করে) সংখ্যা লিখুন\n\n"
+                        "প্যারা গ্রাভিডার উদাহরণ হিসেবে বলা যায় - গর্ভকাল ৭ মাস অতিবাহিত হওয়ার পর মা ৩টি শিশুর"
+                        "জন্মদান করেছেন, তাহলে প্যারা ৩ লিখুন এবং বর্তমান ৫ম বারের মতো গর্ভধারণ করেছেন; গর্ভধারণের ক্ষেত্রে গর্ভকাল যেকোনো সময়ের হতে"
+                        "পারে; গর্ভপাত অথবা একটোপিক গর্ভধারণ হতে পারে তাহলে গ্রাভিডা ৫ লিখুন। যমজ হলে প্যারা ১ গণনা করুন।"
+                        "\n\n\n"
+                        "** উৎসঃ মা ও নবজাতকের সেবা রেজিস্টার পূরণ করার নির্দেশাবলী"</string>
+
+    <string name="para_gravida_info_title">প্যারা/গ্রাভিডার ধারনা</string>
+
+    <string name="risky_pregnancy">Risky Pregnancy Factors</string>
+    <string name="anc_highbp_dialog">"You haven't referred this client in spite of having hypertension. If you want to refer this client, press &#34;Ok&#34;,"
+                                    "otherwise press &#34;Cancel&#34; button"</string>
+    <string name="anc_highbp_dialog_title">Caution!</string>
+
+    <string name="title_anc_history">Antenatal Care History</string>
+    <string name="delete_confirmation">"আপনি কি নিশ্চিত যে আপনি তথ্য মুছে ফেলতে চান? হ্যাঁ হলে Ok চাপুন, অন্যথায় Cancel চাপুন।"</string>
+    <string name="view">"View"</string>
+    <string name="add">"Add"</string>
+    <string name="delete">"Delete"</string>
+
+    //Permanent Method UI Strings
+    <string name="permanant_method_implemantation_date" >"*স্থায়ী পদ্ধতি প্রয়োগের তারিখ:"</string>
+    <string name="permanent_method_service">"স্থায়ী পদ্ধতি সেবা"</string>
+    <string name="operation_date" >"*অপারেশন সময়"</string>
+    <string name="operation_type" >"*অপারেশন নাম"</string>
+    <string name="allowance_given" >"গ্রহীতার অর্থ"</string>
+    <string name="sharee_given">"শাড়ী দেয়া হয়েছে"</string>
+    <string name="cilent_came_alone">"নিজে এসেছেন"</string>
+    <string name="lungi_given">"লুঙ্গী দেয়া হয়েছে"</string>
+    <string name="operative_doctor_name"> "*অস্ত্রোপচারকারী চিকিৎসকের নাম"</string>
+    <string name="operative_doctor_designation" >"অস্ত্রোপচারকারী চিকিৎসকের পদবী"</string>
+    <string name="companion_designation" >"আনায়নকারীর পদবী"</string>
+    <string name="companion_allowance_given_pms">আনয়নকারীকে প্রদত্ত ভাতা দেয়া হয়েছে</string>
+    <string name="client_allowance_given_pms">গ্রহীতাকে যাতায়ত, খাদ্য ও মঞ্জুরীর ক্ষতিপূরণ ভাতা দেয়া হয়েছে</string>
+    <string name="advice_pms">"উপদেশ"</string>
+    <string name="refer_validation_message">"অনুগ্রহ পূর্বক রেফার কেন্দ্রের নাম এবং কারন প্রদান করুণ"</string>
+    <string name="mandatory_field_validation_message">"অনুগ্রহ পূর্বক * চিহ্নিত "</string>
+
+    <string name="pms_treatment" >"ঔষধ"</string>
+    <string name="living_child_numer">জীবিত সন্তান সংখ্যাঃ </string>
+    <string name="child_male">ছেলেঃ </string>
+    <string name="child_female">মেয়েঃ </string>
+    <string name="difficulty">জটিলতা</string>
+    <string name="pms_management">ব্যবস্থাপনাঃ </string>
+
+    //Permanent Method FollowUp UI Strings
+    <string name="pms_followup_history_label">স্থায়ী পদ্ধতি ফলোআপ সেবার ইতিহাস</string>
+    <string name="pms_follow_up_label">স্থায়ী পদ্ধতি ফলোআপ</string>
+    <string name="followup_doctor_name"> "*চিকিৎসকের নাম"</string>
+    <string name="followup_doctor_designation" >"চিকিৎসকের পদবী"</string>
+    <string name="followup_reason_label" >"*ফলোআপের কারন"</string>
+    <string name="followup_exam_label" >" পরীক্ষা"</string>
+    <string name="pms_followup_date">*ফলোআপ সম্পাদনের তারিখ:</string>
+
+    <!--Satellite Session Planning Texts-->
+    <string name="topTextSatelliteSessionPlanning">স্যাটেলাইট ক্লিনিক পরিকল্পনা </string>
+    <string name="saturday">শনিবার </string>
+    <string name="sunday">রবিবার </string>
+    <string name="monday">সোমবার </string>
+    <string name="tuesday">মঙ্গলবার </string>
+    <string name="wednesday">বুধবার </string>
+    <string name="thursday">বৃহস্পতিবার </string>
+    <string name="satelliteNames">টি স্যাটেলাইটের নামগুলো দিনঃ </string>
+    <string name="satellitePlanningYear">স্যাটেলাইট ক্লিনিক পরিকল্পনার বছরঃ </string>
+    <string name="satelliteCountPerWeek">সপ্তাহে কয়টি স্যাটেলাইট সিলেক্ট করুনঃ </string>
+    <string name="satelliteDaysPerWeek">সপ্তাহের কোন দিনে স্যাটেলাইটগুলো সিলেক্ট করুনঃ </string>
+    <string name="satellitePreview"> স্যাটেলাইট সংক্রান্ত তথ্য  </string>
+    <string name="fwaName"> পরিবার পরিকল্পনা সহকারির নাম:  </string>
+    <string name="satelliteName"> *স্যাটেলাইটের নাম:  </string>
+    <string name="first">১ম</string>
+    <string name="second">২য়</string>
+    <string name="third">৩য়</string>
+    <string name="fourth">৪র্থ</string>
+    <string name="submitSuccessfull">সফলভাবে সাবমিট হয়েছে।</string>
+    <string name="satellite_session_planning">স্যাটেলাইট সেশন পরিকল্পনা</string>
+
+    <!--Hard Coded String converted-->
+
+    <!--ADVSearch Activity-->
+    <string name="empty_string">" "</string>
+    <string name="anc_string">"ANC"</string>
+    <string name="delivery_string">"DELIVERY"</string>
+    <string name="pnc_string">"PNC"</string>
+    <string name="spouse_string">Spouse</string>
+    <string name="string_mobile_search">"Mobile Search"</string>
+    <string name="string_advance_search">"Advance Search"</string>
+    <string name="string_service_search">"Service Search"</string>
+    <string name="string_preg_women_search">"গর্ভবতী মহিলা অনুসন্ধান"</string>
+    <string name="string_search_result">"অনুসন্ধানের ফলাফল ("</string>
+    <string name="string_search_result_person">" জন)"</string>
+    <string name="string_search_result_null">"আপনার প্রদেয় তথ্য অনুযায়ী কাউকে খূঁজে পাওয়া যায়নি!"</string>
+    <string name="string_wife">"Wife"</string>
+    <string name="string_husband">"Husband"</string>
+    <string name="string_service_date">"Service Date"</string>
+    <string name="string_village_loading">"The Village list is Loading"</string>
+
+    <!--Alert Message-->
+    <string name="string_okay">"Ok"</string>
+
+    <!--ANCActivity-->
+    <string name="string_toast_text_part_one">"এই মায়ের "</string>
+    <string name="string_toast_text_part_two">"গর্ভপাত"</string>
+    <string name="string_toast_text_part_three">"প্রসব"</string>
+    <string name="string_toast_text_part_four">" হয়ে গেছে"</string>
+    <string name="string_anc_date_range">" এর মধ্যে"</string>
+    <string name="string_anc_range">" - "</string>
+    <string name="string_update">"Update"</string>
+    <string name="string_save">"Save"</string>
+    <string name="string_confirm">"Confirm"</string>
+    <string name="string_cancel">"Cancel"</string>
+    <string name="string_service_info_absent">"সেবা গ্রহনের তারিখ অনুপস্থিত"</string>
+
+
+    <!--AndroidDatabaseManager-->
+    <string name="string_select_table">"Select Table"</string>
+    <string name="string_records">"No. Of Records : "</string>
+    <string name="string_submit_query">"Submit Query"</string>
+    <string name="string_update_message">"Click on the row below to update values or delete the tuple"</string>
+    <string name="string_previous">"Previous"</string>
+    <string name="string_next">"Next"</string>
+    <string name="string_error_message">"Error Messages will be displayed here"</string>
+    <string name="string_custom_query">"Custom Query"</string>
+    <string name="string_success">"Success"</string>
+    <string name="string_success_with_row">"Query Executed successfully.Number of rows returned :"</string>
+    <string name="string_query_success">"Query Executed successfully"</string>
+    <string name="string_error">"Error:"</string>
+    <string name="string_query">"select * from "</string>
+    <string name="string_query_drop_table">"Drop table "</string>
+    <string name="string_drop_success">"Dropped successfully"</string>
+    <string name="string_delete_query">"Delete  from " </string>
+    <string name="string_delete_suceess">" table content deleted successfully"</string>
+    <string name="string_are_you_sure">"Are you sure?"</string>
+    <string name="string_delete_warning_one">"Clicking on yes will delete all the contents of "</string>
+    <string name="string_delete_warning_two">" table from database"</string>
+    <string name="string_yes">"yes"</string>
+    <string name="string_no">"No"</string>
+    <string name="string_remove_warning">"Pressing yes will remove "</string>
+    <string name="sting_value">"values"</string>
+    <string name="string_query_four">"Insert into "</string>
+    <string name="string_query_four_cont">" ("</string>
+    <string name="string_q4">" ) VALUES ( "</string>
+    <string name="string_empty_table">"   Table   Is   Empty   "</string>
+    <string name="string_table_update_successful">" table Updated Successfully"</string>
+    <string name="string_table">" table"</string>
+    <string name="string_row_delete">"Row deleted from "</string>
+    <string name="string_last_page">"This is the last page"</string>
+
+    <!--Dashboard-->
+    <string name="string_data_loading">"ডাটা লোড হচ্ছে ... "</string>
+    <string name="string_data_sync">"ডাটা সিঙ্ক চলছে। তাই এই মুহূর্তে ড্যাশবোর্ড ডাটা দেখানো যাচ্ছে না।"</string>
+    <string name="string_start_date">"-01"</string>
+    <string name="string_end_date">"-31"</string>
+    <string name="string_date_interval">"-"</string>
+    <string name="string_followup_service">"ফলোআপ সেবাসমূহ"</string>
+    <string name="string_service_statistics">"Service Statistics of "</string>
+    <string name="string_comma">", "</string>
+    <string name="string_no_followup">"আজ কোন ফলোআপ ডিউ নেই"</string>
+
+    <!--Delivery-->
+    <string name="string_save_and_new_born">"Save &amp; Open Newborn Information"</string>
+    <string name="string_edit">"Edit"</string>
+    <string name="string_toast_msg">"Newborn cannot be added, verify ..."</string>
+    <string name="string_toast_client_miss">"No Client, Get Client Information first ..."</string>
+
+    <!--FollowUpNotificationList-->
+    <string name="str_phone_call_due">" Phone Call Due Clients"</string>
+    <string name="str_followupd_due">" Followup Due Clients"</string>
+
+    <!--FPStartupFragment-->
+    <string name="str_counceling">"গ্রহীতাকে সব জন্মনিয়ন্ত্রণ পদ্ধতি সম্পর্কে অবহিত করা হয়েছে?"</string>
+    <string name="str_counceling_confirm">"গ্রহীতাকে সব জন্মনিয়ন্ত্রণ পদ্ধতি সম্পর্কে অবহিত করুন "</string>
+
+    <!--InjectableActivity-->
+    <string name="str_visit">"পরিদর্শন "</string>
+    <string name="str_toast_not_applicable">"পূর্ববর্তী ডোজের তারিখ বা তার আগের কোন তারিখ নতুন ইঞ্জেকটেবকল প্রদানের তারিখ হিসেবে দেয়া যাবে না"</string>
+
+
+    <!--IUDServiceActivity-->
+    <string name="str_add_new">"Add New"</string>
+
+    <!--LoginActivity-->
+    <string name="str_training_app_label">"প্রশিক্ষণ এপ্লিকেশন"</string>
+
+
+    <!--NRCActivity-->
+    <string name="str_village_loading">"The Village list is Loading"</string>
+    <string name="str_add_and_see">"প্রথমে সদস্য যোগ করুন, তারপর দেখুন।"</string>
+    <string name="str_household_warning">"খানার অন্যান্য সদস্যের সংখ্যা মোট সদস্য হতে বেশি হতে পারবে না।"</string>
+    <string name="str_add_member">"সদস্যের তথ্য প্রদানের পূর্বে খানার সদস্য সংখ্যা প্রদান করুন।"</string>
+    <string name="str_remove_error">"মুছে ফেলার মত কিছু নেই! "</string>
+
+
+    <!--PACActivity-->
+    <string name="str_title_label">"গর্ভপাত সংক্রান্ত তথ্য"</string>
+    <string name="str_pac_history_label">"গর্ভপাত পরবর্তী সেবার ইতিহাস"</string>
+    <string name="str_exit_label">"EXIT CONFIRMATION"</string>
+    <string name="str_exit_confirmation">"আপনি কি গর্ভপাত পরবর্তী সেবা( PAC ) থেকে বের হয়ে যেতে চান? \nনিশ্চিত করতে OK চাপুন, ফিরে যেতে CANCEL চাপুন "</string>
+
+
+    <!--PermanentMethodFollowupActivity-->
+    <string name="str_doc">"Dr."</string>
+
+
+    <!--PillCondomActivity-->
+    <string name="str_give_up_reason">"ছেড়ে দেবার কারণ: "</string>
+    <string name="str_pill_cannot_given">"এই গ্রহীতাকে খাবার বড়ি দেয়া যাবে না"</string>
+    <string name="str_pill_sukhi_cannot_given">"এই গ্রহীতাকে সুখী খাবার বড়ি দেয়া যাবে না"</string>
+    <string name="str_pill_apon_cannot_given">"এই গ্রহীতাকে আপন খাবার বড়ি দেয়া যাবে না"</string>
+    <string name="str_high_bp_pill_cannot_given">"উচ্চ রক্তচাপের কারণে এই গ্রহীতাকে খাবার বড়ি দেয়া যাবে না"</string>
+
+    <!--PNCActivity-->
+    <string name="str_saving_info">"Saving Entered Information"</string>
+
+    <!--SecondActivity-->
+    <string name="str_data_loading_wait">"ডাটা লোডিং চলছে, অনুগ্রহ করে কিছুক্ষণ পরে লগ আউট করুন"</string>
+    <string name="str_satelite">"Satellite Clinic: "</string>
+    <string name="str_service_offline_not_available">"অফলাইনে এই সেবা প্রযোজ্য নয়। দয়া করে ইন্টারনেট চালু করে আবার চেষ্টা করুন।"</string>
+    <string name="str_internet_need">"ইন্টারনেট প্রয়োজন"</string>
+    <string name="str_auto_logout">"আপনি শেষ কর্মদিবসে লগআউট করেননি। তাই অটোমেটিকেলি আপনাকে লগআঊট করা হয়েছে"</string>
+    <string name="str_wrong_id_search">"ID সঠিক নয়, দয়া করে সঠিক ID দিয়ে সার্চ করুন"</string>
+    <string name="str_pregnancy_availability">"Male or Not Eligible Women for Pregnancy"</string>
+    <string name="str_none_found_with_this_id">"এই ID দিয়ে কাউকে পাওয়া যায়নি, সঠিক ID দিয়ে আবার সার্চ করুন"</string>
+    <string name="str_provider_not_valid">"Provided information is not valid! Please try again"</string>
+    <string name="str_mandatory_field">"তারকা চিহ্নিত তথ্য প্রদান বাধ্যতামূলক"</string>
+    <string name="str_service_not_for_you">"আপনার জন্য এই সেবা প্রযোজ্য নয়"</string>
+    <string name="str_counceling_about_fp">গ্রহীতাকে সব জন্মনিয়ন্ত্রণ পদ্ধতি সম্পর্কে অবহিত করুন।</string>
+    <string name="str_all_question_answer_mandatory">"সকল প্রশ্নের উত্তর দেয়া বাধ্যতামূলক"</string>
+    <string name="str_counceling_must">"সকল পদ্ধতির জন্য কাউন্সেলিং বাধ্যতামূলক"</string>
+    <string name="str_correct_fp_method_selection">"গ্রহীতার জন্য উপযুক্ত পদ্ধতি সমূহ সম্পর্কে নির্ভুল তথ্য প্রদান করে আলাপ-আলোচনার মাধ্যমে গ্রহীতার পছন্দসই ও সঠিক পদ্ধতি"</string>
+    <string name="str_refer_properly">"গ্রহীতাকে উপযুক্ত স্বাস্থ্যকেন্দ্রে রেফার করুন ।"</string>
+
+    <string name="temp_celsius"> &#176;সে</string>
+    <string name="temp_celsius_entry"> &#176;সে এন্ট্রি</string>
+    <string name="satellite_months_selection">Select months to submit</string>
+    <string name="str_ok">OK</string>
+    <string name="str_cancel">Cancel</string>
+    <string name="str_reset">Reset</string>
+
+    <!-- Satellite Session Planning-->
+    <string-array name="month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <!--PSBI Services Texts-->
+    <string name="symptomStartDate"> লক্ষণ শুরুর তারিখ: </string>
+    <string name="symptomStartDate_mandatory"> *লক্ষণ শুরুর তারিখ: </string>
+    <string name="symptom"> লক্ষণ </string>
+    <string name="problem"> অসুবিধা: </string>
+    <string name="weight_gram"> ওজন (গ্রাম): </string>
+    <string name="weight_gram_mandatory"> *ওজন (গ্রাম): </string>
+    <string name="weight_kg"> ওজন (কেজি): </string>
+    <string name="infectionClassification">শ্রেণী বিভাগ </string>
+    <string name="psbiInjection"> ইনজেকশন জেন্টামাইসিন </string>
+    <string name="psbiInjectionExtraText"> পরিমান মাংশপেশীতে </string>
+    <string name="psbiDrop"> এমক্সিসিলিন ড্রপ </string>
+    <string name="psbiGention"> ০.৫% জেনশান ভায়োলেট দিনে ২ বার </string>
+    <string name="psbiDropExtraText"> পরিমান মুখে </string>
+    <string name="psbiFollowUpInjectionSecondDose"> জেন্টামাইসিন এর দ্বিতীয় ডোজ প্রদান: </string>
+    <string name="psbiQuantity"> পরিমান :</string>
+    <string name="psbiFollowUpDrop"> এমক্সিসিলিন ড্রপ </string>
+    <string name="psbiFollowup"> ফলোআপ </string>
+    <string name="psbiFollowupDone"> করা হয়েছে: </string>
+    <string name="psbiFollowupNotDone"> করা হয়নি: </string>
+    <string name="psbiFollowupHealthCondition"> শারীরিক অবস্থা: </string>
+    <string name="psbiTreatmentSegment"> ব্যবস্থাপনা </string>
+    <string name="psbiMedicineGiven"> চিকিৎসা ব্যবস্থাপনা অনুযায়ী ঔষধ ও পরামর্শ দেয়া হয়েছে? </string>
+    <string name="psbiReferedAgree"> রেফারকৃত কেন্দ্রে যেতে </string>
+    <string name="agree"> রেফার হলে </string>
+    <string name="notAgree"> রেফার না হলে </string>
+    <string name="referNotAgreeTreatment"> রেফারকৃত কেন্দ্রে যেতে সম্মত না হওয়ায় চিকিৎসা </string>
+    <string name="referNotAgreeAdvice"> রেফারকৃত কেন্দ্রে যেতে সম্মত না হওয়ায় পরামর্শ </string>
+    <string name="psbiproblem"> অসুবিধা </string>
+    <string name="psbiQuestion"> জিজ্ঞেস করুন </string>
+    <string name="psbiObservation"> লক্ষ্য করুন, শুনুন, অনুভব করুন </string>
+    <string name="psbiPhysicalExamination"> শারীরিক পরীক্ষা </string>
+    <string name="psbiLabExamination"> ল্যাবরেটরী পরীক্ষা </string>
+    <string name="psbiMUAC"> MUAC </string>
+    <string name="psbiLeg"> দুই পায়ের পাতা ফুলে গেছে কিনা? </string>
+    <string name="psbiHand"> হাতের তালু ফ্যাকাসে কিনা? </string>
+    <string name="psbiLabRDT"> Rapid diagnostic test (RDT) </string>
+    <string name="psbiBreastFeedingCount"> বার </string>
+    <string name="psbiother">"অন্যান্য ঔষধ:"</string>
+    <string name="psbimedicinegiven">"দেয়া হয়েছে?"</string>
+    <string name="psbiEPILabel">"শিশুর টিকাদান বিষয় যাচাই করুন "</string>
+    <string name="criticalRefelLabel">প্রথম ডোজ প্রদান </string>
+
+
+    <!--Child Register-->
+    <string name="title_activity_childRegister"> শিশু সেবার তথ্য </string>
+    <string name="childService"> শিশু সেবা </string>
+
+    <string name="mandatory_tag">mandatory</string>
+
+    <!--0 to 59 days-->
+    <string name="childcaresymptom1">অচেতন বা নড়াচড়া করছে না</string>
+    <string name="childcaresymptom2">একেবারেই খেতে পারছে না</string>
+    <string name="childcaresymptom3">খিঁচুনি হচ্ছে/হয়েছিল</string>
+    <string name="childcaresymptom4">ঘুমের মধ্যে ২০ সেকেন্ড বা বেশি সময়ের জন্য শ্বাস বন্ধ হয়ে যায়</string>
+    <string name="childcaresymptom5">গুরুতর রক্তপাত হয়েছে</string>
+    <string name="childcaresymptom6">ক্রমাগত বমি</string>
+    <string name="childcaresymptom7">জন্ম ওজন ১৫০০ গ্রামের কম</string>
+    <string name="childcaresymptom8">মাথার তালু স্ফীত</string>
+    <string name="childcaresymptom9">শিশুর শরীরে বিশেষ অংশ নীল বর্ণ ধারণ করেছে</string>
+    <string name="childcaresymptom10">গুরুতর জন্মগত বিকলঙ্গতা</string>
+    <string name="childcaresymptom11">অধিক রক্তপাত/ সার্জিক্যাল কন্ডিশনের জন্য হাসপাতালে ভর্তি প্রয়োজন</string>
+
+    <string name="childcaresymptom12">বুকের নিচের অংশ মারাত্মকভাবে দেবে যাওয়া</string>
+    <string name="childcaresymptom13">জ্বর (১০০.৪&#176; ফা/৩৮&#176; সেন্টি বা বেশি)</string>
+    <string name="childcaresymptom14">শরীরে অল্প তাপমাত্রা (৯৫.৫&#176; ফা বা ৩৫.৮&#176; সেন্টি কম)</string>
+    <string name="childcaresymptom15">শুধুমাত্র উত্তেজিত করলে নড়াচড়া করে </string>
+    <string name="childcaresymptom16">একেবারেই নড়াচড়া করে না</string>
+
+    <string name="childcaresymptom17">শ্বাসের হার মিনিটে ৬০ বা তার বেশি (০ থেকে ৬ দিন বয়সের জন্য)</string>
+
+    <string name="childcaresymptom18">শ্বাসের হার মিনিটে ৬০ বা তার বেশি (৭ থেকে ৫৯ দিন বয়সের জন্য)</string>
+
+    <string name="childcaresymptom19">নাভি লাল বা তা থেকে কি পুঁজ পড়ছে</string>
+    <string name="childcaresymptom20">চামড়ায় পুঁজসহ দানা আছে</string>
+
+    <string name="childcaresymptom21">খুব মারাত্মক রোগ অথবা স্থানীয় সংক্রমনের কোনো লক্ষণ নেই/ অন্যান্য (নির্দিষ্ট করে লিখুন):</string>
+
+    <string name="childcaresymptom22">জন্ডিস যাচাই: </string>
+    <string name="childcaresymptom23">হলদে চোখ: </string>
+    <string name="childcaresymptom24">হলদে চামড়া: </string>
+    <string name="childcaresymptom25">হলদে হাতের তালু: </string>
+    <string name="childcaresymptom26">হলদে পায়ের পাতা: </string>
+
+    <string name="childcaresymptom27">ডায়রিয়া যাচাই :</string>
+    <string name="childcaresymptom28">অস্থির এবং খিটখিটে</string>
+    <string name="childcaresymptom29">চোখ বসে গেছে</string>
+    <string name="childcaresymptom30">পেটের চামড়া টেনে ধরে ছেড়ে দিলে স্বাভাবিক অবস্থায় ফিরে যায়: খুব ধীরে ধীরে</string>
+
+    <string name="childcaresymptom31">খাওয়ানোর সমস্যা অথবা কম ওজন যাচাই:</string>
+    <string name="childcaresymptom32">খাওয়াতে সমস্যা</string>
+    <string name="childcaresymptom33">বুকের দুধ খায়</string>
+    <string name="childcaresymptom34">অন্য কোন খাবার বা তরল খাবার খায়</string>
+    <string name="childcaresymptom35">বয়স অনুপাতে ওজন কম</string>
+    <string name="childcaresymptom36">মুখের ঘা অথবা সাদা দাগ আছে</string>
+
+    <string name="childcaresymptom37">বুকের দুধ খাওয়ানো নিরূপণ:</string>
+    <string name="childcaresymptom38">শিশু গত এক ঘন্টায় বুকের দুধ খেয়েছে</string>
+    <string name="childcaresymptom39">১। প্রযোজ্য ক্ষেত্রে বুকের দুধ খাওয়ানোর সময় বুকে লাগানো (Attachment) লক্ষ্য করুন</string>
+    <string name="childcaresymptom40">একেবারেই হয়নি</string>
+    <string name="childcaresymptom41">ভালভাবে হয়নি</string>
+    <string name="childcaresymptom42">ভালোভাবে হয়েছে</string>
+    <string name="childcaresymptom43">২। পজিশন যাচাই করার জন্য লক্ষ্য করুন:</string>
+    <string name="childcaresymptom44">ভালো পজিশন</string>
+    <string name="childcaresymptom45">ভালো পজিশন না</string>
+    <string name="childcaresymptom46">একেবারেই দুধ চোষে না</string>
+    <string name="childcaresymptom47">ভালোভাবে দুধ চোষে না</string>
+    <string name="childcaresymptom48">ভালোভাবে দুধ চোষে</string>
+
+    <!--2 months to 5 year-->
+    <string name="childcaresymptom49">শিশু পান করতে অথবা বুকের দুধ খেতে পারছে না</string>
+    <string name="childcaresymptom50">সবকিছু বমি করে ফেলে দেয়</string>
+    <string name="childcaresymptom51">খিচুনি আছে</string>
+    <string name="childcaresymptom52">শিশু নেতিয়ে পরেছে কিংবা অজ্ঞান</string>
+    <string name="childcaresymptom53">শিশুর শান্ত অবস্থায় ট্রাইডর থাকা</string>
+
+    <string name="childcaresymptom54">বুকের নিচের অংশ ভিতরের ডেবে যাওয়া </string>
+    <string name="childcaresymptom55">দ্রুত শ্বাস শ্বাসের হার মিনিটে ৫০ বা তার বেশি (২ মাস থেকে ১ বছর পর্যন্ত)</string>
+    <string name="childcaresymptom56">দ্রুত শ্বাস শ্বাসের হার মিনিটে ৪০ বা তার বেশি (১ বছর থেকে ৫ বছর পর্যন্ত)</string>
+
+    <string name="childcaresymptom57">নিউমোনিয়া অথবা খুব মারাত্মক রোগের চিহ্ন/ লক্ষন নাই</string>
+
+    <string name="childcaresymptom58">চরম পানি স্বল্পতা:</string>
+    <string name="childcaresymptom59">নেতিয়ে পড়েছে বা অজ্ঞান</string>
+    <string name="childcaresymptom60">চোখ বসে গেছে</string>
+    <string name="childcaresymptom61">পান করতে পারে না বা কম পান করে</string>
+    <string name="childcaresymptom62">চামড়া টেনে ধরে ছেড়ে দিলে খুব ধীরে ধীরে স্বাভাবিক অবস্থায় ফিরে যায়</string>
+    <string name="childcaresymptom63">কিছু পানি স্বল্পতা:</string>
+    <string name="childcaresymptom64">অস্থির বা খিটখিটে</string>
+    <string name="childcaresymptom65">আগ্রহের সাথে পান করে</string>
+    <string name="childcaresymptom66">তৃষ্ণার্ত এবং চামড়া টেনে ছেড়ে দিলে ধীরে ধীরে স্বাভাবিক অবস্থায় ফিরে যায়</string>
+    <string name="childcaresymptom67">পানি স্বল্পতা নাই:</string>
+    <string name="childcaresymptom68">কিছু অথবা চরম পানি স্বল্পতার কোন চিহ্ন নাই</string>
+    <string name="childcaresymptom69">মারাত্মক দীর্ঘমেয়াদি ডায়রিয়া:</string>
+    <string name="childcaresymptom70">ডায়রিয়া ১৪ দিন বা তার বেশি এবং পানিস্বল্পতা আছে</string>
+    <string name="childcaresymptom71">দীর্ঘমেয়াদী ডায়রিয়া: </string>
+    <string name="childcaresymptom72">ডায়রিয়া ১৪ দিন বা তার বেশি এবং পানিস্বল্পতা নাই</string>
+    <string name="childcaresymptom73">আমাশয়:</string>
+    <string name="childcaresymptom74">ডায়রিয়া এবং মলে রক্ত আছে</string>
+
+    <string name="childcaresymptom75">ম্যাসটয়ডাইটিস:</string>
+    <string name="childcaresymptom76">কানের পিছনে ব্যথা সহ ফোলা আছে</string>
+    <string name="childcaresymptom77">কানের তীব্র সংক্রমণ: </string>
+    <string name="childcaresymptom78">কানে ব্যথা আছে কান থেকে পুঁজ বা পানি পড়ে (১৪ দিনের কোন সময় থেকে)</string>
+    <string name="childcaresymptom79">দীর্ঘস্থায়ী কান সংক্রমণ: </string>
+    <string name="childcaresymptom80">কানে ব্যথা আছে কান থেকে পুঁজ বা পানি পড়ে (১৪ দিন বা বেশি সময় ধরে)</string>
+
+    <string name="childcaresymptom81">জ্বরের ইতিহাস/গরম অনুভব/ তাপমাত্রা ৯৯.৫&#176; ফা: ৩৭.৫&#176; সেন্টি: বা অধিক</string>
+    <string name="childcaresymptom82">ম্যালেরিয়া ঝুঁকি অধিক অথবা কম</string>
+    <string name="childcaresymptom83">ম্যালেরিয়া প্রবণ এলাকায় ভ্রমণ</string>
+    <string name="childcaresymptom84"> ঘাড় শক্ত</string>
+    <string name="childcaresymptom111">যে কোন সাধারণ বিপদজনক চিহ্ন(শিশু পান করতে অথবা বুকের দুধ খেতে পারেনা, সবকিছু বমি করে ফেলে দেয়, খিচুনি আছে, নেতিয়ে পরেছে অথবা অজ্ঞান)</string>
+
+
+    <string name="childcaresymptom85">নাক ঝড়া নাই</string>
+    <string name="childcaresymptom86">হাম নাই</string>
+    <string name="childcaresymptom88">জ্বরের অন্য কোনো কারণ নাই</string>
+
+    <string name="childcaresymptom87">নাক ঝরা আছে</string>
+    <string name="childcaresymptom89">হাম আছে</string>
+    <string name="childcaresymptom90">জ্বরের অন্য কোনো কারণ আছে</string>
+
+    <string name="childcaresymptom91">হাম:</string>
+    <string name="childcaresymptom92">জ্বর</string>
+    <string name="childcaresymptom93">সারা গায়ে লাল দানা এবং</string>
+    <string name="childcaresymptom94">যেকোনো একটি: কাশি, নাক ঝরা অথবা লাল চোখ</string>
+    <string name="childcaresymptom95">মারাত্মক জটিলতাসহ হাম: যে কোন সাধারণ বিপদজনক চিহ্ন অথবা ঘোলাটে কর্নিয়া অথবা গভীর এবং ব্যাপক মুখের ঘা</string>
+    <string name="childcaresymptom96">চোখ ও মুখের জটিলতাসহ হাম: চোখ দিয়ে পুঁজ পড়ছে অথবা মুখের ক্ষত</string>
+    <string name="childcaresymptom112">মারাত্মক জটিলতাসহ হাম</string>
+    <string name="childcaresymptom113">চোখ ও মুখের জটিলতাসহ হাম</string>
+
+    <string name="childcaresymptom97">উভয় পা ফোলা: </string>
+    <string name="childcaresymptom98">উচ্চতা দৈর্ঘ্য অনুযায়ী ওজন এর জন্য z-score: </string>
+    <string name="childcaresymptom99">-৩ এর চেয়ে কম</string>
+    <string name="childcaresymptom100">-৩ এবং -২ এর মাঝে</string>
+    <string name="childcaresymptom101">-২ অথবা এর চেয়ে বেশি</string>
+    <string name="childcaresymptom102">৬ মাস বা তার বেশি বয়সী শিশুর : উপরে বাহুর মাঝখানের পরিধি ১১৫ মিলিমিটারের কম </string>
+    <string name="childcaresymptom114">দৃশ্যমান মারাত্মক শরীর শুকিয়ে যাওয়া </string>
+
+    <string name="childcaresymptom103">শিশুর যেকোনো সমস্যা /অসুস্থতা (নির্দিষ্ট করে লিখুন):</string>
+
+    <string name="childcaresymptom104">খেতে অসুবিধা হচ্ছে</string>
+
+    <string name="childcaresymptom105">৩ | </string>
+
+    <string name="sympdomstartdate">লক্ষণ শুরুর তারিখ: </string>
+
+    <string name="symptom_response_yes">হ্যাঁ</string>
+    <string name="symptom_response_no">না</string>
+
+    <!--Child Care Treatment Segment-->
+    <string name="criticalDiseaseTreatmentInjectionJentamysin">ইনজেকশন জেন্টামাইসিন ডোজ: </string>
+    <string name="criticalDiseaseTreatmentDoseQuantity">মি:লি:/গ্রাম</string>
+    <string name="criticalDiseaseTreatmentAmoxacilinDrop">এমোক্সিসিলিন ড্রপ: </string>
+    <string name="criticalDiseaseNonReferTreatmentInjectionJentamycin">ইনজেকশন জেন্টামাইসিন: দিনে ১ বার ২ দিন; ডোজ:</string>
+    <string name="criticalDiseaseNonReferTreatmentAmoxacilinDrop">এ্যামোক্সিসিলিন ড্রপ: দিনে ২ বার ৭ দিন; ডোজ:</string>
+    <string name="criticalDiseaseNonReferFourthDayFollowup">৪র্থ দিন ফলোআপ</string>
+    <string name="criticalDiseaseNonReferEigthDayFollowup">৮ম দিন ফলোআপ</string>
+    <string name="criticalDiseaseNonReferFollowupResposeYes">করা হয়েছে</string>
+    <string name="criticalDiseaseNonReferFollowupResposeNo"> করা হয়নি</string>
+    <string name="criticalDiseaseNonReferTreatmentAmoxacilinDropForBacterialInfection">এ্যামোক্সিসিলিন ড্রপ: দিনে ২ বার ৫ দিন; ডোজ:</string>
+    <string name="criticalJaundiceReferTreatment">রক্তে গ্লুকোজের স্বল্পতা রোধ করতে যথাযথ চিকিৎসা দেওয়া হয়েছে; এবং অবিলম্বে নিকটস্থ উপজেলা স্বাস্থ্য কমপ্লেক্সের রেফার করা হয়েছে</string>
+    <string name="jaundiceNonReferTreatmentOne">মাকে বাড়িতে শিশুর যত্ন নেওয়ার পরামর্শ দেওয়া হয়েছে</string>
+    <string name="jaundiceNonReferTreatmentTwo">১ দিন পর ফলোআপে আসতে বলা হয়েছে</string>
+    <string name="jaundiceNonReferTreatmentThree">শিশুর হাত এবং পায়ের পাতা হলুদ হলে অবিলম্বে পুনরায় নিয়ে আসার পরামর্শ দেওয়া হয়েছে</string>
+    <string name="jaundiceNonReferTreatmentFour">শিশুর বয়স ১৪ দিনের বেশি হলে হাসপাতালে রেফার করা হয়েছে</string>
+    <string name="eatingProblemTreatmentOne">খাওয়ানোর সমস্যা থাকলে আদর্শ প্রটোকল (আইএমসিআই) অনুসারে মাকে প্রয়োজনীয় পরামর্শ প্রদান করা হয়েছে</string>
+    <string name="eatingProblemTreatmentTwo">যদি বুকের দুধ একেবারেই না খায়: বুকের দুধ খাওয়ানো সম্ভব হলে পুনরায় বুকের দুধ চালুর পরামর্শ গ্রহণের জন্য হাসপাতালে প্রেরণ করা হয়েছে</string>
+    <string name="eatingProblemTreatmentThree">থ্রাশ হলে বাড়িতে থ্রাশের চিকিৎসাব্যবস্থা মাকে বুঝিয়ে দেওয়া হয়েছে। প্রতিবার হাত ধুয়ে ৪ বার আঙ্গুলে পরিষ্কার সুতি কাপড় জড়িয়ে মুখের ভিতর 0.৫% জেনশান ভায়োলেট লাগিয়ে দিতে হবে এবং ২ দিন পরপর জন্য আসতে বলা হয়েছে। বয়স অনুপাতে ওজন কম হলে ১৪ দিন পর আসার বলা হয়েছে</string>
+    <string name="severeJaundiceLabe">মারাত্মক জন্ডিস:</string>
+    <string name="jaundiceLabel">জন্ডিস:</string>
+    <string name="eatingOrLowWeightTreatmentOne">খাওয়ানোর সমস্যা থাকলে আদর্শ প্রটোকল (আইএমসিআই) অনুসারে মাকে প্রয়োজনীয় পরামর্শ প্রদান করা হয়েছে</string>
+    <string name="eatingOrLowWeightTreatmentTwo">যদি বুকের দুধ একেবারেই না খায়: বুকের দুধ খাওয়ানো সম্ভব হলে পুনরায় বুকের দুধ চালুর পরামর্শ গ্রহণের জন্য হাসপাতালে প্রেরণ করা হয়েছে</string>
+    <string name="eatingOrLowWeightTreatmentThree">থ্রাশ হলে বাড়িতে থ্রাশের চিকিৎসাব্যবস্থা মাকে বুঝিয়ে দিন প্রতিবার হাত ধুয়ে ৪ বার আঙ্গুলে পরিষ্কার সুতি কাপড় জড়িয়ে মুখের ভিতর 0.৫% জেনশান ভায়োলেট লাগিয়ে দিতে হবে এবং ২ দিন পরপর জন্য আসতে বলা হয়েছে</string>
+    <string name="eatingOrLowWeightTreatmentFour">বয়স অনুপাতে ওজন কম হলে ১৪ দিন পর আসার কথা বলা হয়েছে</string>
+    <string name="noEatingOrLowWeightTreatment">ছোট শিশুকে বাড়িতে যত্ন নেওয়ার জন্য মাকে পরামর্শ দেওয়া হয়েছে, শিশুকে ভালোভাবে খাওয়ানোর জন্য মায়ের প্রশংসা করা হয়েছে</string>
+
+    <string name="refer2MTo5YCommonTreatmentOne">যথাযথ এ্যান্টিবায়োটিক এর প্রথম ডোজ প্রদান করা হয়েছে</string>
+    <string name="refer2MTo5YCommonTreatmentTwo">জরুরী ভিত্তিতে রেফার করা হয়েছে</string>
+
+    <string name="diarrhoeaSevereDehydrationLabel">চরম পানি স্বল্পতা:</string>
+    <string name="diarrhoeaSevereDehydrationQuestionOne">আপনি কি দ্রুত শিরায় স্যালাইন দিতে পারেন ?</string>
+    <string name="severeDehydrationTreatmentPartOneTreatmentOne">দ্রুত শিরায় স্যালাইন দেয়া শুরু করুন|যদি শিশু পান করতে পারে তবে শিরায় স্যালাইন আগে ও আর এস দিতে থাকুন</string>
+    <string name="severeDehydrationTreatmentPartOneTreatmentTwo">ছোট শিশু (১২ মাস বয়সের নিচের শিশু) প্রথমে ১ ঘণ্টায় কলেরা স্যালাইন অথবা রিজ্ঞাস ল্যাকটেট দিন : </string>
+    <string name="severeDehydrationTreatmentPartOneTreatmentThree">ছোট শিশু (১২ মাস বয়সের নিচের শিশু) তারপর ৫ ঘন্টা কলেরা স্যালাইন অথবা রিজ্ঞাস ল্যাকটেট দিন :</string>
+    <string name="severeDehydrationTreatmentPartOneTreatmentFour">শিশু (১২ মাস থেকে ৫ বছর পর্যন্ত) প্রথম ৩০ মিনিট কলেরা স্যালাইন অথবা রিজ্ঞাস ল্যাকটেট দিন : </string>
+    <string name="severeDehydrationTreatmentPartOneTreatmentFive">শিশু (১২ মাস থেকে ৫ বছর পর্যন্ত)তারপর ২ ঘন্টা ৩০ মিনিট কলেরা স্যালাইন অথবা রিজ্ঞাস ল্যাকটেট দিন :</string>
+    <string name="severeDehydrationTreatmentPartOneTreatmentWarning">*প্রথম ভাগ দেওয়ার পর নাড়ির গতি যদি খুব দুর্বল থাকে অথবা নাড়ির গতি যদি নির্ণয় করা না যায় তাহলে এই ভাগের সমান পরিমাণ স্যালাইন পুনরায় দিতে হবে</string>
+    <string name="mili_label"> মি:লি: </string>
+    <string name="diarrhoeaSevereDehydrationQuestionTwo">কাছাকাছি অন্তশিরা স্যালাইন দেয়ার কোন ব্যবস্থা আছে কিনা?</string>
+    <string name="severeDehydrationTreatmentPartTwoTreatmentOne">অতি দ্রুত অন্তঃশীলা স্যালাইন দেওয়ার জন্য প্রেরণ করা হয়েছে</string>
+    <string name="severeDehydrationTreatmentPartTwoTreatmentTwo">শিশু তখনও পান করতে পারলে ওআরএস খাওয়াতে খাওয়াতে নিয়ে যান | দুগ্ধপোষ্য শিশুকে বুকের দুধ খাওয়াতে খাওয়াতে নিয়ে যান</string>
+    <string name="diarrhoeaSevereDehydrationQuestionThree">আপনি কি ন্যাজোগ্যাসটিক টিউব দিয়ে পানি স্বল্পতা পূরণের প্রশিক্ষণপ্রাপ্ত ?</string>
+    <string name="diarrhoeaSevereDehydrationQuestionFour">শিশু কি পান করতে পারে ?</string>
+    <string name="severeDehydrationTreatmentPartThreeFourTreatmentOne">ন্যাজোগ্যাসটিক টিউবের সাহায্যে চিকিৎসা শুরু করা হয়েছে</string>
+    <string name="severeDehydrationTreatmentPartThreeFourTreatmentTwo">প্রতি ১-২ ঘন্টা পর পর রোগীকে পর্যবেক্ষণ করুন</string>
+    <string name="severeDehydrationTreatmentPartThreeFourTreatmentThree">যদি বারবার বমি হয় অথবা পেট ফেটে যায় তবে স্যালাইন খুব ধীরে ধীরে দিতে হবে</string>
+    <string name="severeDehydrationTreatmentPartTwoTreatmentFour">যদি ৩ ঘন্টার মধ্যে পানি স্বল্পতা উন্নতি না হয় তবে শিরায় স্যালাইন দেওয়ার জন্য প্রেরণ করুন করা হয়েছে</string>
+    <string name="severeDehydrationTreatmentPartTwoTreatmentFive">৬ ঘন্টা পর রোগীকে পুনরায় পর্যবেক্ষণ করুন এবং যথাযথ চিকিৎসা নির্ধারণ করতে হবে</string>
+    <string name="severeDehydrationTreatmentPartLast">জরুরী রোগীকে অন্তঃশীলা স্যালাইন অথবা প্লাস্টিক টিউব দিয়ে চিকিৎসার জন্য অতিদ্রুত নিকটবর্তী স্বাস্থ্য কেন্দ্র প্রেরণ করা হয়েছে</string>
+    <string name="diarrhoeaSomeDehydrationLabel">কিছু পানি স্বল্পতা : </string>
+    <string name="someDehydrationTreatmentTreatmentOne">ক্লিনিকে চার ঘন্টা ব্যাপী ওআরএস দিতে হবে </string>
+    <string name="someDehydrationTreatmentTreatmentTwo">বার বার তরল খাবার দিতে হবে </string>
+    <string name="someDehydrationTreatmentTreatmentThree">জিংক ট্যাবলেট দেওয়া হয়েছে </string>
+    <string name="someDehydrationTreatmentTreatmentFour">স্বাভাবিক খাবার চালু রাখতে হবে </string>
+    <string name="noDehydrationTreatmentone">বার বার তরল খাবার দেওয়ার পরামর্শ দেওয়া হয়েছে (শিশু যে পরিমানে খেতে পারে) </string>
+    <string name="noDehydrationTreatmenttwo">জিংক বড়িঃ ১/২ বড়ি (১০ মিগ্রা) দিনে ১ বার ১০ দিন  </string>
+    <string name="noDehydrationTreatmentthree">জিংক বড়িঃ ১ বড়ি (২০ মিগ্রা) দিনে ১ বার ১০ দিন  </string>
+    <string name="noDehydrationTreatmentfour">স্বাভাবিক খাবার চালু রাখার পরামর্শ দেওয়া হয়েছে </string>
+    <string name="noDehydrationTreatmentfive">ফলোআপে আসার সময় বলা হয়েছে </string>
+    <string name="diarrhoeaSomeDehydrationTreatmentOrsalaineQuantity">চার ঘন্টা ব্যাপী ওআরএস পরিমাণ</string>
+    <string name="severeDehydrationTreatment">চরম পানি সল্পতাঃ শ্রেণী বিভাগ অনুযায়ী চিকিৎসা করা হয়েছে</string>
+
+    <string name="comment">মন্তব্য: </string>
+    <string name="refer_status">রেফারকৃত কেন্দ্রে যেতে সম্মত</string>
+
+    <string name="injectiongentamicinDoseGiven">ইনজেকশন জেন্টামাইসিন প্রদান করা হয়েছে </string>
+    <string name="injectiongentamicinSecondDoseGiven">২য় দিন ইনজেকশন জেন্টামাইসিন প্রদান করা হয়েছে </string>
+    <string name="injectionamoxicillinDoseGiven">এ্যামোক্সিসিলিন ড্রপ প্রদান করা হয়েছে</string>
+    <string name="tabKotraiMoxelDoseGiven">কোট্রাইমোক্সাজোল ট্যাবলেট অথবা সিরাপ প্রদান করা হয়েছে</string>
+
+    <string name="kotraimoxeltabletdoseone">কোট্রাইমোক্সাজোল ট্যাবলেটঃ ১/২ টি অথবা কোট্রাইমোক্সাজোল সিরাপঃ ৫ মিলি(দিনে ২ বার করে ৫ দিনের জন্য )</string>
+    <string name="kotraimoxeltabletdosetwo">কোট্রাইমোক্সাজোল ট্যাবলেটঃ ১ টি অথবা কোট্রাইমোক্সাজোল সিরাপঃ ১০ মিলি (দিনে ২ বার করে ৫ দিনের জন্য )</string>
+    <string name="amoxicilintabletdoseone">এ্যামক্সিসিলিন ডিটি (২৫০ মিঃ গ্রাম) - ১ টি অথবা এ্যামক্সিসিলিন সিরাপঃ ১০ মিলি (দিনে ৩ বার করে ৫ দিনের জন্য )</string>
+    <string name="amoxicilintabletdosetwo">এ্যামক্সিসিলিন ডিটি (২৫০ মিঃ গ্রাম) - ২ টি অথবা এ্যামক্সিসিলিন সিরাপঃ ১৫ মিলি (দিনে ৩ বার করে ৫ দিনের জন্য )</string>
+    <string name="amoxicilintabletdosethree">এ্যামক্সিসিলিন ডিটি (২৫০ মিঃ গ্রাম) - ৩ টি অথবা এ্যামক্সিসিলিন সিরাপঃ ২৫ মিলি (দিনে ৩ বার করে ৫ দিনের জন্য )</string>
+
+    <string name="pneumonia2mto5yt1">২য় দিন কোট্রাইমোক্সাজোল প্রদান করা হয়েছে</string>
+    <string name="pneumonia2mto5yt2">হুইজিং এর জন্য ৫ দিনের জন্য ব্রংকডাইলেটর প্রদান করা হয়েছে</string>
+    <string name="pneumonia2mto5yt3">গলা পরিস্কার এবং কাশি উপশম করার পরামর্শ প্রদান করা হয়েছে</string>
+    <string name="pneumonia2mto5yt4">যে কোন একটি সাধারণ বিপদচিহ্ন স্ট্রাইডর দেখা দিলে অবিলম্বে আসার পরামর্শ দেওয়া হয়েছে</string>
+    <string name="pneumonia2mto5yt5">২য় দিন ফলো-আপে আসার পরামর্শ দেওয়া হয়েছে</string>
+
+    <string name="normalFlueRefer">কাশি ৩০ দিনের বেশি থাকায়, রোগ নিরুপনের জন্য হাসপাতালে রেফার করা হয়েছে</string>
+
+    <string name="normalFlueNonRefer1">গলা পরিষ্কার এবং কাশি উপশম করার পরামর্শ দেওয়া হয়েছে</string>
+    <string name="normalFlueNonRefer2">দ্রুত শ্বাস বা শ্বাস কষ্ট দেখা দিলে অবিলম্বে আসার পরামর্শ দেওয়া হয়েছে</string>
+    <string name="normalFlueNonRefer3">অবস্থার উন্নতি না হলে ৫ম দিনে ফলো-আপে আসার পরামর্শ দেওয়া হয়েছে</string>
+
+    <string name="c12referadvice1">হাসপাতালে যাওয়ার পথে নবজাতক শিশুকে কিভাবে গরম রাখতে হয় সে সম্পর্কে মাকে পরামর্শ দেয়া হয়েছে</string>
+    <string name="c12referadvice2">পথে শিশুকে মায়ের বুকের দুধ দিতে উপদেশ দেওয়া হয়েছে</string>
+    <string name="c12referadvice3">রেফার কার্ড পুরন করে মাকে দেওয়া হয়েছে</string>
+    <string name="c12referadvice4">হাসপাতালে/চিকিৎসা কেন্দ্রে যাওয়াটা জরুরী তা শিশুটির মা/অভিভাবককে ভালভাবে বুঝিয়ে রাজি করার চেষ্টা করা হয়েছে এবং সেই অনুযায়ী তাকে সাহায্য করা হয়েছে</string>
+
+    <string name="c12nonreferadvice1">শিশুকে মায়ের বুকের দুধ দিতে উপদেশ দেওয়া হয়েছে</string>
+    <string name="c12nonreferadvice2">নবজাতক শিশুকে কিভাবে গরম রাখতে হয় সে সম্পর্কে মাকে পরামর্শ দেওয়া হয়েছে</string>
+    <string name="c12nonreferadvice3">২য় ডোজ জেন্টামাইসিন ইনজেকশন নিতে পুনরায় সেবা কেন্দ্রে আসার জন্য মাকে পরামর্শ দেওয়া হয়েছে</string>
+    <string name="c12nonreferadvice4">শিশুর অবস্থার আরও অবনতি হলে শিশুকে দ্রুত উপজেলা স্বাস্থ্য কমপ্লেক্সে নিয়ে যাওয়ার পরামর্শ দেওয়া হয়েছে</string>
+
+    <string name="c34nonreferadvice1">শিশুকে মায়ের বুকের দুধ দিতে উপদেশ দেওয়া হয়েছে</string>
+    <string name="c34nonreferadvice2">নবজাতক শিশুকে কিভাবে গরম রাখতে হয় সে সম্পর্কে মাকে পরামর্শ দেওয়া হয়েছে</string>
+    <string name="c34nonreferadvice3">এমোক্সিসিলিন ড্রপ ৭ দিন এর ডোজ এর মেয়াদ পূর্ণ করার জন্য প্রয়োজনীয় তথ্য প্রদান করা হয়েছে</string>
+    <string name="c34nonreferadvice4">শিশুর অবস্থার আরও অবনতি হলে শিশুকে দ্রুত উপজেলা স্বাস্থ্য কমপ্লেক্সে নিয়ে যাওয়ার পরামর্শ দেওয়া হয়েছে</string>
+
+    <string name="c5advice1">শিশুকে মায়ের বুকের দুধ দিতে উপদেশ দেওয়া হয়েছে</string>
+    <string name="c5advice2">এমোক্সিসিলিন ড্রপ ৫ দিন এর ডোজ এর মেয়াদ পূর্ণ করার জন্য প্রয়োজনীয় তথ্য প্রদান করা হয়েছে</string>
+
+    <string name="c7advice1">যদি শিশু বুকের দুধ খেতে পারে : শিশুকে বুকের দুধ খাওয়াতে মা-কে বলা হয়েছে</string>
+    <string name="c7advice2">যদি শিশু বুকের দুধ না খেতে পারে কিন্তু গিলতে পারে তাহলে: ২০-৫০ মিলি চেপে বের করা বুকের দুধ দিতে বলা হয়েছে</string>
+    <string name="c7advice3">বুকের দুধ বের করা না গেলে: ২০-৫০ মিলি চিনি মিশ্রিত পানি দিতে বলা হয়েছে</string>
+    <string name="c7advice4">যদি শিশু গিলতে না পারে: নেজোগ্যাস্ট্রিক নলের সাহায্যে ২০-৫০ মিলি দুধ বা চিনির শরবত দিতে বলা হয়েছে</string>
+    <string name="c7advice5">শিশুকে হাসপাতালে নেওয়ার পথে  কিভাবে গরম রাখতে হয় সে সম্পর্কে মাকে পরামর্শ দেওয়া হয়েছে </string>
+    <string name="c7advice6">অবিলম্বে নিকটস্থ উপজেলা স্বাস্থ্য কমপ্লেক্সে রেফার করা হয়েছে</string>
+
+    <string name="c8advice1">শিশুকে ঘন ঘন মায়ের বুকের দুধ দিতে উপদেশ দেওয়া হয়েছে</string>
+    <string name="c8advice2">১ দিন পর ফলোআপে আসতে বলা হয়েছে</string>
+    <string name="c8advice3">শিশুর হাত এবং পায়ের পাতা হলুদ হয়ে গেলে অবিলম্বে নিয়ে আসার পরামর্শ দেওয়া হয়েছে</string>
+    <string name="c8advice4">যদি শিশুর বয়স ১৪ দিনের বেশী হয়, তবে রোগ নিরুপনের জন্য নিকটস্থ উপজেলা স্বাস্থ্য কমপ্লেক্সে রেফার করা হয়েছে</string>
+
+    <string name="advice_given">যথাযথ শ্রেণীবিভাগ অনুযায়ী উপদেশ/পরামর্শ দেওয়া হয়েছে</string>
+
+    <string name="earproblem2mto5yD1T1">কোট্রাইমোক্সাজোল এ্যান্টিবায়োটিক এর প্রথম ডোজ প্রদান করা হয়েছে</string>
+    <string name="earproblem2mto5yD1T2">প্রথম ডোজ প্যারাসিটামল প্রদান করা হয়েছে</string>
+    <string name="earproblem2mto5yD1T3">জরুরি ভিত্তিতে রেফার করা হয়েছে</string>
+
+    <string name="earproblem2mto5yD2T1">কোট্রাইমোক্সাজোল প্রদান করা হয়েছে</string>
+    <string name="earproblem2mto5yD2T2">প্যারাসিটামল প্রদান করা হয়েছে</string>
+    <string name="earproblem2mto5yD2T3">কান পরিস্কার এবং কানে পানি প্রবেশ প্রতিরোধের পরামর্শ দেওয়া হয়েছে</string>
+    <string name="earproblem2mto5yD2T4">৫ম দিনে ফলো-আপে আসার পরামর্শ দেওয়া হয়েছে</string>
+
+    <string name="earproblem2mto5yD3T1">শুকনো কাপড় দিয়ে কান পরিশকারের পরামর্শ দেওয়া হয়েছে</string>
+    <string name="earproblem2mto5yD3T3">সাতার কাটা থেকে বিরত থাকা এবং কানের ভিতর পানি প্রবেশ প্রতিরোধের পরামর্শ দেওয়া হয়েছে</string>
+
+    <string name="highfever2mto5yt1">কুইনাইন প্রথম ডোজ প্রদান করা হয়েছে </string>
+    <string name="highfever2mto5yt2">রক্তে গ্লুকোজের সল্পতা প্রতিরোধের ব্যবস্থা করা হয়েছে </string>
+    <string name="highfever2mto5yt3">এক ডোজ প্যারাসিটামল প্রদান করা হয়েছে</string>
+    <string name="highfever2mto5yt4">এমোক্সিসিলিন এ্যান্টিবায়োটিক এর প্রথম ডোজ প্রদান করা হয়েছে</string>
+
+    <string name="quinieDose1">কুইনাইন ডোজঃ (১৫০ মিগ্রা/মিলি (২ মিলি)) ০.৪ মিলি অথবা (৩০০ মিগ্রা/মিলি (২ মিলি)) ০.২ মিলি</string>
+    <string name="quinieDose2">কুইনাইন ডোজঃ (১৫০ মিগ্রা/মিলি (২ মিলি)) ০.৬ মিলি অথবা (৩০০ মিগ্রা/মিলি (২ মিলি)) ০.৩ মিলি</string>
+    <string name="quinieDose3">কুইনাইন ডোজঃ (১৫০ মিগ্রা/মিলি (২ মিলি)) ০.৮ মিলি অথবা (৩০০ মিগ্রা/মিলি (২ মিলি)) ০.৪ মিলি</string>
+    <string name="quinieDose4">কুইনাইন ডোজঃ (১৫০ মিগ্রা/মিলি (২ মিলি)) ১.০ মিলি অথবা (৩০০ মিগ্রা/মিলি (২ মিলি)) ০.৫ মিলি</string>
+    <string name="quinieDose5">কুইনাইন ডোজঃ (১৫০ মিগ্রা/মিলি (২ মিলি)) ১.২ মিলি অথবা (৩০০ মিগ্রা/মিলি (২ মিলি)) ০.৬ মিলি</string>
+
+    <string name="paracitemolDose1">প্যারাসিটামল ডোজঃ ৫ মিলি অথবা ১/৪ ট্যাবলেট</string>
+    <string name="paracitemolDose2">প্যারাসিটামল ডোজঃ ১০ মিলি অথবা ১/২ ট্যাবলেট</string>
+
+    <string name="classification21">জ্বর ম্যালেরিয়া</string>
+    <string name="classification21ReferTreatment">৭ দিনের বেশি প্রতিদিনই জ্বর থাকায়, রোগ নিরুপনের জন্য হাসপাতালে প্রেরন করা হয়েছে</string>
+    <string name="classification21Dose1">ক্লোরোকুইন ট্যাবলেট (১৫০ মিগ্রা) ১ম ও ২য় দিনঃ ১/২টি ট্যাবলেট এবং ৩য় দিনঃ ১/৪টি ট্যাবলেট অথবা সিরাপ (৫০মিগ্রা বেস প্রতি ৫মিলি) ১ম ও ২য় দিনঃ ৭.৫মিলি এবং ৩য় দিনঃ ৪মিলি</string>
+    <string name="classification21Dose2">ক্লোরোকুইন ট্যাবলেট (১৫০ মিগ্রা) ১ম ও ২য় দিনঃ ১ টি ট্যাবলেট এবং ৩য় দিনঃ ১/২ টি ট্যাবলেট অথবা সিরাপ (৫০মিগ্রা বেস প্রতি ৫মিলি) ১ম ও ২য় দিনঃ ১৫মিলি এবং ৩য় দিনঃ ৭.৫মিলি</string>
+    <string name="classification21NonReferT1">মুখে খাওয়ার এন্টিম্যালেরিয়াল দেওয়া হয়েছে </string>
+    <string name="classification21NonReferT2">অধিক জ্বরের জন্য এক ডোজ প্যারাসিটামল প্রদান করা হয়েছে</string>
+    <string name="classification21NonReferT3">অবিরাম জ্বর থাকলে ২ দিন পর ফলো-আপে আসার পরামর্শ প্রদান করা হয়েছে</string>
+    <string name="classification22NonReferT2">জ্বরের অন্যান্য কারণগুলোর জন্য চিকিৎসা দেওয়া হয়েছে</string>
+
+    <string name="severeSyndrome">যে কোন সাধারণ বিপদজনক চিহ্ন(শিশু পান করতে অথবা বুকের দুধ খেতে পারেনা, সবকিছু বমি করে ফেলে দেয়, খিচুনি আছে, নেতিয়ে পরেছে অথবা অজ্ঞান) অথবা ঘোলাটে কর্নিয়া অথবা গভীর এবং বেপক মুখে ঘা</string>
+
+    <string name="classification23T1">ভিটামিন এ দেওয়া হয়েছে</string>
+    <string name="classification23T2">কর্নিয়া ঘোলাটে বা চোখ থেকে পুঁজ পরায় টেট্রাসাইক্লিন মলম দেওয়া হয়েছে</string>
+    <string name="classification28T2">মুখে ঘা থাকায় জেনশিয়ান ভাইওলেট দিয়ে চিকিৎসা দেওয়া হয়েছে</string>
+    <string name="classification28T3">২ দিন পর ফলো-আপে আসার পরামর্শ প্রদান করা হয়েছে</string>
+
+    <string name="classification24T3">শিশুকে কিভাবে গরম রাখতে হয় সে সম্পর্কে মাকে পরামর্শ দেয়া হয়েছে</string>
+    <string name="classification24T4">জরুরী ভিত্তিতে হাসপাতালে রেফার করা হয়েছে</string>
+    <string name="classification24Label">জটিল মারাত্মক তীব্র অপুষ্টি</string>
+    <string name="classification30Label">জটিলতা বিহীন মারাত্মক তীব্র অপুষ্টি</string>
+    <string name="classification31Label">মাঝারি তীব্র অপুষ্টি</string>
+    <string name="classification32Label">তীব্র অপুষ্টি নেই</string>
+
+    <string name="c30T1">মুখে খাওয়ার এমোক্সিসিলিন ডোজ ৫ দিনের জন্য দেওয়া হয়েছে</string>
+    <string name="c30T2">শিশুর বয়স ৬ মাস বা তার বেশি হওয়ায় পুষ্টি চিকিৎসা দেওয়া হয়েছে </string>
+    <string name="c30T3">শিশুকে কিভাবে খাওাতে হবে মাকে সে বিষয়ে পরামর্শ দেওয়া হয়েছে</string>
+    <string name="c30T4">৭ দিনের মধ্যে ফলো-আপে আসতে বলা হয়েছে</string>
+
+    <string name="c31T1">মুখে খাওান নিরুপন করা এবং মাকে পরামর্শ বিষয়ক চার্ট আনুসারে শিশুর খাওয়ানো সম্পর্কে পরামর্শ দেওয়া হয়েছে</string>
+    <string name="c32T1">শিশুর বয়স ২ বছরের কম হওয়ায় শিশুর খাওান নিরুপন করা এবং মাকে পরামর্শ বিষয়ক চার্ট আনুসারে শিশুর খাওয়ানো সম্পর্কে পরামর্শ দেওয়া হয়েছে</string>
+    <string name="c31T2">খাওয়ানোর সমস্যা হলে, ৭ দিনের মধ্যে ফলো-আপে আসতে বলা হয়েছে</string>
+    <string name="c31T3">সম্ভাব্য টিবি সংক্রমণ নিরুপন করা হয়েছে</string>
+    <string name="c31T4">অবিলম্বে শিশুকে কবে আনতে হবে সে বিষয়ে পরামর্শ দেওয়া হয়েছে</string>
+    <string name="c31T5">৩০ দিনের মধ্যে ফলো-আপে আসতে বলা হয়েছে</string>
+
+    <string name="diarrhoeaDose">টেট্রাসাইক্লিন ক্যাপসুল (২৫০ মিগ্রা) ১টি অথবা এরিথ্রোমাইসিন ট্যাবলেট (২৫০ মিগ্রা) ১টি দিনে ৪ বার ৩ দিনের জন্য</string>
+    <string name="diarrhoeaDoseGiven">টেট্রাসাইক্লিন বা এরিথ্রোমাইসিন এ্যান্টিবায়োটিক দেওয়া হয়েছে</string>
+    <string name="severdiarrhoeaRefer">মারাত্মক শ্রেনিবিভাগ থাকায় জরুরিভাবে হাসপাতালে রেফার করা হয়েছে</string>
+    <string name="noDehydrationT">মলে রক্ত থাকলে অথবা কম পান করলে তাহলে অবিলম্বে আসার পরামর্শ প্রদান করা হয়েছে</string>
+    <string name="longtermSeverDiarrhoeaReferT">মারাত্মক শ্রেনিবিভাগ থাকায় পানি সল্পতার চিকিৎসা প্রদান এবং হাসপাতালে রেফার করা হয়েছে</string>
+    <string name="longtermDiarrhoeaT1">শিশুকে বয়স অনুযায়ী সুপারিশকৃত খাবার খাওয়াতে পরামর্শ প্রদান করা হয়েছে</string>
+    <string name="longtermDiarrhoeaT2">মাল্টিভিটামিন/মিনারেল এবং ভিটামিন "এ" প্রদান করা হয়েছে</string>
+    <string name="longtermDiarrhoeaT3">৫ম দিন ফলো-আপে আসার পরামর্শ দেওয়া হয়েছে</string>
+    <string name="amasoyT1">আমাশয়ের জন্য মুখে খাওয়ার এ্যান্টিবায়োটিকঃ সিপ্রোফ্লক্সাসিন দিনে ২ বার ৩ দিনের জন্য দেওয়া হয়েছে</string>
+    <string name="amosoyT2">২য় দিনে ফলো-আপে আসার পরামর্শ প্রদান করা হয়েছে</string>
+    <string name="amasoyDose1">সিপ্রোফ্লক্সাসিন ২৫০ মিগ্রা ট্যাবলেট (১৫ মিগ্রা/কেজি/দিন) ১/৪ টি</string>
+    <string name="amasoyDose2">সিপ্রোফ্লক্সাসিন ২৫০ মিগ্রা ট্যাবলেট (১৫ মিগ্রা/কেজি/দিন) ১/২ টি</string>
+    <string name="amasoyDose3">সিপ্রোফ্লক্সাসিন ২৫০ মিগ্রা ট্যাবলেট (১৫ মিগ্রা/কেজি/দিন) ১ টি</string>
+    <string name="recommendedFoodofLongTermDiarrhoea">সুপারিশকৃত খাবারঃ যদি শিশু বুকের দুধ খায় তবে শিশুকে আর ঘন ঘন বেশিক্ষণ ধরে দিনে ও রাতে বুকের দুধ খেতে দিন, যদি অন্ন দুধ খায় তবে তার পরিবর্তে বুকের দুধ বেশি করে খাওয়ান এবং সারাদিন যে দুধ খায় তার অর্ধেকের পরিবর্তে নরম পুষ্টিকর খাবার দিন </string>
+    <string name="child_register_predialog">আপনি যদি এই শিশুকে দেয়া পূর্বের কোন সেবার ফলোআপ করতে চান, তাহলে নির্ধারিত সেবার বিস্তারিত বাটনে ক্লিক করুন এবং "Modify/Follow-up" বাটনে প্রেস করে তথ্য সংরক্ষিত করুন।
+            \n\nশিশু যদি নতুন সমস্যা নিয়ে আসে তাহলে শিশু সেবার সকল তথ্য নতুন করে দিয়ে শ্রেনিবিভাগ নির্বাচিত করে নির্ধারিত সেবা দিন।</string>
+
+    <string name="c15advice1">রক্তে গ্লুকোজের সল্পতা প্রতিরোধে যথাযথ খাবার নিশ্চিতের পরামর্শ দেওয়া হয়েছে</string>
+    <string name="c15advice2">জরুরী ভিত্তিতে উপজেলা স্বাস্থ্য কমপ্লেক্সে রেফার করা হয়েছে</string>
+    <string name="c15advice3">রেফার কার্ড পুরন করে মাকে দেওয়া হয়েছে, কার্ডটি শিশুকে হাসপাতালে নেওয়ার সময় মা সাথে রাখবেন এবং মা যেন হাসপাতালের ডাক্তার সাহেবকে কার্ডটি দেখায় তা বলা হয়েছে</string>
+    <string name="c15T1">ডায়াজিপাম প্রদান করা হয়েছে</string>
+    <string name="c16T6">নিরাপদ প্রতিষেধক (কেবলমাত্র বুকের দুধ খাওয়া শিশুদের জন্য- বুকের দুধ এবং অন্য শিশুদের জন্য- উষ্ণ পানি, তুলসি পাতার রস, লেবুর রস, লেবুর চা)দিয়ে গলা পরিষ্কার এবং কাশি উপশমের পরামর্শ প্রদান করা হয়েছে</string>
+    <string name="malNutritionSever">স্বাস্থ্যগত জটিলতা আছে </string>
+    <string name="malNutritionSever2"> পুষ্টি চিকিৎসা শেষ করতে পারেনি </string>
+    <string name="malNutritionLow">পুষ্টি চিকিৎসা শেষ করেছে</string>
+    <string name="malNutritionSever1">বুকের দুধ খাওয়াতে সমস্যা</string>
+    <string name="eatingProb1">যদি বুকে ভালভাবে লাগানো না হয় অথবা ভালভাবে দুধ না চোষে তাহলে মাকে ভাল পজিসন এবং ভালভাবে বুকে লাগানো সম্পর্কে শিখিয়ে দেওয়া হয়েছে</string>
+    <string name="eatingProb2">যদি ভালভাবে বুকে লাগাতে না পারে তবে বুকের দুধ কিভাবে চেপে বের করে বাচ্চাকে খাওয়াতে হয় সে সম্পর্কে মাকে শিখিয়ে দেওয়া হয়েছে</string>
+    <string name="eatingProb3">২৪ ঘণ্টার মধ্যে বুকের দুধ ৮ বারের চেয়ে খাওয়ানো কম হলে আরও বেশি বার খাওয়ানোর পরামর্শ দেওয়া হয়েছে। দিনে ও রাতে শিশু যতবার এবং যতখন খেতে চায়, শিশুকে ততবার খাওয়াতে মাকে পরামর্শ দেওয়া হয়েছে</string>
+    <string name="eatingProb4">যদি অন্য কোন খাবার বা তরল খাবার খায় তবে ঐসব খাবার কমিয়ে বার বার বুকের দুধ খাওয়াতে মাকে পরামর্শ দেওয়া হয়েছে</string>
+    <string name="eatingProb5">ক্যাংগারু মাদার কেয়ার প্রযোজ্য হলেঃ</string>
+    <string name="eatingProb8">ক্যাংগারু মাদার কেয়ার প্রযোজ্য না হলেঃ</string>
+    <string name="eatingProb6">ক্যাংগারু মাদার কেয়ারের জন্য হাসপাতালে প্রেরন করা হয়েছে</string>
+    <string name="eatingProb7">পথে শিশুকে মায়ের বুকের দুধ খাওয়ানোর পরামর্শ দেওয়া হয়েছে</string>
+    <string name="someDehydration2MAdvice">অবস্থার উন্নতি না হলে-৫ম দিন ফলো-আপে আসার পরামর্শ দেওয়া হয়েছে</string>
+    <string name="someDehydrationUnder2MAdvice1">শিশু যদি মায়ের দুধ না খায় তবে, ওআরএস এর সাথে ২০-৪০ চা চামচ (১০০-২০০ মিলি) নিরাপদ পানি দিতে বলা হয়েছে</string>
+    <string name="someDehydrationUnder2MAdvice2">শিশু যদি বমি করে তবে মাকে ১০ মিনিট অপেক্ষা করতে এবং তারপর পূর্বের চেয়ে ধিরে ধিরে ওআরএস খাওয়াতে বলা হয়েছে </string>
+    <string name="someDehydrationUnder2MAdvice3">৪ ঘণ্টা ওআরএস খাওয়ানোর পর পুনরায় শিশুর পানি সল্পতা নিরুপন করতে বলুন। যদি শিশু পূর্বের চেয়ে সুস্থ হয় তবে মাকে বাড়িতে অন্যান্য তরল খাবার একইভাবে শিশুকে দিতে বলা হয়েছে</string>
+    <string name="someDehydrationUnder2MAdvice4">৪ ঘণ্টা ওআরএস খাওয়ানোর পর যদি শিশুর কোন উন্নতি না হয় তবে তাকে হাসপাতালে প্রেরন করুন। হাসপাতালে যাওয়ার পথে ওআরএস চালু রাখতে মাকে বলা হয়েছে </string>
+    <string name="someDehydrationUnder2MAdvice5">বাড়িতে চিকিৎসার ক্ষেত্রে কখন শিশুকে তাড়াতাড়ি হাসপাতলে নিয়ে আসতে হবে তা মাকে বুঝিয়ে বলা হয়েছে (শিশু যদি মায়ের দুধ বা পানি পান করতে না পারে,শিশুর অবস্থা যদি আরো খারাপ হয়,যদি পায়খানার সাথে রক্ত যায়,যদি পানি কম পান করে)</string>
+    <string name="someDehydrationUnder2MAdvice6">বাড়িতে চিকিৎসার ক্ষেত্রে অবস্থার উন্নতি না হলে-২য় দিন ফলো-আপে আসার পরামর্শ দেওয়া হয়েছে</string>
+    <string name="noDehydrationU2A1">পানিস্বল্পতা প্রতিরোধে শিশুদের প্রতিবার পায়খানার পর ১০ থেকে ২০ চা-চামচ (৫০-১০০ মিলি) ওআরএস দিতে বলুন</string>
+    <string name="noDehydrationU2A2">শিশুকে বারবার এবং অনেকক্ষণ ধরে মায়ের দুধ দিতে বলুন</string>
+    <string name="noDehydrationU2A3">শিশু যদি মায়ের দুধ ছাড়া অন্যান্য খাবার খায় তবে মায়ের দুধের পাশাপাশি বাড়িতে তৈরি অন্যান্য তরল খাবার দিতে বলুন যেমনঃনিরাপদ পানি,ওআরএস,ভাতের মাড়,চিড়ার পানি,ডাবের পানি</string>
+    <string name="noDehydrationU2A4">শিশু যদি বমি করে তবে মাকে ১০ মিনিট অপেক্ষা করতে এবং তারপর পূর্বের চেয়ে ধিরে ধিরে ওআরএস খাওয়াতে বলা হয়েছে। ডায়রিয়া বন্ধ না হওয়া পর্যন্ত শিশুকে তরল খাবার ও ওআরএস দিতে বলুন</string>
+    <string name="noDehydrationU2A5">কখন শিশুকে তাড়াতাড়ি হাসপাতলে নিয়ে আসতে হবে তা মাকে বুঝিয়ে বলা হয়েছে (শিশু যদি মায়ের দুধ বা পানি পান করতে না পারে,শিশুর অবস্থা যদি আরো খারাপ হয়,যদি পায়খানার সাথে রক্ত যায়,যদি পানি কম পান করে)</string>
+    <string name="noDehydrationU2A6">যদি অবস্থার উন্নতি না হলে-২য় দিন ফলো-আপে আসার পরামর্শ দেওয়া হয়েছে</string>
+    <string name="longTermSeverDiaheroea">পথে মায়ের দুধ ও খাবার স্যালাইন দেওয়ার পরামর্শ দেওয়া হয়েছে</string>
+    <string name="diazipumDose1">ডায়াজিপাম ডোজ (১০ মিগ্রা/২ মিলি) - ০.৫ মিলি </string>
+    <string name="diazipumDose2">ডায়াজিপাম ডোজ (১০ মিগ্রা/২ মিলি) - ১.০ মিলি</string>
+    <string name="diazipumDose3">ডায়াজিপাম ডোজ (১০ মিগ্রা/২ মিলি) - ১.৫ মিলি</string>
+    <string name="diazipumDose4">ডায়াজিপাম ডোজ (১০ মিগ্রা/২ মিলি) - ২.০ মিলি</string>
+    <string name="c16Refer">১৪ দিনের বেশি কাশি থাকায় উপজেলা স্বাস্থ্য কমপ্লেক্সে রেফার করা হয়েছে</string>
+    <string name="approximate">আনুমানিক</string>
+
+    <string name="temporary_error_with_retry">সাময়িক ত্রুটির জন্য দুঃখিত। পুনরায় চেষ্টা করুন।</string>
+    <string name="incomplete_client_error_message">এই সেবাগ্রহীতার তথ্য অসম্পূর্ণ, অনুগ্রহ করে এই বিষয় আপনার উর্ধতন কর্তৃপক্ষকে অবহিত করুন</string>
+    <string name="warning">Warning</string>
+
+    <string name="add_dead_newborn_query">আপনি কি মৃত বাচ্চা যোগ করতে চান?</string>
+    <string name="add_newborn_query_part1">এই মায়ের বর্তমান গর্ভে </string>
+    <string name="add_newborn_query_part2">জন বাচ্চা এন্ট্রি/যোগ করা আছে। আপনি কি আরো নবজাতক এন্ট্রি/যোগ করতে চান?</string>
+    <string name="add_new_client">সদস্য সংযোজন</string>
+    <string name="distribution_report">বিতরণের রিপোর্ট</string>
+    <string name="meeting_notice">সভার বিজ্ঞপ্তিসমূহ</string>
+    <string name="report_action_tools">কর্মসহায়ক টুলস</string>
+    <string name="quantity_text">পরিমাণ</string>
+    <string name="name_text">নাম</string>
+    <string name="showing_result">তথ্য দেখানো হচ্ছে</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="fill_all_fields_requirement">সব ফিল্ড পূরণ করুন</string>
+    <string name="no_information">কোনো তথ্য নেই</string>
+    <string name="support_ticket">সাপোর্ট টিকেট</string>
+    <string name="newborn_button_label">নবজাতকের তথ্য চেক অথবা হালনাগাদ করতে নিচের বাটনগুলো থেকে নির্দিষ্ট সন্তান নির্বাচন করুন</string>
+    <string name="query_add_as_new_client">নতুন সদস্য হিসাবে সংযোজন করতে চান?</string>
+    <string name="data_sync_in_progress">ডেটা সিঙ্ক চলছে, অনুগ্রহ করে কিছুক্ষণ অপেক্ষা করুন</string>
+    <string name="select_working_area">আপনার কর্ম এলাকা কোন জেলায় তা নির্বাচন করুন</string>
+    <string name="file_download_error_internet_required">দুঃখিত ফাইল ডাউনলোড সম্ভব হয়নি। দয়া করে আপনার ইন্টারনেট কানেকশন ঠিক আছে কিনা দেখে অ্যাপ বন্ধ করে পুনরায় চালু করুন।\n\n*ইন্টারনেট সংযোগ থাকা বাধ্যতামূলক</string>
+    <string name="mobile_number_checking_in_progress">মোবাইল নম্বর চেক করা হচ্ছে…</string>
+    <string name="nid_number_checking_in_progress">জাতীয় পরিচয়পত্র নম্বর চেক করা হচ্ছে…</string>
+    <string name="brid_number_checking_in_progress">জন্ম নিবন্ধন নম্বর চেক করা হচ্ছে…</string>
+    <string name="existing_mobile_number_warning">সেবাগ্রহীতা নিচের তালিকায় বিদ্যমান কিনা তা যাচাই করে নিন এবং এই গ্রহীতার তথ্য বিদ্যমান থাকা সাপেক্ষে তাকে সেবা দিতে কাঙ্খিত নামে ক্লিক করে OK চাপুন। অন্যথায় এই নম্বর দিয়ে নতুন সদস্য সংযোজন করতে CANCEL চাপুন</string>
+    <string name="mobile_number_search">মোবাইল নম্বর অনুসন্ধান</string>
+    <string name="nid_number_search">জাতীয় পরিচয়পত্র নম্বর অনুসন্ধান</string>
+    <string name="brid_number_search">জন্ম নিবন্ধন নম্বর অনুসন্ধান</string>
+
+
+</resources>

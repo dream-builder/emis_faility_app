@@ -1,0 +1,498 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/activity_delivery">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/fragmentborder"
+        android:id = "@+id/DeliveryNewBornLayout">
+
+        <RelativeLayout
+            style="@style/rowHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/rowHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/newborn_related_info"
+                android:id="@+id/newBornLabel"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/editNewBornButton"
+                android:padding="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:background="@drawable/button_style"
+                android:text="EDIT"
+                android:layout_alignParentRight="true"
+                android:onClick="onClick"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/NewBorn"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="5sp"
+            android:paddingBottom="20dp"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fragmentborder">
+            <LinearLayout
+                android:id="@+id/deliveryNewBornCondition"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+
+                <TextView
+                    android:id="@+id/deliveryNewBornLabel"
+                    android:text="@string/child"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50px"
+                    android:textColor="@color/text_color"/>
+
+                <EditText
+                    android:id="@+id/deliveryNewBornConditionValue"
+                    android:inputType="text"
+                    android:textSize="20dp"
+                    android:layout_width="90dp"
+                    android:layout_height="50px"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/deliveryNewBornNo"
+                    android:textSize="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/deliveryNewBornMaturity"
+                    android:text="@string/premature_birth_before_37_weeks_full"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50px"
+                    android:textColor="@color/text_color"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/deliveryNewBorn"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple" >
+                <RadioGroup
+                    android:id="@+id/id_newBornSexRadioGroup"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/deliveryNewBornSon"
+                        android:text="@string/son"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50px" />
+                    <RadioButton
+                        android:id="@+id/deliveryNewBornDaughter"
+                        android:text="@string/daughter"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50px"  />
+
+                    <RadioButton
+                        android:id="@+id/deliveryNewBornNotDetected"
+                        android:text="@string/not_detected"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="50px"  />
+                <!--</LinearLayout>-->
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/deliveryWipe"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+                <TextView android:id="@+id/deliveryWipeLabel"
+                    android:text="@string/wipe_within_one_minute"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50px"
+                    android:textColor="@color/text_color"/>
+                <RadioGroup
+                    android:id="@+id/id_newBornWipeRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/deliveryWipeYesButton"
+                        android:text="@string/general_yes"
+                        android:textSize="20dp"
+                        android:layout_width="80dp"
+                        android:layout_height="50px"  />
+                    <RadioButton
+                        android:id="@+id/deliveryWipeNoButton"
+                        android:text="@string/general_no"
+                        android:textSize="20dp"
+                        android:layout_width="80dp"
+                        android:layout_height="50px"  />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_newBornResasscitationMaster"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/deliveryResastation"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginTop="5sp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layoutbordersimple">
+                    <TextView
+                        android:id="@+id/deliveryResastationLabel"
+                        android:text="@string/resastation"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50px"
+                        android:textColor="@color/text_color" />
+                    <RadioGroup
+                        android:id="@+id/id_newBornResasscitationRadioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/deliveryResastationYesButton"
+                            android:text="@string/general_yes"
+                            android:textSize="20dp"
+                            android:layout_width="80dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="50px"  />
+                        <RadioButton
+                            android:id="@+id/deliveryResastationNoButton"
+                            android:text="@string/general_no"
+                            android:textSize="20dp"
+                            android:layout_width="80dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="50px"  />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/StimulationBagNMask"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+                <CheckBox
+                    android:id="@+id/stimulation"
+                    android:text="@string/stimulation"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50px"
+                    android:textColor="@color/text_color" />
+                <CheckBox
+                    android:id="@+id/bag_n_mask"
+                    android:text="@string/bag_n_mask"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="50px"
+                    android:textColor="@color/text_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_only_for_neborn"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <LinearLayout android:id="@+id/deliveryWeight" android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginTop="5sp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layoutbordersimple">
+
+                    <TextView
+                        android:id="@+id/deliveryNewBornWeightLabel"
+                        android:text="@string/born_weight"
+                        android:textSize="20dp"
+                        android:layout_width="160dp"
+                        android:layout_height="50px"
+                        android:textColor="@color/text_color"/>
+                    <EditText
+                        android:id="@+id/deliveryNewBornWeightValue"
+                        android:inputType="numberDecimal"
+                        android:textSize="20dp"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:paddingLeft="10dp"
+                        android:maxLength="4"
+                        android:background="@drawable/edittext_round"/>
+
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/deliveryPlacentaCutting" android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginTop="5sp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layoutbordersimple">
+                    <TextView android:id="@+id/deliveryPlacentaCuttingLabel"
+                        android:text="@string/placenta_cutting"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50px"
+                        android:textColor="@color/text_color" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/deliveryPlacentaCuttingValue" android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginTop="5sp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layoutbordersimple" >
+                    <RadioGroup
+                        android:id="@+id/id_newBornChlorohexidineRadioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/deliveryPlacentaCuttingYesButton"
+                            android:text="@string/general_yes"
+                            android:textSize="20dp"
+                            android:layout_width="80dp"
+                            android:layout_height="50px"  />
+                        <RadioButton
+                            android:id="@+id/deliveryPlacentaCuttingNoButton"
+                            android:text="@string/general_no"
+                            android:textSize="20dp"
+                            android:layout_width="80dp"
+                            android:layout_height="50px"  />
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/deliveryFittedWithMotherSkin" android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginTop="5sp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layoutbordersimple">
+                    <TextView android:id="@+id/deliveryFittedWithMotherSkinLabel" android:text="@string/fitted_with_mother_skin" android:textSize="20dp" android:layout_width="wrap_content" android:layout_height="50px" android:textColor="@color/text_color" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/deliveryFittedWithMotherSkinValue" android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginTop="5sp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layoutbordersimple">
+                    <RadioGroup
+                        android:id="@+id/id_newBornChordCareRadioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/deliveryFittedWithMotherSkinYesButton"
+                            android:text="@string/general_yes"
+                            android:textSize="20dp"
+                            android:layout_width="80dp"
+                            android:layout_height="50px"  />
+                        <RadioButton
+                            android:id="@+id/deliveryFittedWithMotherSkinNoButton"
+                            android:text="@string/general_no"
+                            android:textSize="20dp"
+                            android:layout_width="80dp"
+                            android:layout_height="50px"  />
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/deliveryBreastFeeding" android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginTop="5sp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layoutbordersimple">
+
+                    <TextView android:id="@+id/deliveryBreastFeedingLabel" android:text="@string/breast_feeding" android:textSize="20dp" android:layout_width="wrap_content" android:layout_height="50px" android:textColor="@color/text_color" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/deliveryBreastFeedingValue" android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginTop="5sp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layoutbordersimple">
+                    <RadioGroup
+                        android:id="@+id/id_newBornBreastFeedingRadioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/deliveryBreastFeedingYesButton"
+                            android:text="@string/general_yes"
+                            android:textSize="20dp"
+                            android:layout_width="80dp"
+                            android:layout_height="50px"  />
+                        <RadioButton
+                            android:id="@+id/deliveryBreastFeedingNoButton"
+                            android:text="@string/general_no"
+                            android:textSize="20dp"
+                            android:layout_width="80dp"
+                            android:layout_height="50px"  />
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/deliveryChildRefer"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginTop="5sp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layoutbordersimple">
+                    <CheckBox
+                        android:id="@+id/deliveryChildReferCheckBox"
+                        android:text="@string/child_refer"
+                        android:textSize="20dp"
+                        android:layout_width="120dp"
+                        android:layout_height="50px"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/title_color" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/deliveryChildReferCenterName"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginTop="5sp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layoutbordersimple" >
+                    <TextView
+                        android:id="@+id/deliveryChildReferCenterNameLabel"
+                        android:text="@string/center_name"
+                        android:textSize="20dp"
+                        android:layout_width="120dp"
+                        android:layout_height="50px"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/text_color"
+                        android:visibility="gone"/>
+                    <Spinner
+                        android:id="@+id/deliveryChildReferCenterNameSpinner"
+                        android:inputType="text"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50px"
+                        android:layout_marginTop="10dp"
+                        android:entries="@array/FacilityType_DropDown"
+                        android:visibility="gone"
+                        android:background="@drawable/gradient_spinner"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/deliveryChildReferReason"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginTop="5sp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layoutbordersimple" >
+                    <TextView
+                        android:id="@+id/deliveryChildReferReasonLabel"
+                        android:text="@string/reason"
+                        android:textSize="20dp"
+                        android:layout_width="120dp"
+                        android:layout_height="50px"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        android:textColor="@color/text_color"/>
+                    <org.sci.rhis.fwc.MultiSelectionSpinner
+                        android:id="@+id/deliveryChildReferReasonSpinner"
+                        android:inputType="text"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50px"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        android:background="@drawable/gradient_spinner"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btn_save_child"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+
+                <Button
+                    android:text="Save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80px"
+                    android:id="@+id/id_saveNewbornButton"
+                    android:onClick="onClick"/>
+
+                <Button
+                    android:text="Cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80px"
+                    android:id="@+id/id_OkNewbornButton"
+                    android:onClick="onClick"
+                    android:visibility="invisible"/>
+
+                <Button
+                    android:text="Delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80px"
+                    android:visibility="invisible"
+                    android:id="@+id/DeleteLastNewbornButton"
+                    android:onClick="onClick"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

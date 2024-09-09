@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_malnutration_2_months"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/layoutborderblack"
+    android:orientation="vertical">
+
+
+    <!--Symptom 100 Segment-->
+    <RelativeLayout
+        android:id="@+id/childcaresymptom100Segement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft='5dp'
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:id="@+id/childcaresymptom100TextviewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/childcaresymptom97"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_toRightOf="@id/childcaresymptom100TextviewLabel"
+            android:id="@+id/childcaresympto100RadioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_weight="4"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <RadioButton
+                android:id="@+id/childcaresymptom100RadioGroupYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:text="@string/general_yes" />
+
+            <RadioButton
+                android:id="@+id/childcaresymptom100RadioGroupNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/general_no" />
+        </RadioGroup>
+
+
+
+
+
+    </RelativeLayout>
+
+    <!--Symptom 101 Segment-->
+    <LinearLayout
+        android:id="@+id/childcaresymptom101MasterSegement"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/childcaresymptom101TextviewLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/childcaresymptom98"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/childcaresymptom101RadioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <RadioButton
+                style="@android:style/Widget.CompoundButton.CheckBox"
+                android:id="@+id/childcaresymptom101RadioGroupOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:text="@string/childcaresymptom99" />
+
+            <RadioButton
+                style="@android:style/Widget.CompoundButton.CheckBox"
+                android:id="@+id/childcaresymptom101RadioGroupTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/childcaresymptom100" />
+
+            <RadioButton
+                style="@android:style/Widget.CompoundButton.CheckBox"
+                android:id="@+id/childcaresymptom101RadioGroupThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/childcaresymptom101" />
+        </RadioGroup>
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/malNutritionSevere1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/malNutritionSever"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/malNutritionSevere3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/malNutritionSever2"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/malNutritionSevere2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/malNutritionSever1"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/malNutritionLow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/malNutritionLow"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/malNutrition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/childcaresymptom102"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

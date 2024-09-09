@@ -1,0 +1,3299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/childcare_fragment_questionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/layoutbordersimple"
+    android:orientation="vertical"
+    android:padding="2sp"
+    android:tag="0to2"
+    android:visibility="visible">
+
+    <ScrollView
+        android:id="@+id/childcare_fragment_questionLayoutScrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/containerEPILayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Treatment Segment-->
+            <LinearLayout
+                android:id="@+id/psbiTreatmentLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/layoutborderblack"
+                android:orientation="vertical"
+                android:padding="2sp">
+
+                <TextView
+                    android:id="@+id/psbiTreatmentLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#92b6dc"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/psbiTreatmentSegment"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <!--Classification 1 & 2 Refer Treatment-->
+                <LinearLayout
+                    android:id="@+id/layoutClassificationOTReferTreatment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/fragmentborder"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewReferTreatmentLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/criticalRefelLabel"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:visibility="gone" />
+
+                    <!--Injection Jentamysin Segment-->
+                    <LinearLayout
+                        android:id="@+id/layoutInjectionJentamysinSegment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:visibility="gone">
+
+                        <!--Label TextView-->
+                        <TextView
+                            android:id="@+id/textViewInjectionJentamycinLabel"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/criticalDiseaseTreatmentInjectionJentamysin"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+
+                        <!--Dose Quantity Label-->
+                        <TextView
+                            android:id="@+id/textViewInjectionJentamycinDoseLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/criticalDiseaseTreatmentDoseQuantity"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <!--Amoxacilin Drop Segment-->
+                    <LinearLayout
+                        android:id="@+id/layoutAmoxacilinDropSegment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:visibility="gone">
+
+                        <!--Label TextView-->
+                        <TextView
+                            android:id="@+id/textViewAmoxacilinDropLabel"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/criticalDiseaseTreatmentAmoxacilinDrop"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+
+                        <!--Dose Quantity Label-->
+                        <TextView
+                            android:id="@+id/textViewAmoxacilinDropQuantityLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/criticalDiseaseTreatmentDoseQuantity"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Classification 15 Treatment Segment-->
+                <LinearLayout
+                    android:id="@+id/layoutTreatmentForClassificationFifteen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fragmentborder"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textKotraiMoxelTablet2Mto12M"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/kotraimoxeltabletdoseone"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:id="@+id/textKotraiMoxelSyrup1Yto5Y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/kotraimoxeltabletdosetwo"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/textAmoxacilinTablet2Mto12M"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/amoxicilintabletdoseone"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/textAmoxacilin1Yto3Y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/amoxicilintabletdosetwo"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/textAmoxacilin3Yto5Y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/amoxicilintabletdosethree"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/textDiazepam6M"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/diazipumDose1"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/textDiazepam1Y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/diazipumDose2"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/textDiazepam3Y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/diazipumDose3"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/textDiazepam5Y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/diazipumDose4"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/textPeracitemol3Y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/paracitemolDose1"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/textPeracitemol5Y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/paracitemolDose2"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <!--Classification 19 Treatment Segment-->
+                <LinearLayout
+                    android:id="@+id/earproblem2mto5yC1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/fragmentborder"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/classification19Label"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/childcaresymptom75"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/earproblem2mto5yD1T1checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/earproblem2mto5yD1T1"
+                        android:textSize="18sp" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/earproblem2mto5yD1T4checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/injectionamoxicillinDoseGiven"
+                        android:textSize="18sp" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/earproblem2mto5yD1T2checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/earproblem2mto5yD1T2"
+                        android:textSize="18sp" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/earproblem2mto5yD1T3checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/earproblem2mto5yD1T3"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <!--Classification 20 Treatment Segment-->
+                <LinearLayout
+                    android:id="@+id/layoutClassification20Refer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/fragmentborder"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/c20DoseLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginBottom="5dp"
+                        android:text=""
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/c20DoseLabel2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginBottom="5dp"
+                        android:text=""
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/c20T1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/highfever2mto5yt1"
+                        android:textSize="18sp" />
+
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/c20T2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/highfever2mto5yt4"
+                        android:textSize="18sp" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/c20T3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/highfever2mto5yt2"
+                        android:textSize="18sp" />
+
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/c20T4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/highfever2mto5yt3"
+                        android:textSize="18sp" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/c20T5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/earproblem2mto5yD1T3"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <!--Classification 23,28,29  Segment-->
+                <LinearLayout
+                    android:id="@+id/layoutClassification23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/fragmentborder"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/classification23Label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/childcaresymptom112"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/classification28Label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/childcaresymptom113"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/classification29Label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/childcaresymptom91"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/classification23Medicine1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text=""
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/c23T1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/classification23T1"
+                        android:textSize="18sp" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/c23T2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/highfever2mto5yt4"
+                        android:textSize="18sp" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/c23T3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/classification23T2"
+                        android:textSize="18sp" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/c28T3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/classification28T2"
+                        android:textSize="18sp" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/c28T4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/classification28T3"
+                        android:textSize="18sp" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/c23T4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/earproblem2mto5yD1T3"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <!--Classification 24 Segment-->
+                <LinearLayout
+                    android:id="@+id/layoutClassification24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/fragmentborder"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/classification24Label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/classification24Label"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/classification24DoseLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text=""
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/c24T1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/highfever2mto5yt4"
+                        android:textSize="18sp" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/c24T2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/highfever2mto5yt2"
+                        android:textSize="18sp" />
+
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/c24T4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/classification24T4"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/general_advice"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/classification24T3"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+                <!--Long term Sever Diarrhoea Treatment-->
+                <LinearLayout
+                    android:id="@+id/layoutClassification35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/fragmentborder"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/classification35Label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/childcaresymptom69"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/c35T1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/longtermSeverDiarrhoeaReferT"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/general_advice"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/longTermSeverDiaheroea"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+                <!--Refer Segment-->
+                <LinearLayout
+                    android:id="@+id/layoutReferSegment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/fragmentborder"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <!--Is Referred or Not-->
+                    <RelativeLayout
+                        android:id="@+id/referChild"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/text_refer_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="@string/general_refer"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+
+                        <!--Refer Radio Button Segment-->
+                        <RadioGroup
+                            android:id="@+id/childReferRadioGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/text_refer_label"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp">
+
+                            <RadioButton
+                                android:id="@+id/childReferRadioButtonYes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="50dp"
+                                android:text="@string/symptom_response_yes" />
+
+                            <RadioButton
+                                android:id="@+id/childReferRadioButtonNo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/symptom_response_no" />
+                        </RadioGroup>
+
+
+                    </RelativeLayout>
+
+                    <!--Refer Name Layout-->
+                    <LinearLayout
+                        android:id="@+id/childReferCenterNameLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginRight="5sp"
+                        android:orientation="horizontal"
+                        android:padding="2sp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/childReferCenterNameLabel"
+                            android:layout_width="100sp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/center_name"
+                            android:textColor="@color/text_color"
+                            android:textSize="20sp" />
+
+                        <Spinner
+                            android:id="@+id/childReferCenterNameSpinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/gradient_spinner"
+                            android:entries="@array/FacilityType_DropDown_Child_Register"
+                            android:inputType="text"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <!--Refer Reason Layout-->
+                    <LinearLayout
+                        android:id="@+id/childReferReasonLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginRight="5sp"
+                        android:orientation="horizontal"
+                        android:padding="2sp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/childReferReasonLabel"
+                            android:layout_width="100sp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/reason"
+                            android:textColor="@color/text_color"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:id="@+id/layoutClassificationAsReferReason"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"></LinearLayout>
+                    </LinearLayout>
+
+                    <!--Agree to go to referred center-->
+                    <RelativeLayout
+                        android:id="@+id/referStatusLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/text_refer_status_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="@string/refer_status"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+
+                        <!--Refer Agree Radio Button Segment-->
+                        <RadioGroup
+                            android:id="@+id/psbiReferStatusRadioGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/text_refer_status_label"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp">
+
+                            <RadioButton
+                                android:id="@+id/psbiReferStatusRadioButtonYes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="50dp"
+                                android:text="@string/symptom_response_yes" />
+
+                            <RadioButton
+                                android:id="@+id/psbiReferStatusRadioButtonNo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/symptom_response_no" />
+                        </RadioGroup>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!-- 0 to 59 Days Treatment Segment-->
+                <LinearLayout
+                    android:id="@+id/layoutRefer0to59DaysTreatment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="vertical">
+
+                    <!--Classification 2,3,4,5 Non Refer Treatment-->
+                    <LinearLayout
+                        android:id="@+id/layoutClassificationTTFFNonReferTreatment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical">
+
+                        <!--Injection gentamicin Layout for Classification 2-->
+                        <LinearLayout
+                            android:id="@+id/layoutInjectionGentamicinForNonRefer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <!--Label TextView-->
+                                <TextView
+                                    android:id="@+id/textViewInjectionJentamycinLabelNonRefer"
+                                    android:layout_width="200dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:maxLines="3"
+                                    android:text="@string/criticalDiseaseNonReferTreatmentInjectionJentamycin"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                                <!--Dose Quantity Label-->
+                                <TextView
+                                    android:id="@+id/textViewInjectionJentamycinDoseNonReferLabel"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:text="@string/criticalDiseaseTreatmentDoseQuantity"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+                            </LinearLayout>
+
+                            <!--2nd Day follow up date-->
+                            <TextView
+                                android:id="@+id/textViewInjectionJentamycinFollowupDoseDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <android.support.v7.widget.AppCompatCheckBox
+                                android:id="@+id/injectiongentamicinSecondDoseGiven"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="@string/injectiongentamicinSecondDoseGiven"
+                                android:textSize="18sp"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                        <!--Amoxacilin Drop Layout for Classification 2,3,4 Non Refer-->
+                        <LinearLayout
+                            android:id="@+id/layoutAmoxacinDropForNonReferSegmentOne"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:visibility="gone">
+
+                            <!--Label TextView-->
+                            <TextView
+                                android:id="@+id/textViewAmoxacinDropForNonReferSegmentOne"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="@string/criticalDiseaseNonReferTreatmentAmoxacilinDrop"
+                                android:textColor="@color/black"
+                                android:textSize="18dp" />
+
+                            <!--Dose Quantity Label-->
+                            <TextView
+                                android:id="@+id/textViewAmoxacilinDropQuantityNonReferLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="@string/criticalDiseaseTreatmentDoseQuantity"
+                                android:textColor="@color/black"
+                                android:textSize="18dp" />
+
+                        </LinearLayout>
+
+                        <!--Follow up Segment for Classification 2,3,4 Non Refer-->
+                        <LinearLayout
+                            android:id="@+id/layoutFollowupNonReferSegment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <!--4th Day Followup-->
+                            <LinearLayout
+                                android:id="@+id/layoutFirstFollowupNonReferSegment"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:id="@+id/textViewFirstFollowupLabel"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="৪র্থ দিন ফলোআপ "
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                                <RadioGroup
+                                    android:id="@+id/psbiFirstFollowupRadioGroup"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_weight="5"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="10dp">
+
+                                    <RadioButton
+                                        android:id="@+id/psbiFirstFollowupRadioButtonYes"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="50dp"
+                                        android:text="করা হয়েছে" />
+
+                                    <RadioButton
+                                        android:id="@+id/psbiFirstFollowupRadioButtonNo"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="করা হয়নি" />
+                                </RadioGroup>
+
+                            </LinearLayout>
+
+                            <!--8th Day Followup-->
+                            <LinearLayout
+                                android:id="@+id/layoutSecondFollowupNonReferSegment"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:id="@+id/textViewSecondFollowupLabel"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="৮ম দিন ফলোআপ "
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                                <RadioGroup
+                                    android:id="@+id/psbiSecondFollowupRadioGroup"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_weight="5"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="10dp">
+
+                                    <RadioButton
+                                        android:id="@+id/psbiSecondFollowupRadioButtonYes"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="50dp"
+                                        android:text="করা হয়েছে" />
+
+                                    <RadioButton
+                                        android:id="@+id/psbiSecondFollowupRadioButtonNo"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="করা হয়নি" />
+                                </RadioGroup>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!--Amoxacilin Drop Layout for Classification 5-->
+                        <LinearLayout
+                            android:id="@+id/layoutAmoxacinDropForNonReferSegmentTwo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:visibility="gone">
+
+                            <!--Label TextView-->
+                            <TextView
+                                android:id="@+id/textViewAmoxacinDropForNonReferSegmentTwo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="@string/criticalDiseaseNonReferTreatmentAmoxacilinDropForBacterialInfection"
+                                android:textColor="@color/black"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:id="@+id/textAmoxacinDropForNonReferSegmentTwo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--Anti Biotic Given Confirmation Segment for Classification 1 to 5-->
+                    <LinearLayout
+                        android:id="@+id/layoutAntiBioticDoseGivenConfirmation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/injectiongentamicinDoseGiven"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/injectiongentamicinDoseGiven"
+                            android:textSize="18sp"
+                            android:visibility="gone" />
+
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/injectionamoxicillinDoseGiven"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/injectionamoxicillinDoseGiven"
+                            android:textSize="18sp"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <!--Classification 1, 2, 3 Refer Advice Segment-->
+                    <LinearLayout
+                        android:id="@+id/layoutClassification12ReferAdvice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/adviceLabeC12Refer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/general_advice"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceOneC12Refer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c12referadvice1"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceTwoC12Refer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c12referadvice2"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceThreeC12Refer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c12referadvice3"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceFourC12Refer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c12referadvice4"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <!--Classification 1,2 Non Refer Advice Segment-->
+                    <LinearLayout
+                        android:id="@+id/layoutClassification12NonReferAdvice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/adviceLabeC12NonRefer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/general_advice"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceOneC12NonRefer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c12nonreferadvice1"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceTwoC12NonRefer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c12nonreferadvice2"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceThreeC12NonRefer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c12nonreferadvice3"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceFourC12NonRefer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c12nonreferadvice4"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <!--Classification 3,4 Non refer Advice Segment-->
+                    <LinearLayout
+                        android:id="@+id/layoutClassification34NonReferAdvice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/adviceLabeC34NonRefer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/general_advice"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceOneC34NonRefer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c34nonreferadvice1"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceTwoC34NonRefer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c34nonreferadvice2"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceThreeC34NonRefer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c34nonreferadvice3"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceFourC34NonRefer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c34nonreferadvice4"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <!--Classification 5 Advice Segment-->
+                    <LinearLayout
+                        android:id="@+id/layoutClassification5Advice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/adviceLabeC5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/general_advice"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceOneC5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c5advice1"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceTwoC5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c5advice2"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <!--Severe Jaundice Segment for Classification 7-->
+                    <LinearLayout
+                        android:id="@+id/layoutSevereJaundiceTreatmentSegment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/textViewSeverJaundiceLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/severeJaundiceLabe"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/severeJaundiceTreatmentcheckbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/criticalJaundiceReferTreatment"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/adviceLabeC7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/general_advice"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceOneC7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c7advice1"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceTwoC7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c7advice2"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceThreeC7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c7advice3"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceFourC7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c7advice4"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceFiveC7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c7advice5"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceSixC7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c7advice6"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <!--Classification 8 Advice-->
+                    <LinearLayout
+                        android:id="@+id/layoutClassification8Advice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/textViewJaundiceLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/jaundiceLabel"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceLabeC8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/general_advice"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceOneC8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c8advice1"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceFiveC8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/jaundiceNonReferTreatmentOne"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceTwoC8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c8advice2"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceThreeC8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c8advice3"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceFourC8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c8advice4"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <!--Eating Problem Segment Classification 12 -->
+                    <LinearLayout
+                        android:id="@+id/layoutEatingOrLowWeightTreatmentSegment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:visibility="gone">
+
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/jeatingOrLowWeightTreatmentcheckboxThree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/eatingOrLowWeightTreatmentThree"
+                            android:textSize="18sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/general_advice"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/eatingOrLowWeightTreatmentOne"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/eatingOrLowWeightTreatmentTwo"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/eatingProb1"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/eatingProb2"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/eatingProb4"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/eatingProb3"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <!--Low weight Problem Segment-->
+                    <LinearLayout
+                        android:id="@+id/layoutClassification13Advice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/general_advice"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+
+                        <TextView
+                            android:id="@+id/c13RT1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/eatingProb6"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/c13RT2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/c12referadvice1"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/c13RT3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/eatingProb7"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:visibility="gone"/>
+
+
+
+                        <TextView
+                            android:id="@+id/c13NRT1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/eatingOrLowWeightTreatmentOne"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/c13NRT2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/eatingProb1"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/c13NRT3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/eatingProb2"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/c13NRT4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/eatingProb3"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/c13NRT5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/eatingProb4"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/c13NRT6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/eatingOrLowWeightTreatmentTwo"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:visibility="gone"/>
+
+
+
+
+                    </LinearLayout>
+
+                    <!--No eating Problem Classification 14-->
+                    <LinearLayout
+                        android:id="@+id/layoutNoEatingOrLowWeightTreatmentSegment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/general_advice"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/noEatingOrLowWeightTreatment"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--2 Months to 5 Year Treatment-->
+                <LinearLayout
+                    android:id="@+id/layoutTreatmentTwoMonthstoFiveYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--Classification 16 Treatment Segment-->
+                    <LinearLayout
+                        android:id="@+id/layoutpneumonia2mto5y"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <!--2nd Day follow up date-->
+                        <TextView
+                            android:id="@+id/textPneumoniaFollowup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <!--2nd Day Antibiotic Given-->
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/kotraimoxaxolinSecondDoseGiven"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/pneumonia2mto5yt1"
+                            android:textSize="18sp"
+                            android:visibility="gone" />
+
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/pneumonia2Mto5YTreatment2checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/pneumonia2mto5yt2"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <!--Classification 16 refer Treatment-->
+                    <TextView
+                        android:id="@+id/textPneumoniaReferTreatment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/c16Refer"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:background="@drawable/fragmentborder"
+                        android:visibility="gone"/>
+
+
+
+                    <!--Classification 26 Treatment Segment-->
+                    <LinearLayout
+                        android:id="@+id/layoutClassification26NonRefer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/classification26Label"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/childcaresymptom77"
+                            android:textColor="@color/text_color"
+                            android:textSize="20sp" />
+
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/earproblem2mto5yD2T1checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/earproblem2mto5yD2T1"
+                            android:textSize="18sp" />
+
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/earproblem2mto5yD2T2checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/earproblem2mto5yD2T2"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/general_advice"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/earproblem2mto5yD2T3"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/earproblem2mto5yD2T4"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+
+
+                    <!--Classification 21,22 Refer Segment-->
+                    <LinearLayout
+                        android:id="@+id/classification21SegmentRefer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:padding="2sp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/classification21Label"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/classification21"
+                            android:textColor="@color/text_color"
+                            android:textSize="20sp" />
+
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/classification21ReferTreatment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/classification21ReferTreatment"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+
+                    <!--Antibiotics Given Confirmation-->
+                    <LinearLayout
+                        android:id="@+id/layoutAntiBioticDoseGivenConfirmationSectionTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/tabKotraiMoxelDoseGiven"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/tabKotraiMoxelDoseGiven"
+                            android:textSize="18sp"
+                            android:visibility="gone" />
+
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/injectionamoxicillinDoseGivenSctionTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/injectionamoxicillinDoseGiven"
+                            android:textSize="18sp"
+                            android:visibility="gone" />
+
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/c15Treatment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c15T1"
+                            android:textSize="18sp"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <!--Classification 15 Advice-->
+                    <LinearLayout
+                        android:id="@+id/layoutClassification15Advice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/adviceLabeC15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/general_advice"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceOneC15Refer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c15advice1"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceTwoC15Refer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c15advice2"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/adviceThreeC15Refer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c15advice3"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                    <!--Classification 16 Advice-->
+                    <LinearLayout
+                        android:id="@+id/layoutClassification16Advice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/general_advice"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c16T6"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/pneumonia2mto5yt4"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/pneumonia2mto5yt5"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                    <!--Classification 17 Normal Flue Refer-->
+                    <LinearLayout
+                        android:id="@+id/layoutClassification17Refer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/noramlFlue2Mto5YReferTreatmentcheckbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/normalFlueRefer"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <!--Classification 17 Non Refer Advice-->
+                    <LinearLayout
+                        android:id="@+id/layoutClassification17Advice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/general_advice"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c16T6"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/normalFlueNonRefer2"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/normalFlueNonRefer3"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <!--Classification 27 Segment-->
+                    <LinearLayout
+                        android:id="@+id/layoutClassification27NonRefer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/classification27Label"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/childcaresymptom79"
+                            android:textColor="@color/text_color"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/general_advice"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/earproblem2mto5yD3T1"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/earproblem2mto5yD3T3"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <!--Classification 21,22 Non Refer Segment-->
+                    <LinearLayout
+                        android:id="@+id/layoutClassification21NonRefer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/classification21NonReferMedicine1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:text=""
+                            android:textColor="@color/text_color"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/classification21NonReferMedicine2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:text=""
+                            android:textColor="@color/text_color"
+                            android:textSize="20sp" />
+
+
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/c21T1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/classification21NonReferT1"
+                            android:textSize="18sp" />
+
+
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/c21T2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/classification21NonReferT2"
+                            android:textSize="18sp" />
+
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/c22T2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/classification22NonReferT2"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/general_advice"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/classification21NonReferT3"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                    <!--Classification 30 Segment-->
+                    <LinearLayout
+                        android:id="@+id/layoutClassification30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/classification30Label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="@string/classification30Label"
+                            android:textColor="@color/text_color"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/classification30DoseLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:text=""
+                            android:textColor="@color/text_color"
+                            android:textSize="20sp" />
+
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/c30T1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c30T1"
+                            android:textSize="18sp" />
+
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/c30T2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c30T2"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/general_advice"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c30T3"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c30T4"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                    <!--Classification 31 Segment-->
+                    <LinearLayout
+                        android:id="@+id/layoutClassification31"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/classification31Label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="@string/classification31Label"
+                            android:textColor="@color/text_color"
+                            android:textSize="20sp" />
+
+
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/c31T3T"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c31T3"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/general_advice"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c31T1"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c31T2"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c31T4"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c31T5"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                    <!--Classification 32 Advice Segment-->
+                    <LinearLayout
+                        android:id="@+id/layoutClassification32Advice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/general_advice"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c32T1"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/c31T2"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!--No Dehydration Treatment Classification 11-->
+                <LinearLayout
+                    android:id="@+id/layoutNoDehydrationTreatmentSegment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fragmentborder"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textViewNoDehydrationLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/childcaresymptom67"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/noDehydrationTreatmentcheckboxtwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/noDehydrationTreatmenttwo"
+                        android:textSize="18sp" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/noDehydrationTreatmentcheckboxthree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/noDehydrationTreatmentthree"
+                        android:textSize="18sp" />
+
+                    <!--0-59 Days Advice-->
+                    <LinearLayout
+                        android:id="@+id/noDehydrationUnder2Months"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/general_advice"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/noDehydrationU2A1"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/noDehydrationU2A2"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/noDehydrationU2A3"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/noDehydrationU2A4"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/noDehydrationU2A5"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/noDehydrationU2A6"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                    <!--2 Months - 5 Year Advice-->
+                    <LinearLayout
+                        android:id="@+id/noDehydrationAbove2Months"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical"
+                       android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/general_advice"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/noDehydrationTreatmentone"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/noDehydrationTreatmentfour"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/noDehydrationT"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/someDehydration2MAdvice"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Some Dehydration Treatment Segment Classification 10-->
+                <LinearLayout
+                    android:id="@+id/diarrhoeaSomeDehydrationLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/fragmentborder"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/diarrhoeaSomeDehydrationTreatmentLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/diarrhoeaSomeDehydrationLabel"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp" />
+
+                    <!--Refer-->
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/referSomeDehydration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/longtermSeverDiarrhoeaReferT"
+                        android:textSize="18sp" />
+
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/someDehydrationTreatmentTreatmentOneCheckbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/someDehydrationTreatmentTreatmentOne"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/diarrhoeaSomeDehydrationTreatmentOrsalaineQuantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/diarrhoeaSomeDehydrationTreatmentOrsalaineQuantity"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/someDehydrationTreatmentTreatmentTwoCheckbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/someDehydrationTreatmentTreatmentTwo"
+                        android:textSize="18sp" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/someDehydrationTreatmentTreatmentThreeCheckbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/someDehydrationTreatmentTreatmentThree"
+                        android:textSize="18sp" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/someDehydrationTreatmentTreatmentFourCheckbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/someDehydrationTreatmentTreatmentFour"
+                        android:textSize="18sp" />
+
+                    <!--Under 2 Months Advice-->
+                    <LinearLayout
+                        android:id="@+id/someDehydrationUnder2Months"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/general_advice"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/someDehydrationUnder2MAdvice1"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/someDehydrationUnder2MAdvice2"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/someDehydrationUnder2MAdvice3"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/someDehydrationUnder2MAdvice4"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/someDehydrationUnder2MAdvice5"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/someDehydrationUnder2MAdvice6"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <!--Above 2 Months Advice-->
+                    <LinearLayout
+                        android:id="@+id/layoutSomeDehydrationAdvice2Months"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/general_advice"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/noDehydrationT"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/someDehydration2MAdvice"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Sever Dehydration Segment Classification 9-->
+                <LinearLayout
+                    android:id="@+id/diarrhoeaSevereDehydrationLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/fragmentborder"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/diarrhoeaSevereDehydrationTreatmentLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/diarrhoeaSevereDehydrationLabel"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp" />
+
+                    <!--Refer-->
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/referDiarrhoeaSevere"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/severdiarrhoeaRefer"
+                        android:textSize="18sp" />
+
+                    <!--Medicine Dose-->
+                    <TextView
+                        android:id="@+id/diarrhoeaSevereDehydrationDose"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/diarrhoeaDose"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/doseGiven"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/diarrhoeaDoseGiven"
+                        android:textSize="18sp" />
+
+
+                    <!--Severe Dehydration Question One-->
+                    <LinearLayout
+                        android:id="@+id/diarrhoeaSevereDehydrationQuestionOneLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/diarrhoeaSevereDehydrationQuestionOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/diarrhoeaSevereDehydrationQuestionOne"
+                            android:textColor="@color/text_color"
+                            android:textSize="18sp" />
+
+                        <RadioGroup
+                            android:id="@+id/diarrhoeaSevereDehydrationQuestionOneRadioGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="5"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp">
+
+                            <RadioButton
+                                android:id="@+id/diarrhoeaSevereDehydrationQuestionOneRadioButtonYes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="50dp"
+                                android:text="@string/general_yes" />
+
+                            <RadioButton
+                                android:id="@+id/diarrhoeaSevereDehydrationQuestionOneRadioButtonNo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/general_no" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <!--Severe Dehydration Question One Answer Yes Treatment Segment-->
+                    <LinearLayout
+                        android:id="@+id/severeDehydrationTreatmentPartOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/severeDehydrationTreatmentPartOneTreatmentOneText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/severeDehydrationTreatmentPartOneTreatmentOne"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/severeDehydrationTreatmentPartOneTreatmentTwoText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/severeDehydrationTreatmentPartOneTreatmentTwo"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/severeDehydrationTreatmentPartOneTreatmentThreeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/severeDehydrationTreatmentPartOneTreatmentThree"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/severeDehydrationTreatmentPartOneTreatmentFourText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/severeDehydrationTreatmentPartOneTreatmentFour"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/severeDehydrationTreatmentPartOneTreatmentFiveText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/severeDehydrationTreatmentPartOneTreatmentFive"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/severeDehydrationTreatmentPartOneTreatmentWarningLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/severeDehydrationTreatmentPartOneTreatmentWarning"
+                            android:textColor="@color/text_color"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <!--Severe Dehydration Question Two-->
+                    <LinearLayout
+                        android:id="@+id/diarrhoeaSevereDehydrationQuestionTwoLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/diarrhoeaSevereDehydrationQuestionTwo"
+                            android:layout_width="325dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/diarrhoeaSevereDehydrationQuestionTwo"
+                            android:textColor="@color/text_color"
+                            android:textSize="18sp" />
+
+                        <RadioGroup
+                            android:id="@+id/diarrhoeaSevereDehydrationQuestionTwoRadioGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="5"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp">
+
+                            <RadioButton
+                                android:id="@+id/diarrhoeaSevereDehydrationQuestionTwoRadioButtonYes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="50dp"
+                                android:text="@string/general_yes" />
+
+                            <RadioButton
+                                android:id="@+id/diarrhoeaSevereDehydrationQuestionTwoRadioButtonNo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/general_no" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <!--Severe Dehydration Question Two Answer Yes Treatment Segment-->
+                    <LinearLayout
+                        android:id="@+id/severeDehydrationTreatmentPartTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/severeDehydrationTreatmentPartTwoTreatmentOneTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/severeDehydrationTreatmentPartTwoTreatmentOne"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/severeDehydrationTreatmentPartTwoTreatmentTwoText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/severeDehydrationTreatmentPartTwoTreatmentTwo"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <!--Severe Dehydration Question Three-->
+                    <LinearLayout
+                        android:id="@+id/diarrhoeaSevereDehydrationQuestionThreeLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/diarrhoeaSevereDehydrationQuestionThree"
+                            android:layout_width="325dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/diarrhoeaSevereDehydrationQuestionThree"
+                            android:textColor="@color/text_color"
+                            android:textSize="18sp" />
+
+                        <RadioGroup
+                            android:id="@+id/diarrhoeaSevereDehydrationQuestionThreeRadioGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="5"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp">
+
+                            <RadioButton
+                                android:id="@+id/diarrhoeaSevereDehydrationQuestionThreeRadioButtonYes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="50dp"
+                                android:text="@string/general_yes" />
+
+                            <RadioButton
+                                android:id="@+id/diarrhoeaSevereDehydrationQuestionThreeRadioButtonNo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/general_no" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <!--Severe Dehydration Question Four-->
+                    <LinearLayout
+                        android:id="@+id/diarrhoeaSevereDehydrationQuestionFourLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/diarrhoeaSevereDehydrationQuestionFour"
+                            android:layout_width="325dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/diarrhoeaSevereDehydrationQuestionFour"
+                            android:textColor="@color/text_color"
+                            android:textSize="18sp" />
+
+                        <RadioGroup
+                            android:id="@+id/diarrhoeaSevereDehydrationQuestionFourRadioGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="5"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp">
+
+                            <RadioButton
+                                android:id="@+id/diarrhoeaSevereDehydrationQuestionFourRadioButtonYes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="50dp"
+                                android:text="@string/general_yes" />
+
+                            <RadioButton
+                                android:id="@+id/diarrhoeaSevereDehydrationQuestionFourRadioButtonNo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/general_no" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <!--Severe Dehydration Question Three and Four Answer Yes Treatment Segment-->
+                    <LinearLayout
+                        android:id="@+id/severeDehydrationTreatmentPartThreeFour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/severeDehydrationTreatmentPartThreeFourTreatmentOneText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/severeDehydrationTreatmentPartThreeFourTreatmentOne"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/severeDehydrationTreatmentPartThreeFourTreatmentTwoText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/severeDehydrationTreatmentPartThreeFourTreatmentTwo"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/severeDehydrationTreatmentPartThreeFourTreatmentThreeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/severeDehydrationTreatmentPartThreeFourTreatmentThree"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/severeDehydrationTreatmentPartThreeFourTreatmentFourText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/severeDehydrationTreatmentPartTwoTreatmentFour"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/severeDehydrationTreatmentPartThreeFourTreatmentFiveText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/severeDehydrationTreatmentPartTwoTreatmentFive"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <!--Severe Dehydration Question No Treatment Segment-->
+                    <LinearLayout
+                        android:id="@+id/severeDehydrationTreatmentPartLast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/severeDehydrationTreatmentPartLastText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/severeDehydrationTreatmentPartLast"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <!--Severe Dehydration Treatment-->
+                    <LinearLayout
+                        android:id="@+id/severeDehydrationTreatment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/severeDehydrationTreatmentCheckbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/severeDehydrationTreatment"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--Long Term Diarrhoea Treatment-->
+                <LinearLayout
+                    android:id="@+id/layoutClassification36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/fragmentborder"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/classification36Label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/childcaresymptom71"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp" />
+
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/c36T2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/longtermDiarrhoeaT2"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/general_advice"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/recommendedFoodofLongTermDiarrhoea"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/longtermDiarrhoeaT1"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/longtermDiarrhoeaT3"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+
+
+                </LinearLayout>
+
+                <!--Classification 37 Segment-->
+                <LinearLayout
+                    android:id="@+id/layoutClassification37"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/fragmentborder"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/classification37Label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/childcaresymptom73"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/classification37Dose"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text=""
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/c37T1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/amasoyT1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/general_advice"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/amosoyT2"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+                <!--Classification 6,25 Treatment-->
+                <LinearLayout
+                    android:id="@+id/layoutClassification6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/fragmentborder"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/classification6Label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/general_treatment"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/classification6TreatmentEditText"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edittext_round"
+                        android:inputType="text"
+                        android:maxLines="3"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <!--Advice give Segment-->
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/advicegivencheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/advice_given"
+                    android:textSize="18sp" />
+
+                <!--Comment Segment-->
+                <LinearLayout
+                    android:id="@+id/childCareComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5sp">
+
+                    <TextView
+                        android:id="@+id/childCareCommentLabel"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/comment"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/childCareCommentEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:background="@drawable/edittext_round"
+                        android:gravity="top|left"
+                        android:inputType="text"
+                        android:maxLines="3"
+                        android:paddingLeft="2sp"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--button segment.............................-->
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="35dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnEPIPrevious"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/button_style_moderateblue"
+                    android:text="Previous"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/btnEPIEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_toLeftOf="@id/btnEPINext"
+                    android:background="@drawable/button_style_moderateblue"
+                    android:text="EDIT"
+                    android:textColor="#ffffff"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnEPINext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/button_style_moderateblue"
+                    android:text="Save"
+                    android:textColor="#ffffff" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

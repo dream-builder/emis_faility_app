@@ -1,0 +1,1598 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:id="@+id/pnc_activity_layout"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/rowHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/PNCHistoryLabel"
+            style="@style/rowHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:drawableLeft="@android:drawable/arrow_down_float"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/pncHistoryLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="প্রসবোত্তর সেবার ইতিহাস"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/pncmother"
+            style="@drawable/button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_shape"
+            android:text="Mother"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/pncMotherChildSelector"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/pncMotherSelector"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="মা"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/pncChildSelector"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/new_born"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/pncChildHistoryLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            android:text="@string/new_born"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/id_pncChildListDropdown"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="3sp"
+            android:background="@drawable/gradient_spinner"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/modifyLastPncButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="3sp"
+            android:onClick="onClick"
+            android:text="Modify Last Service" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/PNCHistoryLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/pnc_mother_frag"
+            android:layout_width="match_parent"
+            android:layout_height="250sp">
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/pnchistory_fragment"
+                android:name="org.sci.rhis.fwc.PNCHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="250sp"
+                tools:layout="@layout/fragment_pnchistory" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pnc_child_frag"
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:visibility="gone">
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/pnchistory_fragment_child"
+                android:name="org.sci.rhis.fwc.PNC_Child_History"
+                android:layout_width="wrap_content"
+                android:layout_height="250sp"
+                tools:layout="@layout/fragment_pnc_child_history" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pncLabel"
+        style="@style/rowHeading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/title_activity_pnc"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+    <TableLayout
+        android:id="@+id/pncVisitDates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:background="@drawable/layoutborder">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="130sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3sp"
+                android:layout_marginRight="1sp"
+                android:background="@drawable/textviewback"
+                android:padding="2sp"
+                android:text="@string/Visit1"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="130sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1sp"
+                android:layout_marginRight="1sp"
+                android:background="@drawable/textviewback"
+                android:padding="2sp"
+                android:text="@string/Visit2"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="130sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1sp"
+                android:layout_marginRight="1sp"
+                android:background="@drawable/textviewback"
+                android:padding="2sp"
+                android:text="@string/Visit3"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="130sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1sp"
+                android:background="@drawable/textviewback"
+                android:padding="2sp"
+                android:text="@string/Visit4"
+                android:textColor="@color/text_color"
+
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/pncVisit1Date"
+                android:layout_width="130sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3sp"
+                android:layout_marginTop="1sp"
+                android:layout_marginRight="1sp"
+                android:background="@drawable/textviewback"
+                android:padding="2sp"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/pncVisit2Date"
+                android:layout_width="130sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1sp"
+                android:layout_marginTop="1sp"
+                android:layout_marginRight="1sp"
+                android:background="@drawable/textviewback"
+                android:padding="2sp"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/pncVisit3Date"
+                android:layout_width="130sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1sp"
+                android:layout_marginTop="1sp"
+                android:layout_marginRight="1sp"
+                android:background="@drawable/textviewback"
+                android:padding="2sp"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/pncVisit4Date"
+                android:layout_width="130sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1sp"
+                android:layout_marginTop="1sp"
+                android:background="@drawable/textviewback"
+                android:padding="2sp"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+        </TableRow>
+    </TableLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/pncScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/pnc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10sp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:paddingBottom="20sp">
+
+            <LinearLayout
+                android:id="@+id/pncMotherInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2sp"
+                android:layout_marginRight="2sp"
+                android:background="@drawable/fragmentborder"
+                android:orientation="vertical"
+                android:padding="2sp">
+
+                <Button
+                    android:id="@+id/pncInfoMotherLabel"
+                    style="@style/rowStyle1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/pncInfo_mother"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/pncVisit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncVisitLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/visit"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/pncVisitValue"
+                        android:layout_width="30sp"
+                        android:layout_height="wrap_content"
+
+                        android:text=""
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncServiceOthers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/pncOthersCheckBox"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/other_source"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <Spinner
+                        android:id="@+id/pncServiceOthersSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:background="@drawable/gradient_spinner"
+                        android:entries="@array/FacilityType_DropDown"
+                        android:paddingLeft="2sp"
+                        android:paddingBottom="10sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncServiceDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncServiceDateLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/service_date"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/pncServiceDateValue"
+                        android:layout_width="120sp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_round"
+                        android:enabled="false"
+                        android:hint="dd/mm/yyyy"
+                        android:inputType="date"
+                        android:paddingLeft="2sp" />
+
+                    <ImageButton
+                        android:id="@+id/Date_Picker_Button"
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:layout_marginLeft="10sp"
+                        android:onClick="pickDate"
+                        android:src="@drawable/calendar_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncDrawback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncDrawbackLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/drawback"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <org.sci.rhis.fwc.MultiSelectionSpinner
+                        android:id="@+id/pncDrawbackSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:background="@drawable/gradient_spinner"
+                        android:inputType="text"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncTemperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncTemperatureLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/temperature"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/pncTemperatureValue"
+                        android:layout_width="120sp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_round"
+                        android:inputType="numberDecimal"
+                        android:maxLength="4"
+                        android:paddingLeft="2sp"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/pncTemperatureUnitLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" &#176;ফা"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncBloospresser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncBloospresserLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/blood_presser"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/pncBloodPresserValue"
+                        android:layout_width="60sp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_round"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:paddingLeft="2sp"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/pncBloospresserLevelD"
+                        android:layout_width="10sp"
+                        android:layout_height="wrap_content"
+
+                        android:text="/"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/pncBloodPresserValueD"
+                        android:layout_width="60sp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_round"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:paddingLeft="2sp"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncAnemia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncAnemiaLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/anemia"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <Spinner
+                        android:id="@+id/pncAnemiaSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:background="@drawable/gradient_spinner"
+                        android:entries="@array/Anemia_Dropdown"
+                        android:inputType="text"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncHemoglobin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncHemoglobinLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/hemoglobin"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/pncHemoglobinValue"
+                        android:layout_width="70sp"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/edittext_round"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:paddingLeft="2sp"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/pncHemoglobinLabelp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" %"
+                        android:textColor="@color/text_color"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/pncEdema"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncEdemaLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/edema"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <Spinner
+                        android:id="@+id/pncEdemaSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:background="@drawable/gradient_spinner"
+                        android:entries="@array/Jaundice_Edima_Dropdown"
+                        android:inputType="text"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncBreastCondition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncBreastConditionLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/breast_condition"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <Spinner
+                        android:id="@+id/pncBreastConditionSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:background="@drawable/gradient_spinner"
+                        android:entries="@array/Breast_Condition_DropDown"
+                        android:inputType="text"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncCervixInvolution"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncCervixInvolutionLevel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/cervix_involution"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <Spinner
+                        android:id="@+id/pncCervixInvolutionSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:background="@drawable/gradient_spinner"
+                        android:entries="@array/Cervix_Involution_DropDown"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncDischargeBleeding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/ancDischargeBleedingLevel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/hematuria"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <Spinner
+                        android:id="@+id/pncDischargeBleedingSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:background="@drawable/gradient_spinner"
+                        android:entries="@array/Discharge_Bleeding_DropDown"
+                        android:inputType="text"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncPerineum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncPerineumLevel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/perineum"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <Spinner
+                        android:id="@+id/pncPerineumSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:background="@drawable/gradient_spinner"
+                        android:entries="@array/Perineum_DropDown"
+                        android:inputType="text"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncFamilyPlanningMethods"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncFamilyPlanningMethodsLevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/family_planning_methods"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <Spinner
+                        android:id="@+id/pncFamilyPlanningMethodsSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:background="@drawable/gradient_spinner"
+                        android:entries="@array/Family_Planning_Methods_DropDown"
+                        android:inputType="text"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncDangerSigns"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncDangerSignsLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/complication"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <org.sci.rhis.fwc.MultiSelectionSpinner
+                        android:id="@+id/pncDangerSignsSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/gradient_spinner"
+                        android:inputType="text"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncDisease"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncDiseaseLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/disease"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <org.sci.rhis.fwc.MultiSelectionSpinner
+                        android:id="@+id/pncDiseaseSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:background="@drawable/gradient_spinner"
+                        android:inputType="text"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncTreatment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncTreatmentLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/treatment"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <org.sci.rhis.fwc.MultiSelectionSpinner
+                        android:id="@+id/pncTreatmentSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:background="@drawable/gradient_spinner"
+                        android:inputType="text"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncAdvice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncAdviceLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/advice"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <org.sci.rhis.fwc.MultiSelectionSpinner
+                        android:id="@+id/pncAdviceSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:background="@drawable/gradient_spinner"
+                        android:inputType="text"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncRefer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncReferLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/refer"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <CheckBox
+                        android:id="@+id/pncReferCheckBox"
+                        android:layout_width="120sp"
+                        android:layout_height="wrap_content"
+
+                        android:inputType="text"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncReferCenterName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncReferCenterNameLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/center_name"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/pncReferCenterNameSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:background="@drawable/gradient_spinner"
+                        android:entries="@array/FacilityType_DropDown"
+                        android:inputType="text"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncReason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncReasonLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/reason"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <org.sci.rhis.fwc.MultiSelectionSpinner
+                        android:id="@+id/pncReasonSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:background="@drawable/gradient_spinner"
+                        android:inputType="text"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/pncSaveButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:onClick="onClick"
+                        android:padding="10sp"
+                        android:paddingBottom="10sp"
+                        android:text="Save"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/pncCancelButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:onClick="onClick"
+                        android:padding="10sp"
+                        android:paddingBottom="10sp"
+                        android:text="Cancel"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/pncDeleteButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClick"
+                        android:text="Delete"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/pncUpdateCancelButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClick"
+                        android:text="Cancel"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pncChildInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10sp"
+
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:paddingBottom="20sp"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/pncInfoChildLabel"
+                    style="@style/rowStyle1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/pncInfo_child"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/pncNewBorn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncNewBornLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/new_born"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/pncNewBornNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncChildVisit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncChildVisitLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/visit"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/pncChildVisitValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncChildServiceDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncChildServiceDateLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0sp"
+                        android:text="@string/service_date"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/pncChildServiceDateValue"
+                        android:layout_width="120sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0sp"
+                        android:background="@drawable/edittext_round"
+                        android:enabled="false"
+                        android:hint="dd/mm/yyyy"
+                        android:inputType="date"
+                        android:paddingLeft="2sp" />
+
+                    <ImageView
+                        android:id="@+id/Date_Picker_Button_Child"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="0sp"
+                        android:onClick="pickDate"
+                        android:src="@drawable/calendar_icon" />
+
+                    <CheckBox
+                        android:id="@+id/pncChildOthersCheckBox"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0sp"
+                        android:text="@string/other_source"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncChildServiceOthers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/pncChildServiceOthersSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="430sp"
+                        android:background="@drawable/gradient_spinner"
+                        android:entries="@array/FacilityType_DropDown"
+                        android:paddingLeft="2sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncChildDrawback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncChildDrawbackLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0sp"
+                        android:text="@string/drawback"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <org.sci.rhis.fwc.MultiSelectionSpinner
+                        android:id="@+id/pncChildDrawbackSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0sp"
+                        android:background="@drawable/gradient_spinner"
+                        android:inputType="text"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncChildTemperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncChildTemperatureLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0sp"
+                        android:text="@string/temperature"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/pncChildTemperatureValue"
+                        android:layout_width="60sp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_round"
+                        android:inputType="numberDecimal"
+                        android:maxLength="4"
+                        android:paddingLeft="2sp"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/pncChildTemperatureUnitLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" &#176;ফা"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncChildWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncChildWeightLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0sp"
+                        android:text="@string/weight"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/pncChildWeightValue"
+                        android:layout_width="60sp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_round"
+                        android:inputType="numberDecimal"
+                        android:maxLength="4"
+                        android:paddingLeft="2sp"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncChildBreath"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncChildBreathLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0sp"
+                        android:text="@string/breath_per_minute"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/pncChildBreathValue"
+                        android:layout_width="60sp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_round"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:paddingLeft="2sp"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncChildDangerSigns"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncChildDangerSignsLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0sp"
+                        android:text="@string/complication"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <org.sci.rhis.fwc.MultiSelectionSpinner
+                        android:id="@+id/pncChildDangerSignsSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0sp"
+                        android:background="@drawable/gradient_spinner"
+                        android:inputType="text"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncChildOnlyBreastFeeding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncChildOnlyBreastFeedingLabel"
+                        android:layout_width="260sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0sp"
+                        android:text="@string/only_breast_feeding"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <CheckBox
+                        android:id="@+id/pncChildOnlyBreastFeedingCheckBox"
+                        android:layout_width="60sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:inputType="text"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncChildDisease"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncChildDiseaseLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0sp"
+                        android:text="@string/disease"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <org.sci.rhis.fwc.MultiSelectionSpinner
+                        android:id="@+id/pncChildDiseaseSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0sp"
+                        android:background="@drawable/gradient_spinner"
+                        android:inputType="text"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncChildTreatment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncChildTreatmentLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0sp"
+                        android:text="@string/treatment"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <org.sci.rhis.fwc.MultiSelectionSpinner
+                        android:id="@+id/pncChildTreatmentSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0sp"
+                        android:background="@drawable/gradient_spinner"
+                        android:inputType="text"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncChildAdvice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncChildAdviceLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0sp"
+                        android:text="@string/advice"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <org.sci.rhis.fwc.MultiSelectionSpinner
+                        android:id="@+id/pncChildAdviceSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0sp"
+                        android:background="@drawable/gradient_spinner"
+                        android:inputType="text"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncChildRefer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncChildReferLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0sp"
+                        android:text="@string/refer"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <CheckBox
+                        android:id="@+id/pncChildReferCheckBox"
+                        android:layout_width="120sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0sp"
+                        android:inputType="text"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncChildReferCenterName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncChildReferCenterNameLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0sp"
+                        android:text="@string/center_name"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/pncChildReferCenterNameSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0sp"
+                        android:background="@drawable/gradient_spinner"
+                        android:entries="@array/FacilityType_DropDown"
+                        android:inputType="text"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncChildReason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pncChildReasonLabel"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0sp"
+                        android:text="@string/reason"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <org.sci.rhis.fwc.MultiSelectionSpinner
+                        android:id="@+id/pncChildReasonSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0sp"
+                        android:background="@drawable/gradient_spinner"
+                        android:inputType="text"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pncChildButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/layoutbordersimple"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/pncChildSaveButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClick"
+                        android:padding="10sp"
+                        android:paddingBottom="10sp"
+                        android:text="Save"
+                        android:textSize="20sp"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/pncChildCancelButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClick"
+                        android:padding="10sp"
+                        android:paddingBottom="10sp"
+                        android:text="Cancel"
+                        android:textSize="20sp"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/pncChildDeleteButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClick"
+                        android:text="Delete"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/pncChildUpdateCancelButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClick"
+                        android:text="Cancel"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

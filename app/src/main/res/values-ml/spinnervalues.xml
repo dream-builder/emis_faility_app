@@ -1,0 +1,1477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Blood_Group_Dropdown">
+        <item></item>
+        <item> A+ </item>
+        <item> A- </item>
+        <item> B+ </item>
+        <item> B- </item>
+        <item> AB+ </item>
+        <item> AB- </item>
+        <item> O+ </item>
+        <item> O- </item>
+    </string-array>
+
+    <string-array name="search_parameter">
+        <item>Health ID</item>
+        <item>Mobile No </item>
+        <item>National ID</item>
+        <item>Birth Reg. No</item>
+        <item>NRC ID</item>
+        <item>Service Search</item>
+        <item>Pregnant Woman Search</item>
+        <item>Advance Search</item>
+        <item>Last Search Result</item>
+    </string-array>
+
+    <string-array name="Search_Criteria_SACMO">
+        <item>Health ID</item>
+        <item>Mobile No </item>
+        <item>National ID</item>
+        <item>Birth Reg. No</item>
+        <item>NRC ID</item>
+        <item>Service Search</item>
+        <item>Advance Search</item>
+        <item>Last Search Result</item>
+    </string-array>
+
+    <string-array name="nrcClientsSex">
+        <item>পুরুষ </item>
+        <item>মহিলা </item>
+        <item>হিজরা </item>
+    </string-array>
+
+    <string-array name="sevice_type_dropdown">
+        <item>  </item>
+        <item> ANC </item>
+        <item> DELIVERY </item>
+        <item> PNC </item>
+        <item> PILL_CONDOM </item>
+        <item> INJECTABLE </item>
+        <item> IUD </item>
+        <item> IUD_FOLLOWUP </item>
+        <item> GENERAL PATIENT </item>
+        <item> PAC </item>
+        <item> Implant</item>
+        <item> Implant_Followup</item>
+        <item> PMS </item>
+        <item> PMS_FOLLOWUP</item>
+        <item> CHILD SERVICE</item>
+        <!--<item> MR </item>-->
+        <!--<item> IMCI </item>-->
+    </string-array>
+
+    <string-array name="pcMethod_Dropdown">
+        <item></item>
+        <item> খাবার বড়ি ‘ব‘</item>
+        <item> কনডম ‘ক‘</item>
+        <item> ছেড়ে দিয়েছেন ‘ছে‘</item>
+        <item> অন্য পদ্ধতি নিয়েছেন ‘অ‘</item>
+    </string-array>
+
+    <string-array name="pc_top3Method_Dropdown">
+        <item></item>
+        <item> খাবার বড়ি (সুখী) </item>
+        <item> খাবার বড়ি (আপন) </item>
+        <item> খাবার  বড়ি(অন্যান্য) </item>
+        <item> কনডম </item>
+    </string-array>
+
+    <string-array name="pill_Dropdown">
+        <item></item>
+        <item> সুখী </item>
+        <item> আপন </item>
+        <item> অন্যান্য </item>
+    </string-array>
+
+    <string-array name="left_Dropdown">
+        <item></item>
+        <item> পার্শ্ব প্রতিক্রিয়ার জন্য ‘ছে(প)‘</item>
+        <item> সন্তান নিবে ‘ছে(স)‘</item>
+        <item> মজুদ সংকট/ সরবরাহ নাই ‘ছে(ম)‘</item>
+        <item> স্বামী বিদেশে / কাছে নাই ‘ছে(সম)‘</item>
+    </string-array>
+
+    <string-array name="left_Dropdown_json">
+        <item></item>
+        <item> পার্শ্ব প্রতিক্রিয়ার জন্য </item>
+        <item> সন্তান নিবে </item>
+        <item> মজুদ সংকট/ সরবরাহ নাই </item>
+        <item> স্বামী বিদেশে / কাছে নাই </item>
+    </string-array>
+
+    <string-array name="pcOther_Dropdown">
+        <item></item>
+        <item> ইনজেকটেবলস ‘অ(ই)‘</item>
+        <item> আইইউডি ‘অ(টি)‘</item>
+        <item> ইমপ্ল্যান্ট  ‘অ(ইম)‘</item>
+        <item> স্থায়ী পদ্ধতি ( এনএসভি ) ‘অ(পু)‘</item>
+        <item> স্থায়ী পদ্ধতি ( টিউবেকটমি ) ‘অ(ম)‘</item>
+        <item> অন্য যে কোন অবস্থা ‘অ(যে)‘</item>
+    </string-array>
+
+    <string-array name="pcOther_Dropdown_json">
+        <item></item>
+        <item> ইনজেকটেবলস </item>
+        <item> আইইউডি </item>
+        <item> ইমপ্ল্যান্ট </item>
+        <item> স্থায়ী পদ্ধতি ( এনএসভি ) </item>
+        <item> স্থায়ী পদ্ধতি ( টিউবেকটমি ) </item>
+        <item> অন্য যে কোন অবস্থা </item>
+    </string-array>
+
+    <string-array name="FacilityType_DropDown">
+        <item></item>
+        <item> মেডিকেল কলেজ হাসপাতাল </item>
+        <item> জেলা সদর হাসপাতাল </item>
+        <item> মা ও শিশু কল্যাণ কেন্দ্র </item>
+        <item> উপজেলা স্বাস্থ্য কমপ্লেক্স </item>
+        <item> ইউনিয়ন স্বাস্থ্য ও পরিবার কল্যান কেন্দ্র </item>
+        <item> কমিউনিটি ক্লিনিক </item>
+        <item> এনজিও হাসপাতাল / ক্লিনিক / সেবা কেন্দ্র </item>
+        <item> প্রাইভেট ক্লিনিক / হাসপাতাল </item>
+        <item> অন্যান্য</item>
+    </string-array>
+
+    <string-array name="FacilityType_DropDown_Child_Register">
+        <item></item>
+        <item> মেডিকেল কলেজ হাসপাতাল </item>
+        <item> জেলা সদর হাসপাতাল </item>
+        <item> মা ও শিশু কল্যাণ কেন্দ্র </item>
+        <item> উপজেলা স্বাস্থ্য কমপ্লেক্স </item>>
+    </string-array>
+
+    <string-array name="FacilityPlace_DropDown">
+        <item></item>
+        <item> বাড়ি </item>
+        <item> সেবাকেন্দ্র </item>
+    </string-array>
+
+    <string-array name="DeliveryType_DropDown">
+        <item></item>
+        <item> স্বাভাবিক </item>
+        <item> সিজারিয়ান </item>
+    </string-array>
+
+    <string-array name="MinDeliveryType_DropDown">
+        <item></item>
+        <item> স্বাভাবিক </item>
+        <item> সিজারিয়ান </item>
+        <item> গর্ভপাত </item>
+        <item> ফলস </item>
+    </string-array>
+
+    <string-array name="DeliveryTime_DropDown">
+        <item> AM </item>
+        <item> PM </item>
+    </string-array>
+
+    <string-array name="DeliveryAttendant_DropDown">
+        <item></item>
+        <item>ডাক্তার</item>
+        <item>নার্স</item>
+        <item>পরিবার কল্যাণ পরিদর্শিকা (এফ.ডব্লিউ.ভি)</item>
+        <item>উপ-সহকারী কমিউনিটি মেডিকেল অফিসার (এস.এ.সি.এম.ও)</item>
+        <item>প্যারামেডিক্স </item>
+        <item>স্বাস্থ্য সহকারী (এইচ.এ)/(সি.এস.বি.এ)</item>
+        <item>পরিবার কল্যাণ সহকারী (এফ.ডব্লিউ.এ)/(সি.এস.বি.এ)</item>
+        <item>ধাত্রী (টি.বি.এ)</item>
+        <item>আত্মীয়/প্রতিবেশী</item>
+        <item>মিডওয়াইফ</item>
+    </string-array>
+
+    <string-array name="IUDRemoverDesignation_DropDown">
+        <item></item>
+        <item>পরিবার কল্যাণ পরিদর্শিকা (এফ.ডব্লিউ.ভি)</item>
+        <item>সাব-অ্যাসিস্ট্যান্ট কমিউনিটি মেডিকেল অফিসার</item>
+        <item>মেডিকেল অফিসার (এমসিএইচ-এফপি)</item>
+        <item>মেডিকেল অফিসার (ক্লিনিক)</item>
+    </string-array>
+
+    <string-array name="ImplantRemoverDesignation_DropDown">
+        <item></item>
+        <item>সাব-অ্যাসিস্ট্যান্ট কমিউনিটি মেডিকেল অফিসার</item>
+        <item>মেডিকেল অফিসার (এমসিএইচ-এফপি)</item>
+        <item>মেডিকেল অফিসার (ক্লিনিক)</item>
+    </string-array>
+
+    <string-array name="Breast_Condition_DropDown">
+        <item></item>
+        <item> স্বাভাবিক </item>
+        <item> ফোলা</item>
+        <item> ব্যথাযুক্ত </item>
+    </string-array>
+
+    <string-array name="Injectable_Breast_Condition_DropDown">
+        <item></item>
+        <item> স্বাভাবিক </item>
+        <item> স্তনে চাকা </item>
+    </string-array>
+
+    <string-array name="Uterus_Shape_DropDown">
+        <item></item>
+        <item> স্বাভাবিক </item>
+        <item> স্বাভাবিক নয় </item>
+    </string-array>
+
+    <string-array name="Uterus_Position_DropDown">
+        <item></item>
+        <item> এন্টিভার্টেড </item>
+        <item> রেট্রোভার্টেড </item>
+    </string-array>
+
+    <string-array name="Uterus_Movement_DropDown">
+        <item></item>
+        <item> নড়ানো যায়  </item>
+        <item> নড়ানো যায় না </item>
+    </string-array>
+
+    <string-array name="Uterus_Movement_Pain_DropDown">
+        <item></item>
+        <item> ব্যথা হয়  </item>
+        <item> ব্যথা হয় না </item>
+    </string-array>
+
+    <string-array name="Injection_Name_DropDown">
+        <item></item>
+        <item> ইনজেকশন (ডিএমপিএ) </item>
+    </string-array>
+
+    <string-array name="IUD_Name_DropDown">
+        <item></item>
+        <item> কপার-টি ৩৮০ এ </item>
+    </string-array>
+
+    <string-array name="Implant_Name_DropDown">
+        <item></item>
+        <item>ইমপ্ল্যান্ট(ইমপ্ল্যানন)</item>
+        <item>ইমপ্ল্যান্ট(জ্যাডেল)</item>
+    </string-array>
+
+    <string-array name="IUD_Refer_Reason_DropDown">
+        <item></item>
+        <item>তলপেটে প্রচন্ড ব্যাথা</item>
+        <item>অতিরিক্ত রক্তক্ষরণ</item>
+        <item>সুতা হারিয়ে যাওয়া অথবা ছোট বা বড় হয়ে যাওয়া</item>
+        <item>পদ্ধতি পরিবর্তন (ইমপ্ল্যান্ট বা অন্যান্য)</item>
+        <item>অন্যান্য </item>
+    </string-array>
+
+    <string-array name="IUD_Management_DropDown">
+        <item></item>
+        <item>আইইউডি পরানোর আগে এবং পরে গ্রহীতাকে এ বিষয়ে কাউন্সেলিং করুন</item>
+        <item>গ্রহীতাকে আয়রণ সম্বলিত পুষ্টিকর খাবার খেতে পরামর্শ দিন</item>
+        <item> ক্ষত দেখা দিলে ক্ষতের আকার ও রক্তপাতের পরিমাণের উপর ভিত্তি করে রিপেয়ার করুন</item>
+        <item>রক্তস্রাব অসহ্য মনে হলে আইইউডি খুলে দিন</item>
+        <item>রক্তচাপ,নাড়ীর গতি ও তাপমাত্রা দেখুন</item>
+        <item>গর্ভবতী কি-না পরীক্ষা করে দেখুন</item>
+        <item>প্রচন্ড ব্যথা হলে ব্যথানাশক ইনজেকশন দিন</item>
+        <item>প্রয়োজনীয় ইতিহাস নিন ও শারীরিক পরীক্ষা করুন</item>
+        <item>অন্যান্য </item>
+    </string-array>
+
+    <string-array name="IUD_Complication_DropDown">
+        <item></item>
+        <item>অস্বাভাবিক রক্তস্রাব</item>
+        <item>তলপেটে মোচড়ানো ব্যথা</item>
+        <item>আইইউডি বের হয়ে যাওয়া</item>
+        <item>জরায়ু ছিদ্র হয়ে যাওয়া</item>
+        <item>সুতা পাওয়া যাচ্ছে না</item>
+        <item>সুতা ছোট</item>
+        <item>সুতা বড়</item>
+        <item>গর্ভধারণ</item>
+        <item>তলপেটে প্রদাহ</item>
+        <item>যোনি পথের স্রাব</item>
+        <item>চুলকানি </item>
+        <item>অন্যান্য</item>
+    </string-array>
+
+    <string-array name="IUD_Remove_Reason_DropDown">
+        <item></item>
+        <item> গ্রহীতা কোন কারনে আইইউডি ব্যবহার করতে না চাওয়া এবং তা খোলার ইচ্ছা প্রকাশ করা </item>
+        <item> গ্রহীতা সন্তান নিতে চাওয়া </item>
+        <item> আইইউডি\'র মেয়াদ শেষ হয়ে যাওয়া </item>
+        <item> গ্রহীতার মেনোপজ বা মাসিক বন্ধ হয়ে যাওয়া </item>
+        <item> আইইউডি সংক্রান্ত কোন জটিলতা বা সমস্যা </item>
+        <item> অসুস্থতা </item>
+        <item> অতিরিক্ত রক্তক্ষরণ </item>
+        <item> তলপেটে প্রচন্ড ব্যথা </item>
+        <item> সুতা হারিয়ে যাওয়া বা না পাওয়া </item>
+        <item> অন্যান্য</item>
+    </string-array>
+
+    <string-array name="IUD_Treatment_DropDown">
+        <item></item>
+        <item>Tab. Paracetamol 500 mg</item>
+        <item>Tab. Ibuprofen 400 mg</item>
+        <item>Tab. Ferrous Sulfate 300 mg </item>
+        <item>Cap. Doxycycline 100 mg</item>
+        <item>Tab. Metronidazole 400 mg</item>
+        <item>Tab. Ranitidine 150 mg</item>
+        <item>Cap. Amoxicillin 500 mg</item>
+        <item>Other</item>
+    </string-array>
+
+
+
+    <string-array name="Implant_Treatment_DropDown">
+        <item></item>
+        <item>Tab. Paracetamol 500 mg</item>
+        <item>Tab. Ibuprofen 400 mg</item>
+        <item>Tab. Iron Folic Acid </item>
+        <item>Pill (Sukhi) </item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="Implant_Remove_Reason_DropDown">
+        <item></item>
+        <item> গ্রহীতা কোন কারনে ইমপ্ল্যান্ট ব্যবহার করতে না চাওয়া এবং তা খোলার ইচ্ছা প্রকাশ করা </item>
+        <item> গ্রহীতা সন্তান নিতে চাওয়া </item>
+        <item> ইমপ্ল্যান্ট\'র মেয়াদ শেষ হয়ে যাওয়া </item>
+        <item> গ্রহীতার মেনোপজ বা মাসিক বন্ধ হয়ে যাওয়া </item>
+        <item> ইমপ্ল্যান্ট সংক্রান্ত কোন জটিলতা বা সমস্যা </item>
+        <item> অসুস্থতা </item>
+        <item> অতিরিক্ত রক্তক্ষরণ </item>
+        <item> তলপেটে প্রচন্ড ব্যথা </item>
+        <item> অন্যান্য</item>
+    </string-array>
+
+    <string-array name="Implant_Complication_DropDown">
+        <item></item>
+        <item>মাসিক বন্ধ হয়ে যাওয়া</item>
+        <item>ইমপ্লান্ট রড স্থাপনের জায়গায় সংক্রমণ</item>
+        <item>তলপেটে প্রচন্ড ব্যাথা</item>
+        <item>ইমপ্লান্টের কোন রড বেড় হয়ে আসা</item>
+        <item>অতিরিক্ত রক্তস্রাব</item>
+        <item>প্রচন্ড মাথা ব্যাথা বা চোখে ঝাপসা দেখা</item>
+    </string-array>
+
+    <string-array name="Implant_Management_DropDown">
+        <item></item>
+    </string-array>
+
+    <string-array name="Implant_Refer_Reason_DropDown">
+        <item></item>
+    </string-array>
+
+    <string-array name="Injectable_Side_Effect_DropDown">
+        <item></item>
+        <item> মাসিক বন্ধ </item>
+        <item> ফোঁটা ফোঁটা রক্তস্রাব </item>
+        <item> অতিরিক্ত রক্তস্রাব </item>
+        <item> দুই মাসিকের মধ্যবর্তী সময়ে রক্তস্রাব </item>
+        <item> ইনজেকশনের স্থানে সংক্রমণ </item>
+        <item> চোখ ও চামড়া অথবা এর যে কোন একটি হলুদ বর্ণ ধারণ করা (জন্ডিস) </item>
+        <item> শ্বাসকষ্ট </item>
+        <item> অল্প পরিশ্রমে বুকে ব্যথা হওয়া </item>
+        <item> মাথা ধরা </item>
+        <item> ঘন ঘন প্রচণ্ড মাথা ব্যথা ও চোখে ঝাপসা দেখা </item>
+        <item> পায়ের পিছনে প্রচণ্ড ব্যথা হওয়া এবং তা কয়েকদিন স্থায়ী হওয়া </item>
+        <item> ইনজেকশন নেয়া বন্ধ করার পরও গর্ভবতী না হওয়া </item>
+        <item> মানসিক অবসাদ</item>
+        <item> ওজন বৃদ্ধি </item>
+        <item> মানসিক অবসাদ </item>
+        <item> ঝিমুনি </item>
+        <item> অন্যান্য </item>
+    </string-array>
+
+    <string-array name="Injectable_Advice_DropDown">
+        <item></item>
+        <item> অন্য কোন পদ্ধতি গ্রহনের পরামর্শ </item>
+        <item> ইনজেকশন নেয়া বাদ </item>
+        <item> কম করে খাবার খাবেন </item>
+        <item> দিনে প্রায় ১ ঘণ্টা হাঁটবেন </item>
+        <item> প্রতিদিন ১০-১২ গ্লাস পানি খাবেন </item>
+        <item> অন্যান্য </item>
+    </string-array>
+
+    <string-array name="Injectable_Treatment_DropDown">
+        <item></item>
+        <item> Tab. Ferus Fumarate 200 mg + Folic Acid 0.20 mg</item>
+        <item> Low Doze Pill </item>
+        <item> Standard Doze Pill </item>
+        <item> Ethinyl Estradiol 30 mcg </item>
+        <item> Ethinyl Estradiol 50 mcg </item>
+        <item> Tab Ibuprofen 400 mg</item>
+        <item> Other </item>
+    </string-array>
+
+    <string-array name="Injectable_Refer_Reason_DropDown">
+        <item></item>
+        <item>তলপেটে প্রচন্ড ব্যাথা</item>
+        <item>অতিরিক্ত রক্তক্ষরণ</item>
+        <item>ইঞ্জেকশনের জায়গায় সংক্রমণ</item>
+        <item>পদ্ধতি পরিবর্তন (ইমপ্ল্যান্ট বা অন্যান্য)</item>
+        <item> অন্যান্য </item>
+    </string-array>
+
+    <string-array name="VaginalWall_DropDown">
+        <item></item>
+        <item> স্বাভাবিক </item>
+        <item> সংক্রমিত </item>
+    </string-array>
+
+    <string-array name="Discharge_Bleeding_DropDown">
+        <item></item>
+        <item> স্বাভাবিক </item>
+        <item> দূর্গন্ধযুক্ত </item>
+        <item> অতিরিক্ত </item>
+    </string-array>
+
+    <string-array name="Perineum_DropDown">
+        <item></item>
+        <item> স্বাভাবিক </item>
+        <item> ছিঁড়ে গিয়েছে  </item>
+        <item> অন্যান্য জটিলতা </item>
+    </string-array>
+
+    <string-array name="Cervix_Involution_DropDown">
+        <item></item>
+        <item> নাভি বরাবর </item>
+        <item> নাভি হতে ২-৩ ইঞ্চি নিচে  </item>
+        <item> অনুভব করা যাচ্ছে না </item>
+    </string-array>
+
+    <string-array name="Family_Planning_Methods_DropDown">
+        <item></item>
+        <item> কনডম </item>
+        <item> খাবার  বড়ি(সুখী) </item>
+        <item> খাবার  বড়ি(আপন) </item>
+        <item> খাবার  বড়ি(অন্যান্য) </item>
+        <item> ইনজেকশন (ডিএমপিএ) </item>
+        <item> আই ইউ ডি  </item>
+    </string-array>
+
+    <string-array name="FP_Methods_Screening_DropDown">
+        <item></item>
+        <item>কনডম</item>
+        <item>খাবার  বড়ি(সুখী)</item>
+        <item>খাবার  বড়ি(আপন)</item>
+        <item>খাবার  বড়ি(অন্যান্য)</item>
+        <item>ইনজেকশন (ডিএমপিএ)</item>
+        <item>আই ইউ ডি</item>
+        <item>ইমপ্ল্যান্ট(ইমপ্ল্যানন)</item>
+        <item>ইমপ্ল্যান্ট(জ্যাডেল)</item>
+        <item>স্থায়ী পদ্ধতি (এনএসভি)</item>
+        <item>স্থায়ী পদ্ধতি (টিউবেকটমি)</item>
+    </string-array>
+
+    <string-array name="FP_Methods_Screening_DropDown_Male">
+        <item></item>
+        <item>কনডম</item>
+        <item>স্থায়ী পদ্ধতি (এনএসভি)</item>
+    </string-array>
+
+
+    <string-array name="Delivery_Newborn_Refer_Reason_DropDown">
+        <item></item>
+        <item> জন্মগত শ্বাসরুদ্ধতা (asphyxia)	</item>
+        <item> অপরিণত জন্ম (Prematurity)	</item>
+        <item> কম ওজন নিয়ে জন্ম	</item>
+        <item>"অন্যান্য"</item>
+    </string-array>
+
+    <string-array name="FP_Visit_Reason_DropDown">
+        <item></item>
+        <item> পুনঃ সরবরাহ/ফলোআপ/পার্শ্ব-প্রতিক্রিয়া বা জটিলতার ব্যবস্থাপনা</item>
+        <item> পদ্ধতি পরিবর্তন	</item>
+    </string-array>
+
+    <string-array name="ANC_Advice_DropDown">
+        <item></item>
+        <item>	গর্ভবতী মাকে কমপক্ষে ৪ বার গর্ভকালীন সময়ে ভিজিটে আসুন 	</item>
+        <item>	অন্য সময়ের চাইতে বেশী পরিমাণে (কম পক্ষে ১ মুঠ চালের ভাত ও ১ চামচ ডাল বেশী) খান	</item>
+        <item>	বেশী পরিমাণে পানি খান (কম পক্ষে ৮ গ্লাস)	</item>
+        <item>	রক্তস্বল্পতা প্রতিরোধ করার জন্য মাকে আয়রন সমৃদ্ধ খাবার যেমন সবুজ শাকসবজি, ডাল, ডিম খেতে হবে এবং এগুলোর সাথে আয়রন এবং ফলিক এসিড ট্যাবলেট খেতে খান 	</item>
+        <item>	যদি পা ফুলে যায় অতিরিক্ত (আলগা) লবণ খাওয়া বাদ দিতে হবে এবং পর্যাপ্ত বিশ্রাম নিন </item>
+        <item>	দুপুরের খাবার পর কমপক্ষে ২ ঘন্টা বিশ্রাম ও রাতে ৮ ঘন্টা ঘুমান (বিশেষ করে বাম কাত হয়ে)</item>
+        <item>	স্বাভাবিক সাংসারিক হালকা কাজকর্মে উত্‍সাহ কিন্তু ভারী কাজে নিষেধ	 </item>
+        <item>	প্রথম তিন মাস ও শেষ তিনমাস দীর্ঘ ভ্রমণ এড়িয়ে চলুন 	</item>
+        <item>	টাইট (আঁটসাঁট) পোশাক পরিহার এবং ঢিলা ও আরামদায়ক পোশাক পড়ুন </item>
+        <item>	(গর্ভপাতের আশংকা থাকলে) প্রথম তিনমাস এবং শেষের দুইমাস স্বামী সহবাস থেকে বিরত থাকুন </item>
+        <item>	টিটি টিকা দিন 	</item>
+        <item>	বারবার অল্প করে খান , তৈলাক্ত ও মসলা জাতীয় খাবার এবং ধূমপানে বিরত থাকুন	</item>
+        <item>	তিন বেলা ভারী খাবারের পরিবর্তে অল্প অল্প করে বারেবারে খান </item>
+        <item>	(কোষ্ঠকাঠিন্য হলে) প্রচুর পরিমাণ পানি, শাকসবজি, হালকা গরম দুধ এবং ইসুপগুলের ভুষি খান </item>
+        <item>	(পায়ে পানি আসলে) পা সামান্য উঁচু রাখা	</item>
+        <item>	প্রসব পরবর্তী পরিবার পরিকল্পনা বিষয়ক কাউন্সেলিং </item>
+        <item>  আইএফএ, হাত ধোয়া, মায়ের পুষ্টি বিষয়ক কাউন্সেলিং </item>
+        <item>  আইওয়াইসিএফ, ভিটামিন-এ বিষয়ক কাউন্সেলিং </item>
+    </string-array>
+
+    <string-array name="GP_Advice_DropDown">
+        <item></item>
+        <item>	বেশী পরিমাণে পানি খান (কম পক্ষে ৮ গ্লাস)	</item>
+        <item>	বারবার অল্প করে খান , তৈলাক্ত ও মসলা জাতীয় খাবার এবং ধূমপানে বিরত থাকুন	</item>
+        <item>	তিন বেলা ভারী খাবারের পরিবর্তে অল্প অল্প করে বারেবারে খান </item>
+        <item>	(কোষ্ঠকাঠিন্য হলে) প্রচুর পরিমাণ পানি, শাকসবজি, হালকা গরম দুধ এবং ইসুপগুলের ভুষি খান </item>
+        <item>	প্রজননতন্ত্রের সংক্রমণ ও যৌনবাহিত বিষয়ে কাউন্সেলিং </item>
+        <item>	বয়ঃসন্ধিকালীন পরিবর্তন বিষয়ে কাউন্সেলিং</item>
+        <item>	বাল্যবিবাহ ও কিশোরী মাতৃত্বের কুফল বিষয়ে কাউন্সেলিং</item>
+        <item>	বিভিন্ন ধরণের পুষ্টিকর ও সুষম খাবার বিষয়ে কাউন্সেলিং</item>
+        <item>	কৈশোর সহিংসতা প্রতিরোধ বিষয়ে কাউন্সেলিং</item>
+        <item>	মানসিক সমস্যা এবং মাদকাসক্তি প্রতিরোধ ও নিরাময় বিষয়ে কাউন্সেলিং</item>
+        <item>	কিশোর-কিশোরীর ব্যক্তিগত পরিষ্কার পরিচ্ছন্না ও কিশোরীর স্যানিটারি প্যাড বিষয়ে কাউন্সেলিং</item>
+    </string-array>
+
+    <string-array name="PNC_Mother_Advice_DropDown">
+        <item></item>
+        <item>	অন্য সময়ের চাইতে বেশী পরিমাণে (কম পক্ষে ১ মুঠ চালের ভাত ও ১ চামচ ডাল বেশী) খান	</item>
+        <item>	রক্তস্বল্পতা প্রতিরোধ করার জন্য মাকে আয়রন সমৃদ্ধ খাবার যেমন সবুজ শাকসবজি, ডাল, ডিম খেতে হবে এবং এগুলোর সাথে আয়রন এবং ফলিক এসিড ট্যাবলেট খেতে খান </item>
+        <item>	যদি পা ফুলে যায় অতিরিক্ত (আলগা) লবণ খাওয়া বাদ দিতে হবে এবং পর্যাপ্ত বিশ্রাম নিন	</item>
+        <item>	৩ মাস আয়রন এবং ১ মাস ফলিক এসিড খান	</item>
+        <item>	প্রসবের ২ সপ্তাহের মধ্যে ভিটামিন-এ ক্যাপসুল ২,০০,০০০ আই.ইউ	 </item>
+        <item>	প্রসব ঝরা বন্ধ করার জন্য পেরিনিয়াম ও পেটের পেশীর ব্যায়াম করুন	 </item>
+        <item>	প্রসব ও পায়খানার পর পেরিনিয়াম ভালভাবে পরিষ্কার করুন 	</item>
+        <item>	পেরিনিয়ামের ক্ষত শুকনা ও পরিষ্কার রাখুন 	</item>
+        <item>	পেরিনিয়ামের প্যাড/কাপড় দিনে কমপক্ষে চার বার পরিবর্তন করুন  ৷ যদি প্রসবোত্তর স্রাব বেশী হয়, তখন বেশী বার পরিবর্তন করুন ৷ যদি কাপড় ব্যবহার করে তা ভালমতো ধুয়ে অথবা গরম পানিতে ধুয়ে রোদ্রে শুকিয়ে ব্যবহার করুন 	</item>
+        <item>	প্রতিদিন গোসল করুন	</item>
+        <item>	প্রসবের পর ৬ সপ্তাহ পর্যন্ত স্বামী সহবাস করবেন না  </item>
+        <item>	অন্যান্য 	</item>
+    </string-array>
+
+    <string-array name="PNC_Child_Advice_DropDown">
+        <item></item>
+        <item>	নবজাত শিশুকে কখনই অনাবৃত রাখবেন না৷ 	</item>
+        <item>	শিশু জন্মের সাথে সাথে বা ৭২ ঘণ্টার মধ্যে গোসল করাবেন না৷ </item>
+        <item>	প্রথম ২৪ ঘনটায় শিশুর শরীর কোন প্রকার তৈল মেখে পরিষ্কার করবেন না৷ </item>
+        <item>	কখনই ভারনিক্স (Vernix)ওঠাবেন না৷ 	</item>
+        <item>	জন্মের পর পরই শাল দুধ খাওয়ান  	</item>
+        <item>	জন্মের ১ ঘণ্টার মধ্যে বুকের দুধ খাওয়ানো শুরু করুন 	</item>
+        <item>	শিশুর চাহিদা অনুযায়ী শুধুমাত্র বুকের দুধ খাওয়ান  	</item>
+        <item>	নবজাতককে শুকনো ও উষ্ণ রাখুন 	</item>
+        <item>	কাঁটা নাভিতে ৭.১% CHX ব্যবহার করুন ও পরবর্তীতে শুকনো রাখুন 	</item>
+        <item>	নবজাতককে ধরার পূর্বে হাত পরিষ্কার করুন	</item>
+        <item>	জন্মের পর পর যত তাড়াতাড়ি সম্ভব বিসিজি এবং পোলিও টিকা দিন 	</item>
+        <item>	ইপিআই-এর আওতায় টিকার সময়সূচী অনুযায়ী শিশুকে রোগ প্রতিরোধের উদ্দেশ্যে টিকা দিন </item>
+        <item>	নবজাতককে বুকের দুধ খাওয়ানোর পূর্বে পরিষ্কার করে নিন 	</item>
+    </string-array>
+
+    <string-array name="Delivery_Advice_DropDown">
+        <item></item>
+        <item>	বেশী পরিমাণে পানি খান (কম পক্ষে ৮ গ্লাস)	</item>
+        <item>	কাঁটা নাভিতে ৭.১% CHX ব্যবহার করুন ও পরবর্তীতে শুকনো রাখুন	</item>
+    </string-array>
+
+    <string-array name="Treatment_DropDown">
+        <item></item>
+        <item>	Tab. Iron (200mg) &amp; Folic Acid( 0.02mg)	</item>
+        <item>	Tab. Vitamin B  Complex	</item>
+        <item>	Tab. Albendazole 400 mg	</item>
+        <item>	Tab. Paracetamol 500 mg	</item>
+        <item>	Tab. Antacid </item>
+        <item>	Tab. Drotaverine Hydrocloride 40 mg	</item>
+        <item>	Tab. Ranitidine Hydrocloride 150mg	</item>
+        <item>	Tab. Metronidazole 400 mg	</item>
+        <item>	Tab. Chlorpheniramine Maleate 4mg	</item>
+        <item>	Tab. Salbutamol 4 mg	</item>
+        <item>	Tab. Ibuprufen 400 mg	</item>
+        <item>	Tab. Diazepam 5 mg		</item>
+        <item>	Tab. Cotrimoxazole 120 mg (dispersible)	</item>
+        <item>	Tab. Cotrimoxazole (480 mg)	</item>
+        <item>	Cap. Amoxycillin 500 mg	</item>
+        <item>	Tab. Ciprofloxacine 500 mg	</item>
+        <item>	Cap. Doxycycline 100mg	</item>
+        <item>	Powder for Suspension Amoxycillin 125 mg/5 ml	</item>
+        <item>	Powder for Suspension Amoxycillin (Paed) 125 mg/1.25ml	</item>
+        <item>	Cotrimoxazole Suspension – Sulfamethoxazole 200 mg + Trimethoprim 40 mg/5 ml	 </item>
+        <item>	Syrup/Elixir I Suspension  Paracetamol  120 mg/ 5ml	</item>
+        <item>	Chloramphenicol Eye Ointment 10mg/gm	</item>
+        <item>	Neomycin+ Bacitracin skin Oint. Neomycin Sulfate 5mg + Bacitracin 500 I.U/gm </item>
+        <item>	Lotion Benzyle Benzoate for  Application-25% </item>
+        <item>	Oint. Benzoic Acid and Salicylic Acid </item>
+    </string-array>
+
+    <string-array formatted="false"
+        name="ANC_Treatment_DropDown">
+
+        <item></item>
+        <item> সিরিঞ্জ </item>
+        <item> INJ. MgSo4 </item>
+        <item> CAP. AMOXYCILLIN 500 MG </item>
+        <item> আয়রন ও ফলিক এসিড বড়ি </item>
+        <item> এমএনপি </item>
+        <item> TAB. IRON (FS 200 MG + FOLIC ACID 200 MCG) </item>
+        <item> TAB. PARACETAMOL 500 MG </item>
+        <item> TAB. VITAMIN B COMPLEX </item>
+        <item> TAB. ANTACID (650 MG) </item>
+        <item> TAB. PANTOPRAZOLE (20 MG) </item>
+        <item> TAB. SALBUTAMOL (4 MG) </item>
+        <item> TAB. CALCIUM CARBONATE (500 MG) </item>
+        <item> LEVOFLOXACINE EYE DROP (0.5%) </item>
+        <item> GENTAMYCIN OINTMENT (10 GM) </item>
+        <item> 5% PERMETHRIN CREAM (15 GM) </item>
+        <item> OINT. BENZOIC ACID (6%) AND SALICYLIC ACID (3%) - 1 KG JAR. </item>
+        <item> DISPENSING ENVELOP(14 CM. X 9 CM.) SELF-LOCKING POLYBAG </item>
+        <item> CAP. DOXICYCLINE 100 MG </item>
+        <item> TAB. RANITIDINE </item>
+        <item> EYE OINT. CHLORAMPHENICOL </item>
+        <item> OINT. NEOMYCIN AND BACITRACIN </item>
+        <item> BENZYL BENZOATE APPLICATION 25% </item>
+        <item> মিসোপ্রোস্টল </item>
+        <item> 7.1% Chlorhexidine </item>
+        <item> INJ. ANTENATAL CORTICOSTEROID </item>
+
+    </string-array>
+
+    <string-array name="ANC_Refer_Reason_DropDown">
+        <item></item>
+        <item>	অতিরিক্ত রক্তস্বল্পতা (শ্বাসকষ্ট, মাথা ঝিমঝিম করা, ক্লান্তি বোধ, বুক ধড়ফড় করা)	 </item>
+        <item>	খিচুনি হওয়া	</item>
+        <item>	উচ্চ রক্তচাপ (রক্তচাপ ১৪০/৯০ মি.মি. মার্কারি অথবা স্বাভাবিক অবস্থার চেয়ে ৩০/১৫ মি.মি. মার্কারি বেশী হওয়া৷ </item>
+        <item>	হাত, পা, মুখ ফুলে যাওয়া			</item>
+        <item>	প্রচন্ড মাথা ব্যথা ও চোখে ঝাপসা দেখা	 </item>
+        <item>	অত্যধিক বমি হওয়া 	</item>
+        <item>	খিঁচুনি ও অজ্ঞান হয়ে যাওয়া 	</item>
+        <item>	সময়ের আগে পানি ভাঙ্গা এবং উচ্চ তাপমাত্রা 	</item>
+        <item>	বিলম্বিত ও বাধাপ্রাপ্ত প্রসব বেদনা ১২ ঘণ্টার বেশী 	</item>
+        <item>	মাথা ছাড়া অন্য কোন উপস্থাপিত অঙ্গ থাকলে 	</item>
+        <item>	গর্ভস্থ শিশুর অসুবিধা </item>
+        <item>	গর্ভস্থ শিশুর হৃদপিণ্ডের স্পন্দন ১৬০/মিঃ এর চেয়ে 	</item>
+        <item> "অন্যান্য" </item>
+        <!--<item>	প্রসাব পরীক্ষা করার জন্য রেফার 	</item>-->
+
+    </string-array>
+    <string-array name="GP_Refer_Reason_DropDown">
+        <item></item>
+        <item>অতিরিক্ত রক্তস্বল্পতা</item>
+        <item>উচ্চ রক্তচাপ</item>
+        <item>হাত, পা, মুখ ফুলে যাওয়া</item>
+        <item>হাঁপানি, বুক ধড়ফড় করা</item>
+        <item>মাড়ি দিয়ে রক্ত পড়া</item>
+        <item>পোড়া</item>
+        <item>নাক দিয়ে রক্ত পড়া</item>
+        <item>কান দিয়ে পুঁজ পড়া</item>
+        <item>কান দিয়ে পানি পড়া</item>
+        <item>কানে কম শোনা</item>
+        <item>কান ভার ভার ও তালি লাগা</item>
+        <item>চোখ ব্যাথা</item>
+        <item>চোখ দিয়ে পানি পড়া</item>
+        <item>চোখ দিয়ে পুঁজ পড়া</item>
+        <item>তলপেটে ব্যথা</item>
+        <item>পিঠে ব্যথা</item>
+        <item>বুকে ব্যথা</item>
+        <item>হাড় ভাঙ্গা/মচকে যাওয়া</item>
+        <item>পানিতে ডুবে যাওয়া</item>
+        <item>বিষ খাওয়া</item>
+        <item>সাপে কাটা</item>
+        <item>কুকুরে কামড়ানো</item>
+        <item>মূত্রনালীর নিঃসরণ</item>
+        <item>আঘাতজনিত ক্ষত</item>
+        <item>"অন্যান্য"</item>
+    </string-array>
+    <string-array name="PNC_Mother_Refer_Reason_DropDown">
+        <item></item>
+        <item>	প্রসাব পরীক্ষা করার জন্য রেফার 	</item>
+        <item>	খিচুনি হওয়া	</item>
+        <item>	উচ্চ রক্তচাপ (রক্তচাপ ১৪০/৯০ মি.মি. মার্কারি অথবা স্বাভাবিক অবস্থার চেয়ে ৩০/১৫ মি.মি. মার্কারি বেশী হওয়া৷	</item>
+        <item>	যোনি পথে ঘন সবুজ তরল পদার্থ বের হওয়া (প্রসবকালীন সময়ে) 	</item>
+        <item>	প্রচন্ড মাথা ব্যথা ও চোখে ঝাপসা দেখা	</item>
+        <item>	প্রসবের পরে অত্যধিক রক্তস্রাব (৫ মিনিটে প্যাড ভিজে যাওয়া) </item>
+        <item>	খিঁচুনি ও অজ্ঞান হয়ে যাওয়া 	</item>
+        <item>	প্রসব পথে কোথাও ছিঁড়ে যাওয়া 	</item>
+        <item>	ক্রমাগত অত্যধিক ব্যথা ও রক্তস্রাব (জরায়ু ছিঁড়ে যাওয়া) </item>
+        <item>"অন্যান্য"</item>
+    </string-array>
+
+    <string-array name="PAC_Refer_Reason_DropDown">
+        <item></item>
+        <item> আটকে ধরা ব্যথা/তলপেটে ব্যথা </item>
+        <item> অতিরিক্ত রক্তক্ষরণ </item>
+        <item> অসম্পূর্ণ গর্ভপাত  </item>
+        <item> সংক্রমিত গর্ভপাত </item>
+        <item>"অন্যান্য"</item>
+    </string-array>
+
+    <string-array name="PNC_Child_Refer_Reason_DropDown">
+        <item></item>
+        <item>	জন্মের ২৪ ঘন্টার মধ্যে ও দ্বিতীয় সপ্তাহের পরে জন্ডিস হওয়া এবং যে কোন সময়ে হাতের তালু,পায়ের পাতায় জন্ডিস আসা </item>
+        <item>	খিচুনি হওয়া	</item>
+        <item>	পুজ নি:সরণ সহ চোখ লাল হওয়া ও ফুলে যাওয়া	</item>
+        <item>	নাভীরজ্জর চারিদিকে লাল হয়ে যাওয়া ও নি:সরণ হওয়া 	</item>
+        <item>	শ্বাস-প্রশ্বাসে (শ্বাস মিনিটে ৩০ এর কম বা ৬০ এর বেশী)	</item>
+        <item>"অন্যান্য"</item>
+    </string-array>
+    <string-array name="Delivery_Refer_Reason_DropDown">
+        <item></item>
+        <item>	মায়ের রক্তের গ্রুপ আর এইচ (RH(-)) নেগেটিভ </item>
+        <item> অতিরিক্ত রক্তক্ষরণ </item>
+        <item> গর্ভফুল না পড়া </item>
+        <item> যোনি পথে ঘন সবুজ তরল পদার্থ বের হওয়া (প্রসবকালীন সময়ে) </item>
+        <item> প্রসব পথে কোথাও ছিঁড়ে যাওয়া </item>
+        <item> খিঁচুনি  </item>
+        <item>"অন্যান্য"</item>
+    </string-array>
+
+    <string-array name="Newborn_Refer_Reason_DropDown">
+        <item></item>
+        <item>	জন্মগত শ্বাসরুদ্ধতা (asphyxia) </item>
+        <item>	অপরিণত জন্ম (Prematurity) </item>
+        <item>	কম ওজন নিয়ে জন্ম  </item>
+        <item>"অন্যান্য"</item>
+    </string-array>
+    <string-array name="ANC_Complication_DropDown">
+        <item></item>
+        <item>	ব্যথা সহ বা ব্যথা ছাড়া যে কোন ধরনের প্রসব-পূর্ব রক্তস্রাব</item>
+        <item>	খিচুনি হওয়া৷ 	</item>
+        <item>	হাত, পা, মুখ ফুলে যাওয়া </item>
+        <item>	প্রচন্ড মাথা ব্যথা ও চোখে ঝাপসা দেখা </item>
+        <item>	খিঁচুনি ও অজ্ঞান হয়ে যাওয়া 	</item>
+        <item>	বিলম্বিত ও বাধাপ্রাপ্ত প্রসব বেদনা ১২ ঘণ্টার বেশী </item>
+        <item>	মাথা ছাড়া অন্য কোন উপস্থাপিত অঙ্গ থাকলে	</item>
+        <item>  রক্তস্রাব</item>
+        <item>  শরীরে পানি আসা </item>
+        <item>  তিন দিনের বেশি জ্বর</item>
+        <item>  দুর্গন্ধযুক্ত স্রাব </item>
+    </string-array>
+
+    <string-array name="PAC_Complication_DropDown">
+        <item></item>
+        <item> অতিরিক্ত রক্তক্ষরণ </item>
+        <item> সংক্রমণ/সেপসিস </item>
+        <item> জরায়ুতে ক্ষত </item>
+        <item> যোনিপথে ক্ষত </item>
+        <item> অন্ত্রে ক্ষত  </item>
+    </string-array>
+
+    <string-array name="PAC_Advice_DropDown">
+        <item></item>
+        <item> বিছানায় শুয়ে সম্পূর্ণ বিশ্রাম নিবেন </item>
+        <item> রক্তস্রাব পর্যবেক্ষণ করবেন </item>
+        <item> আয়রন যুক্ত এবং আঁশযুক্ত খাবার খাবেন </item>
+        <item> রক্তস্রাব বন্ধ হওয়ার পরেও যতটুকু সম্ভব বিশ্রাম নিবেন </item>
+        <item> পায়খানা এবং প্রস্রাব করার পর গরম পানি দিয়ে যোনিদ্বার পরিষ্কার করবেন </item>
+        <item> ৭ দিন পর আবার দেখা করবেন </item>
+        <item> দেরি না করে চিকিৎসার জন্য হাসপাতালে যোগাযোগ করুন </item>
+    </string-array>
+
+    <string-array name="PNC_Mother_Danger_Sign_DropDown">
+        <item></item>
+        <item>	প্রসবের পরে অত্যধিক রক্তস্রাব (৫ মিনিটে প্যাড ভিজে যাওয়া) </item>
+        <item>	খিচুনি হওয়া৷ 	</item>
+        <item>	উচ্চ রক্তচাপ		</item>
+        <item>	জ্বর,তল পেটে ব্যথা,দুগন্ধযুক্ত স্রাব	</item>
+        <item>	বুকে ব্যথা ও শ্বাসকস্ট		</item>
+        <item>	যোনিপথে প্রসাব ও পায়খানা আসা		</item>
+        <item>	যোনিপথে কিছু নেমে আসা		</item>
+    </string-array>
+    <string-array name="PNC_Child_Danger_Sign_DropDown">
+        <item></item>
+        <item>	খিচুনি হওয়া৷ </item>
+        <item>	জন্মের ২৪ ঘন্টার মধ্যে ও দ্বিতীয় সপ্তাহের পরে জন্ডিস হওয়া এবং যে কোন সময়ে হাতের তালু,পায়ের পাতায় জন্ডিস আসা	</item>
+        <item>	দীঘ সময় ধরে শুয়ে থাকা বা জেগে না উঠা </item>
+        <item>	শ্বাস-প্রশ্বাসে (শ্বাস মিনিটে ৩০ এর কম বা ৬০ এর বেশী)	</item>
+        <item>	জ্বর	</item>
+        <item>	পুজ নি:সরণ সহ চোখ লাল হওয়া ও ফুলে যাওয়া	</item>
+        <item>	নাভীরজ্জর চারিদিকে লাল হয়ে যাওয়া ও নি:সরণ হওয়া	</item>
+        <item>	মায়ের দুধ কম টানা বা মোটেই না চোষা	</item>
+        <item>	নেতিয়ে পরা বা কম নড়াচড়া 	</item>
+        <item>	ত্বকে ১০ টির বেশি পুঁজবটি 	</item>
+        <item>	পেট ফোলা </item>
+    </string-array>
+
+    <string-array name="ANC_Symptom_Dropdown">
+        <item></item>
+        <item>	হাত, পা, মুখ ফুলে যাওয়া </item>
+        <item>	খিচুনি হওয়া	</item>
+        <item>	প্রচন্ড মাথা ব্যথা ও চোখে ঝাপসা দেখা </item>
+        <item>	অত্যধিক বমি হওয়া 	</item>
+        <item>	সার্বক্ষণিক (Persistent) পেটে ব্যথা 	</item>
+        <item>	খিঁচুনি ও অজ্ঞান হয়ে যাওয়া 	</item>
+        <item>	সময়ের আগে পানি ভাঙ্গা এবং উচ্চ তাপমাত্রা </item>
+        <item>	গর্ভস্থ শিশুর অসুবিধা </item>
+        <item> মাসিক বন্ধ </item>
+        <item> বমি বমি ভাব</item>
+        <item> দুর্বল লাগা</item>
+        <item> শ্বাসকষ্ট</item>
+        <item> বুক ধড়ফড় করা</item>
+        <item> বুক জ্বালাপোড়া করা </item>
+        <item> কোষ্ঠকাঠিন্য </item>
+        <item> পিঠে ব্যথা </item>
+        <item> কোমরে ব্যথা </item>
+        <item> ঘন ঘন প্রস্রাব হওয়া </item>
+        <item> পায়ের শিরা ফোলা (ভেরিকোস ভেইন) </item>
+        <item> পায়ের শিরায় ব্যথা </item>
+        <item> মাথা ঘোরানো </item>
+        <item> সাদাটে রংবিহীন স্রাব </item>
+        <item> দুর্গন্ধযুক্ত স্রাব </item>
+        <item> যৌনাঙ্গে চুলকানি </item>
+        <item> তলপেটে ব্যথা </item>
+        <item> যোনিপথে রক্তক্ষরণ</item>
+    </string-array>
+
+    <string-array name="PNC_Mother_Drawback_DropDown">
+        <item></item>
+        <item>	প্রসবের পরে অত্যধিক রক্তস্রাব (৫ মিনিটে প্যাড ভিজে যাওয়া) </item>
+        <item>	ক্রমাগত অত্যধিক ব্যথা ও রক্তস্রাব (জরায়ু ছিঁড়ে যাওয়া)	 </item>
+        <item>	স্তনে কোন সমস্যা (ব্যথা,লাল হয়ে যাওয়া)	</item>
+        <item>	যোনিপথে কিছু নেমে আসা	</item>
+    </string-array>
+    <string-array name="PNC_Child_Drawback_DropDown">
+        <item></item>
+        <item>	খেতে বা চুষতে না পারা </item>
+        <item>	খিচুনি হওয়া </item>
+        <item>	দীঘ সময় ধরে শুয়ে থাকা বা জেগে না উঠা </item>
+        <item>	জ্বর বা ঠান্ডা লাগা	</item>
+        <item>	পুজ নি:সরণ সহ চোখ লাল হওয়া ও ফুলে যাওয়া </item>
+        <item>	নাভীরজ্জর চারিদিকে লাল হয়ে যাওয়া ও নি:সরণ হওয়া </item>
+        <item>	জন্মের ২৪ ঘন্টার মধ্যে ও দ্বিতীয় সপ্তাহের পরে জন্ডিস হওয়া এবং যে কোন সময়ে হাতের তালু,পায়ের পাতায় জন্ডিস আসা	</item>
+    </string-array>
+
+    <string-array name="ANC_Disease_DropDown">
+        <item></item>
+        <item>	খিচুনী হওয়া/একলাম্পসিয়া	</item>
+        <item>	শ্বাসকষ্ট /হাঁপানি	</item>
+        <item>	জন্ডিস	</item>
+        <item>	গর্ভকালীন উচ্চ রক্তচাপ	</item>
+        <item>	গর্ভকালীন জ্বর	</item>
+        <item>	গর্ভকালীন ডায়াবেটিস	</item>
+        <item>	প্লাসেনটা প্রিভিয়া	</item>
+        <item>	একটপিক প্রেগন্যান্সি</item>
+        <item>	মোলার প্রেগন্যান্সি	</item>
+        <item>	আব্রাপসিও প্লাসেনটা </item>
+        <item>	অতিরিক্ত  রক্তস্বল্পতা (শ্বাসকস্ট,মাথা ঝিমঝিম করা,ক্লন্তিবোধ,বুক ধড়ফড় করা) </item>
+        <item>	হৃদরোগ		</item>
+        <item>	হাইড্রমনিওস	</item>
+        <item>  ভেরিকোস ভেইন </item>
+        <item>  প্রি-একলাম্পসিয়া </item>
+        <item>  প্রসবপূর্ব রক্তক্ষরণ </item>
+    </string-array>
+
+    <string-array name="PNC_Mother_Disease_DropDown">
+        <item></item>
+        <item>	খিচুনী হওয়া/একলাম্পসিয়া	</item>
+        <item>	শ্বাসকষ্ট /হাঁপানি	</item>
+        <item>	প্রসবোত্তর অতিরিক্ত রক্তক্ষরণ	</item>
+        <item>	একটপিক প্রেগন্যান্সি</item>
+        <item>	মোলার প্রেগন্যান্সি	</item>
+        <item>	আব্রাপসিও প্লাসেনটা	</item>
+        <item>	অতিরিক্ত  রক্তস্বল্পতা (শ্বাসকস্ট,মাথা ঝিমঝিম করা,ক্লন্তিবোধ,বুক ধড়ফড় করা) </item>
+        <item>	হৃদরোগ		</item>
+        <item>	গর্ভফুল দেরীতে পড়া		</item>
+        <item>	জরায়ুর ভিতর গর্ভফুল থেকে যাওয়া	</item>
+        <item>	জরায়ু ছিঁড়ে যাওয়া (ক্রমাগত অত্যধিক ব্যথা ও রক্তস্রাব )	</item>
+        <item>	বিলম্বিত প্রসব		</item>
+        <item>	বাধাগ্রস্থ প্রসব	</item>
+        <item>	ভাজাইনাল টিয়ার		</item>
+        <item>	পেরিনেয়াল টিয়ার	</item>
+        <item>	সারভিকাল টিয়ার		</item>
+        <item>	ভেরিকোস ভেইন		</item>
+        <item>	ভ্যাজাইনাল ফেসটুলা	</item>
+        <item>	জরায়ু বের হয়ে আসা	</item>
+        <item>	সময়ের পূর্বে গর্ভঝিল্লি ছিঁড়ে যাওয়া	</item>
+        <item>	প্রসব পরবর্তী সংক্রমন	</item>
+        <item>	মুত্রনালির সংক্রমন UTI	</item>
+        <item>	প্রসব পরবর্তী জ্বর		</item>
+        <item>	প্রসব পরবর্তী উচ্চ রক্তচাপ	</item>
+        <item>	প্রসব পরবর্তী  ডায়াবেটিস	</item>
+    </string-array>
+
+    <string-array name="PAC_Disease_DropDown">
+        <item></item>
+        <item> সম্পূর্ণ গর্ভপাত </item>
+        <item> অসম্পূর্ণ গর্ভপাত  </item>
+        <item> সংক্রমিত গর্ভপাত </item>
+    </string-array>
+
+    <string-array name="PNC_Child_Disease_DropDown">
+        <item></item>
+        <item>	শ্বাস প্রশ্বাসে সমস্যা </item>
+        <item>	সেপসিস		</item>
+        <item>	নাড়ির সংক্রমণ 	</item>
+        <item>	ত্বকের সংক্রমণ	</item>
+        <item>	চোখের সংক্রমণ	</item>
+        <item>	নিম্ন তাপমাত্রা (হাইপথারমিয়া) </item>
+        <item>	উচ্চ তাপমাত্রা (হাইপারথারমিয়া) </item>
+        <item>	ডায়রিয়া	</item>
+        <item>	জন্ডিস	</item>
+        <item>	মুখের থ্রাস </item>
+        <item>	নাভিরজ্জু থেকে রক্তক্ষরণ  </item>
+    </string-array>
+
+    <string-array name="Abnormality_Dropdown">
+        <item></item>
+        <item> স্বাভাবিক</item>
+        <item> স্বাভাবিক নয় </item>
+    </string-array>
+
+    <string-array name="Placeholder_Dropdown">
+        <item></item>
+        <item> অপশন... </item>
+        <item> অপশন... </item>
+    </string-array>
+
+    <string-array name="Jaundice_Edima_Dropdown">
+        <item></item>
+        <item> নাই </item>
+        <item> + (অল্প) </item>
+        <item> ++ (মোটামুটি) </item>
+        <item> +++ (অধিক) </item>
+    </string-array>
+    <string-array name="Urine_Test_Dropdown">
+        <item></item>
+        <item> নাই </item>
+        <item>+</item>
+        <item>++</item>
+        <item>+++</item>
+        <item>++++</item>
+    </string-array>
+
+    <string-array name="Anemia_Dropdown">
+        <item></item>
+        <item>+</item>
+        <item>++</item>
+        <item>+++</item>
+    </string-array>
+
+    <string-array name="Anemia_Dropdown_Full">
+        <item></item>
+        <item> নাই </item>
+        <item>+</item>
+        <item>++</item>
+        <item>+++</item>
+    </string-array>
+
+    <string-array name="YesNoLong_Dropdown">
+        <item></item>
+        <item>নাই</item>
+        <item>আছে</item>
+    </string-array>
+
+    <string-array name="CloseOpen_Dropdown">
+        <item></item>
+        <item>মুক্ত</item>
+        <item>মুক্ত নয়</item>
+    </string-array>
+
+    <string-array name="YesNo_Dropdown">
+        <item></item>
+        <item>না</item>
+        <item>হ্যাঁ</item>
+    </string-array>
+
+    <string-array name="Regularity_Dropdown">
+        <item></item>
+        <item>নিয়মিত</item>
+        <item>অনিয়মিত</item>
+    </string-array>
+
+    <string-array name="PACProblemDropDown">
+        <item></item>
+        <item>	মাসিক বন্ধ		</item>
+        <item>	আটকে ধরা ব্যথা		</item>
+        <item>	তলপেটে ব্যথা		</item>
+        <item>	রক্তক্ষরণ		</item>
+        <item>	মাথা ব্যথা		</item>
+        <item>	গায়ে ব্যথা		</item>
+        <item>	কাঁধে ব্যথা	</item>
+        <item>	বমিভাব		</item>
+        <item>	বমি		</item>
+        <item>	জ্বর		</item>
+        <item>	যোনিপথে দুর্গন্ধযুক্ত স্রাব	</item>
+        <item>	যোনিপথে পুঁজযুক্ত স্রাব	</item>
+        <item>	পেট ফোলা	</item>
+        <item>	ভ্রূণের অংশবিশেষ বের হয়ে এসেছে	</item>
+        <item>	ভ্রূণের সম্পূর্ণ অংশ বের হয়ে এসেছে	</item>
+        <item>	নিজে নিজে গর্ভপাতের ইতিহাস   </item>
+        <item>	অনিরাপদ গর্ভপাতের ইতিহাস     </item>
+    </string-array>
+
+    <string-array name="PACUterusDropdown">
+        <item></item>
+        <item>	গর্ভমেয়াদের সাথে সঙ্গতিপূর্ণ</item>
+        <item>	গর্ভমেয়াদের তুলনায় জরায়ুর আকার কম</item>
+        <item>	গর্ভমেয়াদের তুলনায় জরায়ুর আকার বেশী</item>
+    </string-array>
+
+    <string-array name="PACcervixDropDown">
+        <item></item>
+        <item>বন্ধ জরায়ুমুখ</item>
+        <item>সম্প্রসারিত জরায়ুমুখ</item>
+        <item>পুঁজযুক্ত জরায়ুমুখে স্রাব</item>
+        <item>নড়াচড়ায় জরায়ুমুখের ব্যথা</item>
+    </string-array>
+
+    <string-array name="PACHematuriaDropdown">
+        <item></item>
+        <item> স্বাভাবিক</item>
+        <item> হালকা রক্তক্ষরণ (১টা শুকনো প্যাড কিংবা কাপড় ভিজে যাওয়ার জন্য ৫ মিনিটের বেশী সময় লাগে)</item>
+        <item> অতিরিক্ত রক্তক্ষরণ (১টা শুকনো প্যাড কিংবা কাপড় ভিজে যাওয়ার জন্য ৫ মিনিটের কম সময় লাগে)</item>
+        <item> দুর্গন্ধযুক্ত স্রাব</item>
+    </string-array>
+
+    <string-array name="PACAbdomenDropdown">
+        <item></item>
+        <item> স্বাভাবিক (নরম) পেট</item>
+        <item> অনমনীয় (পীড়িত এবং শক্ত) পেট</item>
+        <item> চেপে ছেড়ে দিলে ব্যথা</item>
+        <item> স্বাভাবিকের চেয়ে নরম জরায়ু </item>
+        <item>  জরায়ুতে  চাপ দিলে ব্যথা</item>
+    </string-array>
+
+    <string-array name="DeathReason_DropDown">
+        <item></item>
+        <item>"I64 - ষ্ট্রোক"</item>
+        <item>"I51.9 - হার্ট এ্যাটাক"</item>
+        <item>"C80.9 - ক্যান্সার"</item>
+        <item>"W74 - পানিতে ডুবে মৃত্যু"</item>
+        <item>"Y19 - বিষ খেয়ে মৃত্যু   "</item>
+        <item>"X33 - বজ্রপাতে মৃত্যু"</item>
+        <item>"V99 - সড়ক দুর্ঘটনায় মৃত্যু"</item>
+        <item>"T75.4 - বিদ্যুস্পৃষ্ট মৃত্যু"</item>
+        <item>"X84 - আত্ম্যহত্যা"</item>
+        <item>"A09.0 - ডায়রিয়া"</item>
+        <item>"J18.9 - নিউমোনিয়া"</item>
+        <item>"T30.0 - আগুনে পুড়ে মারা যাওয়া"</item>
+        <item>"R54 - বার্ধক্য জনিত মৃত্যু"</item>
+        <item>"77 - অন্যান্য"</item>
+    </string-array>
+
+    <string-array name="Neonatal_DeathReason_DropDown">
+        <item></item>
+        <item>"P07.3 - অপরিণত জন্ম"</item>
+        <item>"P21 - জন্ম পরবর্তী শ্বাসকষ্ট/শ্বাস জনিত সমস্যা"</item>
+        <item>"P23 - নিউমোনিয়া"</item>
+        <item>"P36.9 - সংক্রমণ"</item>
+        <item>"A33 - ধনুষ্টংকার"</item>
+        <item>"A09.0 - ডায়রিয়া"</item>
+        <item>"P59.9 - জন্ডিস"</item>
+        <item>"P02.60 - নবজাতকের নাভীতে ইনফেকশন"</item>
+        <item>"P15.9 - ডেলিভারির সময় আঘাত জনিত কারণ"</item>
+        <item>"Q79 - জন্মগত ত্রুটি"</item>
+        <item>"P07.1 - কম ওজন"</item>
+        <item>"J00 - ঠান্ডা"</item>
+        <item>"O75.9 - প্রসব জনিত জটিলতা"</item>
+        <item>"I64 - মাথায় রক্ত ক্ষরণ"</item>
+        <item>"P12 - মাথায় আঘাত"</item>
+        <item>"O66.9 - বাধাগ্রস্ত প্রসব"</item>
+        <item>"O42.2 - বিলম্বিত প্রসব"</item>
+        <item>"E46 - অপুষ্টি"</item>
+        <item>"A68.9 - জ্বর"</item>
+        <item>"77 - অন্যান্য"</item>
+    </string-array>
+
+    <string-array name="MaternalDeathReason_DropDown">
+        <item></item>
+        <item>"রক্তক্ষরণ- প্রসবের আগে, প্রসব কালীন অথবা প্রসব পরবর্তী সময়ে"</item>
+        <item>"অতিরিক্ত খিঁচুনি- গর্ভাবস্থায় এবং প্রসব পরবর্তী সময়ে"</item>
+        <item>"পুষ্টিহীনতা-  গর্ভাবস্থায় এবং প্রসব পরবর্তী সময়ে"</item>
+        <item>"অতিরিক্ত রক্তস্রাব- প্রসব পরবর্তী সময়ে"</item>
+        <item>"একলাম্পসিয়া"</item>
+        <item>"অনিরাপদ গর্ভপাত"</item>
+        <item>"প্রসব পরবর্তী সংক্রমণ"</item>
+        <item>"বিলম্বিত বা বাধাগ্রস্থ প্রসব"</item>
+        <item>"প্রসবের পরে গর্ভ ফুল না পড়লে"</item>
+        <item>"রক্তস্বল্পতা"</item>
+        <item>"ডেলিভারির সময় বাচ্চার মাথা আগে না এসে যদি অন্য কোন অঙ্গ প্রত্যঙ্গ যেমন- হাত, পা ইত্যাদি আসে।"</item>
+        <item>"নারী নির্যাতন ও আঘাত জনিত কারণে"</item>
+        <item>"অন্যান্য"</item>
+    </string-array>
+
+    <string-array name="list_item_pnc_mother">
+        <item>সেবাগ্রহনের তারিখ:</item>
+        <item>রক্তচাপ (মিঃ মিঃ মার্কারি):</item>
+        <item>ওজন (কেজি):</item>
+        <item>ইডিমা:</item>
+        <item>জরায়ুর উচ্চতা (সপ্তাহ):</item>
+        <item>ফিটাসের হৃদপিণ্ডের গতি (প্রতি মিনিটে):</item>
+        <item>ফিটাল প্রেজেনটেশন:</item>
+        <item>রক্তস্বল্পতা / হিমোগ্লোবিন:</item>
+        <item>জন্ডিস:</item>
+        <item>প্রস্রাব পরীক্ষা: সুগার:</item>
+        <item>প্রস্রাব পরীক্ষা: এলবুমিন:</item>
+        <item>বিপদ চিহ্ন / জটিলতা:</item>
+        <item>অসুবিধা:</item>
+        <item>রোগ:</item>
+        <item>চিকিৎসা:</item>
+        <item>পরামর্শ:</item>
+        <item>রেফার:</item>
+        <item>কেন্দ্রের নাম:</item>
+        <item>কারণ:</item>
+        <item>প্রসবোত্তর সেবা</item>
+        <item>বর্তমান সেবার তথ্য: মা</item>
+        <item>তাপমাত্রা:</item>
+        <item>স্তনের অবস্থা:</item>
+        <item>জরায়ুর ইনভলিউশন:</item>
+        <item>স্রাব/ রক্তস্রাব:</item>
+        <item>পেরিনিয়াম:</item>
+        <item>পরিবার পরিকল্পনা পদ্ধতি(পরামর্শ / পদ্ধতি প্রদান):</item>
+    </string-array>
+
+    <string-array name="list_item">
+        <item>সেবাগ্রহনের তারিখ:</item>
+        <item>রক্তচাপ (মিঃ মিঃ মার্কারি):</item>
+        <item>রক্তচাপ (মিঃ মিঃ মার্কারি):</item>
+        <item>ওজন (কেজি):</item>
+        <item>ইডিমা:</item>
+        <item>জরায়ুর উচ্চতা (সপ্তাহ):</item>
+        <item>ফিটাসের হৃদপিণ্ডের গতি \n(প্রতি মিনিটে):</item>
+        <item>ফিটাল প্রেজেনটেশন:</item>
+        <item>হিমোগ্লোবিন:</item>
+        <item>জন্ডিস:</item>
+        <item>প্রস্রাব পরীক্ষা: সুগার:</item>
+        <item>প্রস্রাব পরীক্ষা: এলবুমিন:</item>
+        <item>বিপদ চিহ্ন / জটিলতা:</item>
+        <item>অসুবিধা:</item>
+        <item>রোগ:</item>
+        <item>চিকিৎসা:</item>
+        <item>পরামর্শ:</item>
+        <item>রেফার:</item>
+        <item>কেন্দ্রের নাম:</item>
+        <item>কারণ:</item>
+        <item>রক্তস্বল্পতা :</item>
+        <item>রেফার:</item>
+        <item>কেন্দ্রের নাম:</item>
+    </string-array>
+
+    <string-array name="pc_cycle">
+        <item></item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>মজুদ নাই</item>
+    </string-array>
+
+    <string-array name="pc_piece">
+        <item></item>
+        <item>12</item>
+        <item>24</item>
+        <item>36</item>
+        <item>মজুদ নাই</item>
+    </string-array>
+
+    <string-array name="occupation">
+        <item></item>
+        <item>01-ভৌত বিজ্ঞানী এবং এতদ সম্পর্কিত টেকনিশিয়ান</item>
+        <item>02-ইঞ্জিনিয়ারিং ও স্থপতি</item>
+        <item>03-ইঞ্জিনিয়ারিং ও স্থপতি সম্পর্কিত টেকনিশিয়ান</item>
+        <item>04-বিমান এবং জাহাজের কর্মকর্তা </item>
+        <item>05-জীব বিজ্ঞানী এবং এতদসম্পর্কিত টেকনিশিয়ান</item>
+        <item>06-চিকিৎসক, দন্ত চিকিৎসক ও পশু চিকিৎসক</item>
+        <item>07-নার্স এবং চিকিৎসক সংক্রান্ত অন্যান্য কর্মী </item>
+        <item>08-পরিসংখ্যানবিদ, গণিতবিদ, সিস্টেম এনালিস্ট এবং এতদসম্পর্কিত কর্মী</item>
+        <item>09-অর্থনীতিবিদ </item>
+        <item>10-হিসাবরক্ষক </item>
+        <item>12-বিচারক</item>
+        <item>13-শিক্ষক</item>
+        <item>14-ধর্মীয় কর্মী </item>
+        <item>15-লেখক, সাংবাদিক এবং এতদসম্পর্কিত কর্মী</item>
+        <item>16-চিত্রশিল্পী, ফটোগ্রাফার এবং এতদসম্পর্কিত সৃজনশীল শিল্পী</item>
+        <item>17-অভিনয়, কণ্ঠশিল্পী ও নৃত্যশিল্পী</item>
+        <item>18-খেলোয়াড় এবং এতদসম্পর্কিত কর্মী</item>
+        <item>19-পেশাগত, কারিগরী এবং অন্যান্য অশ্রেনিভুক্ত এতদসম্পর্কিত কর্মী</item>
+        <item>20-আইনজীবী</item>
+        <item>21-ম্যানেজার</item>
+        <item>30-সরকারি নির্বাহী কর্মকর্তা</item>
+        <item>31-করণিক (কেরানী)</item>
+        <item>32-টাইপিস্ট/ স্টেনোগ্রাফার/ কম্পিউটার অপারেটর </item>
+        <item>33-রেকর্ড কিপার, ক্যাশিয়ার এবং এতদসম্পর্কিত কর্মী </item>
+        <item>34-কম্পিউটার সম্পর্কিত কর্মী</item>
+        <item>35-যানবাহন ও যোগাযোগ তত্ত্বাবধায়ক</item>
+        <item>36-গাড়ি চালক ও কন্ডাক্টর (যান্ত্রিক ও কায়িক)</item>
+        <item>37-চিঠিপত্র বিলি (ডাকপিয়ন)</item>
+        <item>38-টেলিফোন ও টেলিগ্রাফ অপারেটর</item>
+        <item>39-অশ্রেণীভুক্ত দাপ্তরিক কাজ</item>
+        <item>40-ম্যানেজার (পাইকারি ও খুচরা ব্যবসা)</item>
+        <item>42-বিক্রয় তত্ত্বাবধায়ক </item>
+        <item>43-ভ্রমন সংক্রান্ত কাজে নিয়োজিত কর্মী </item>
+        <item>44-বীমা, রিয়েল এস্টেট ব্যবসা এবং এতদসম্পর্কিত সেবা বিক্রেতা</item>
+        <item>45-ফেরিওয়ালা </item>
+        <item>46-অশ্রেনিভুক্ত বিক্রয়কর্মী</item>
+        <item>50-আবাসিক হোটেল ম্যানেজার</item>
+        <item>51-হোটেল মালিক</item>
+        <item>52-আবাসিক হোটেল তত্ত্বাবধায়ক </item>
+        <item>53-বাবুর্চি, হোটেল বয় এবং এতদসম্পর্কিত কর্মী </item>
+        <item>54-অশ্রেণীভুক্ত গৃহপরিচারিকা </item>
+        <item>55-বাড়ির কেয়ারটেকার, ঝাড়ুদার এবং এতদসম্পর্কিত কর্মী</item>
+        <item>56-ধোপার কাজ </item>
+        <item>58-নিরাপত্তা কর্মী</item>
+        <item>59-অশ্রেণীভুক্ত সেবা কর্মী</item>
+        <item>60-কৃষি খামার ব্যবস্থাপক ও তত্ত্বাবধায়ক </item>
+        <item>61-কৃষিকাজ</item>
+        <item>63-বন কর্মী</item>
+        <item>64-জেলে, শিকারি এবং এতদ সম্পর্কিত কর্মী</item>
+        <item>70-উৎপাদন তত্ত্বাবধায়ক এবং ফোরম্যান</item>
+        <item>71-খননকর্মী ও খননকারী</item>
+        <item>72-ধাতু প্রক্রিয়াকারী</item>
+        <item>74-রাসায়নিক দ্রব্য প্রক্রিয়াকারী</item>
+        <item>75-তাঁতি কাপড় বোনা</item>
+        <item>76-চামড়া প্রক্রিয়াকারী</item>
+        <item>77-খাদ্য ও পানীয় প্রক্রিয়াকারী</item>
+        <item>78-তামাক প্রক্রিয়াকারী</item>
+        <item>79-দর্জি ও অন্যান্য সেলাই কর্মী</item>
+        <item>80-জুতা ও চামড়াজাত দ্রব্য প্রস্তুতকারী</item>
+        <item>81-কাঠ মিস্ত্রী</item>
+        <item>82-পাথর কাটা ও প্রক্রিয়াকারী</item>
+        <item>83-কর্মকার, ঢালাই কর্মী </item>
+        <item>84-বৈদ্যুতিক ব্যতিত অন্যান্য মেশিন কর্মী</item>
+        <item>85-বৈদ্যুতিক কর্মী</item>
+        <item>86-শব্দ প্রচার কর্মী ও চলচিচত্র প্রদর্শনকারী</item>
+        <item>87-পানি ও পয়ঃ নিষ্কাশন কাঠামো নির্মাণকারী</item>
+        <item>88-স্বর্ণকার</item>
+        <item>89-গ্লাস ও মাটির জিনিস প্রস্তুতকারী</item>
+        <item>90-রাবার ও প্লাস্টিক দ্রব্য প্রস্তুতকারী</item>
+        <item>91-রাবার ও কাগজের বোর্ড প্রস্তুতকারী মুদ্রণকাজ</item>
+        <item>92-মুদ্রণকাজ</item>
+        <item>93- নিয়মিত দিন মজুর </item>
+        <item>94-বেকার</item>
+        <item>95-ছাত্র (চাকুরি করেন না)</item>
+        <item>96-গৃহিণী (চাকুরি করেন না)</item>
+        <item>97-ভিক্ষুক (চাকুরি করেন না)</item>
+        <item>98-বিকলাঙ্গ (চাকুরি করেন না)</item>
+        <item>99-অবসরপ্রাপ্ত (চাকুরি করেন না)</item>
+        <item>00-প্রযোজ্য নয়</item>
+    </string-array>
+    
+    <string-array name="education">
+        <item></item>
+        <item>00-স্কুলে যায়নি বা প্রথম শ্রেণী পাশ করেনি</item>
+        <item>01-১ম শ্রেনী</item>
+        <item>02-২য় শ্রেনী</item>
+        <item>03-৩য় শ্রেনী</item>
+        <item>04-৪র্থ শ্রেনী</item>
+        <item>05-৫ম শ্রেনী</item>
+        <item>06-৬ষ্ঠ শ্রেনী</item>
+        <item>07-৭ম শ্রেনী</item>
+        <item>08-৮ম শ্রেনী</item>
+        <item>09-৯ম শ্রেনী</item>
+        <item>10-মাধ্যমিক বা সমতুল্য</item>
+        <item>11-উচ্চ মাধ্যমিক বা সমতুল্য</item>
+        <item>12-স্নাতক বা সমতুল্য</item>
+        <item>13-স্নাতকোত্তর বা সমতুল্য</item>
+        <item>14-ডাক্তারি</item>
+        <item>15-ইঞ্জিনিয়ারিং</item>
+        <item>16-বৃত্তিমূলক  শিক্ষা</item>
+        <item>17-কারিগরি শিক্ষা</item>
+        <item>18-ধাত্রীবিদ্যা/নার্সিং</item>
+        <item>19-অন্যান্য</item>
+        <item>77-প্রযোজ্য নয়</item>
+        <item>99-শিক্ষাগত যোগ্যতা নেই</item>
+    </string-array>
+
+    <string-array name="missing_reason">
+        <item></item>
+        <item>1-কখনো ছিল না</item>
+        <item>2-হারিয়ে ফেলেছি</item>
+        <item>3-খুঁজে পাচ্ছি না</item>
+        <item>4-অন্য জায়গায় আছে</item>
+        <item>7-নাগরিক নয়</item>
+    </string-array>
+    
+    <string-array name="marital_status">
+        <item></item>
+        <item>অবিবাহিত</item>
+        <item>বিবাহিত</item>
+        <item>বিধবা/বিপত্নীক</item>
+        <item>স্বামী/স্ত্রী পৃথক</item>
+        <item>তালাক প্রাপ্ত/ বিবাহ বিচ্ছিন্ন</item>
+    </string-array>
+
+    <string-array name="religion">
+        <item></item>
+        <item>1-ইসলাম</item>
+        <item>2-হিন্দু</item>
+        <item>3-বৌদ্ধ</item>
+        <item>4-খ্রীস্টান</item>
+        <item>8-Refuse to disclose</item>
+        <item>9-Not a believer</item>
+        <item>0-অন্যান্য</item>
+    </string-array>
+
+    <!--Permanent Method Spinner Values-->
+
+    <string-array name="PMS_Treatment_Dropdown">
+        <item></item>
+        <item>Tab. Ciprofloxacin 500 mg</item>
+        <item>Tab. Azithromycin 500 mg</item>
+        <item>Tab. Diazepam 10 mg</item>
+        <item>Tab. Diazepam 5 mg</item>
+        <item>Inj. Pethidine 25-30 mg</item>
+        <item>Inj. Pentazocine 25-30 mg</item>
+        <item>Inj. Atropine 0.4-0.6 mg</item>
+        <item>Inj. Promethazine 12.5 mg</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="PMS_Complication_Female_DropDown">
+        <item></item>
+        <item>অন্ত্রে বা মূত্রাশয়ে আঘাত লাগা বা কেটে যাওয়া</item>
+        <item>একদিকে বা উভয়দিকে টিউব বাঁধতে বা কাটতে না পারা</item>
+        <item>অপারেশন স্থানে সংক্রমণ</item>
+    </string-array>
+
+    <string-array name="PMS_Complication_Male_DropDown">
+        <item></item>
+        <item>অন্ডকোষের রক্তনালীর রক্তপাত</item>
+        <item>ক্ষতস্থান দিয়ে রক্তপাত হওয়া</item>
+        <item>অন্ডথলি ফুলে যাওয়া</item>
+        <item>অপারেশন স্থানে বা অন্ডথলিতে সংক্রমণ</item>
+        <item>স্পার্ম গ্রানুলোমা</item>
+        <item>অন্ডকোষে দীর্ঘস্থায়ী ব্যথা</item>
+        <item>এপিডিডাইমিসে সংক্রমণ</item>
+        <item>ভ্যাসেকটমি গ্রহীতার স্ত্রীর গর্ভাবস্থা</item>
+        <item>ভ্যাসেকটমির ব্যর্থতা</item>
+    </string-array>
+
+    <string-array name="PMS_Management_Female_DropDown">
+        <item></item>
+        <item>কোন অসুবিধা না থাকলে অপারেশনের ২৪ ঘণ্টা পর থেকে স্বাভাবিক খাওয়া-দাওয়া করতে পারবেন</item>
+
+    </string-array>
+    <string-array name="PMS_Management_Male_DropDown">
+        <item></item>
+        <item>কোন অসুবিধা না থাকলে অপারেশনের ২৪ ঘণ্টা পর থেকে স্বাভাবিক খাওয়া-দাওয়া করতে পারবেন</item>
+
+    </string-array>
+
+    <string-array name="PMS_Advice_Female_DropDown">
+        <item></item>
+        <item>প্রথম ২ দিন সম্পূর্ণ বিশ্রাম করুন </item>
+        <item>৩ সপ্তাহ কোন ভারি কাজ করা যাবে না এবং পেটে যেন চাপ না পরে সেদিকে লক্ষ্য রাখবেন</item>
+        <item>নিয়ম আনু্যায়ী এন্টিবায়োটিক খাবেন</item>
+        <item>ড্রেসিং এর স্থান ঘসা-মাজা করা যাবে না</item>
+        <item>স্বাচ্ছন্দ্য অনুভব করলে সহবাস করতে পারবেন, তবে আপারেশনের ১৫ দিন পর থেকে সহবাস করা ভাল</item>
+        <item>সেলাই না কাটা পর্যন্ত অপারেশন স্থানে যাতে হাত, পানি, বাচ্চার প্রস্রাব না লাগে সে দিকে লক্ষ্য রাখতে হবে</item>
+        <item>সেলাই না কাটা পর্যন্ত স্বাভাবিক খাওয়া-দাওয়া করতে পারবেন । দুধ এবং টক জাতীয় খাদ্য খাওাতে কোন নিষেধ নেই</item>
+        <item>৭-১০ দিন পর সেলাই কাটতে আসবেন</item>
+        <item>ক্ষতস্থানে সামান্য ব্যাথা হতে পারে ও  ২-৩ দিন পর ড্রেসিং-এর নিচে ক্ষতের ওপর পুঁজের মত কিছু জমা হতে দেখা যায়,যা স্বাভাবিক।এর জন্য দুশ্চিন্তা করার কারন নেই</item>
+        <item>কোন জটিলতা দেখা দিলে যেমন, এক সপ্তাহের মধ্যে জ্বর, অপারেশন স্থানে প্রচণ্ড ব্যথা, অপারেশন স্থান দিয়ে পুঁজ বা রক্ত পড়লে, অপারেশন স্থান ফুলে গেলে, তলপেটে খুব ব্যথা হলে, মুখ খুলতে বা হা করতে অসুবিধা হলে অথবা চোয়াল লেগে গেলে পরিবার কল্যাণ কর্মীর সাথে বা নিকটবর্তী স্বাস্থ্যসেবা কেন্দ্রে যোগাযোগ করবেন </item>
+        <item>সরবরাহকৃত কার্ডটি সংরক্ষণ করবেন এবং পরবর্তী ফলো-আপের সময় সাথে নিয়ে আসবেন</item>
+    </string-array>
+
+    <string-array name="PMS_Advice_Male_DropDown">
+        <item></item>
+        <item>সম্ভব হলে ৪ ঘন্টার মধ্যে অন্ডথলিতে ঠান্ডা সেঁক দিবেন </item>
+        <item>সম্ভব হলে ২ দিন বিশ্রাম নিবেন</item>
+        <item>২-৩ দিন কোন ভারী কাজ করবেন না ও সাইকেল বা রিক্সা চালাবেন না</item>
+        <item>২-৩ দিন পর্যন্ত আঁটসাট আন্ডারওয়্যার ব্যবহার করবেন</item>
+        <item>অপারেশনের ২-৩ দিন সহবাস করবেন না</item>
+        <item>৩ মাস পর্যন্ত সহবাসের সময় কনডম ব্যবহার করবেন বা স্ত্রীকে অন্য কোন জন্মবিরতিকরণ পদ্ধতি ব্যবহার করতে বলবেন</item>
+        <item>৭ দিন পর ফলো-আপের জন্য আসবেন</item>
+        <item>কোনো সমস্যা দেখা দিলে তাৎক্ষণিকভাবে পরিবার কল্যাণ কর্মীর সাথে বা নিকটবর্তী স্বাস্থ্যসেবা কেন্দ্রে যোগাযোগ করবেন।</item>
+    </string-array>
+
+    <string-array name="PM_Operation_Name_Female_DropDown">
+        <item></item>
+        <item>মিনিলাপ টিউবেকটমি</item>
+        <item>সিজারিয়ান অপারেশেনের সাথে টিউবেকটমি</item>
+        <item>ল্যাপ্রোলাইগেশন</item>
+    </string-array>
+
+    <string-array name="PM_Operation_Name_Male_DropDown">
+        <item></item>
+        <item>ইনসিশনাল বা সনাতন পদ্বতি</item>
+        <item>এনএসভি</item>
+    </string-array>
+
+    <string-array name="PM_Operation_Time_Female_DropDown">
+        <item></item>
+        <item>ইন্টারভ্যাল</item>
+        <item>প্রসব পরবর্তী</item>
+    </string-array>
+
+    <string-array name="PM_Followup_Complication_Female_DropDown">
+        <item></item>
+        <item>অন্ত্রে বা মূত্রাশয়ে আঘাত লেগেছে বা কেটে গেছে</item>
+        <item>একদিকের বা উভয়দিকের টিউব বাঁধতে বা কাটতে পারেনি</item>
+    </string-array>
+
+    <string-array name="PM_Followup_Complication_Male_DropDown">
+        <item></item>
+        <item>রক্ত জমে অন্ডথলি ফুলে যাওয়া</item>
+        <item>অপারেশন স্থানে অথবা অন্ডথলিতে সংক্রমণ</item>
+        <item>অন্ডকোষে পুরাতন ব্যাথা</item>
+        <item>স্পার্ম গ্রানুলোমা</item>
+        <item>এপিডিডাইমিসে সংক্রমণ</item>
+        <item>ভ্যাসেকটমি গ্রহীতার স্ত্রীর গর্ভাবস্থা</item>
+        <item>ভ্যাসেকটমি ব্যর্থতা</item>
+    </string-array>
+
+    <string-array name="PM_Followup_Examination_DropDown">
+        <item></item>
+        <item>সাধারণ</item>
+        <item>প্যাথলজী</item>
+
+    </string-array>
+
+    <string-array name="PM_Followup_Management_Male_DropDown">
+        <item></item>
+        <item>ছোট রক্তনালীর রক্তপাতের ক্ষেত্রে রক্তনালীতে গজ দিয়ে কিছুক্ষণ চাপ দিয়ে ধরে রাখুন </item>
+        <item>বড় রক্তনালীর ক্ষেত্রে রক্তনালীকে বেঁধে দিন</item>
+        <item>বাইরের সংক্রমণের ক্ষেত্রে ক্ষত পরিষ্কার করুন</item>
+        <item>ভিতরের টিস্যূর সংক্রমণের ক্ষেত্রে অপারেশন স্থানের যত্ন নিন</item>
+        <item>পুঁজ বাহির করে দিন</item>
+        <item>সবসময় ব্যথা হলে দক্ষ সার্জনের কাছে রেফার করুন</item>
+        <item>বরফ দিয়ে সেক দিন</item>
+        <item>আঁট সাঁট আন্ডার ওয়ার ব্যবহার করা বা অন্ডথলিকে উঁচু করে রাখার জন্য ব্যবস্থা করুন </item>
+        <item>বীর্য পরীক্ষা করুন</item>
+        <item>স্ত্রীকে গর্ভজনিত সেবা দিন</item>
+        <item>ভ্যাসেকটমি কি কি কারণে ব্যর্থ হতে পারে তা গ্রহীতাকে ব্যাখ্যা করুন </item>
+        <item>পুনরায় ভ্যাসেকটমি করার প্রস্তাব দিন </item>
+
+
+    </string-array>
+
+    <string-array name="PM_Followup_Management_Female_DropDown">
+        <item></item>
+        <item>এট্রমাটিক ক্যাটগাট দিয়ে কমপক্ষে দুই স্তরে সেলাই করুন(এক স্তরে এবং দ্বিতীয় স্তরে)</item>
+        <item>মূত্রাশয় সেলাইয়ের পর অবশ্যই ফলিস ক্যাথেটর ৭-১৪ দিন ঢুকিয়ে রাখুন</item>
+        <item>রোগী সুস্থ না হওয়া পর্যন্ত সেবা কেন্দ্রে ভর্তি রেখে চিকিৎসা করুন</item>
+        <item>উন্নত সুযোগ সুবিধা সম্পন্ন কোন সেবা কেন্দ্রে দ্রুত রেফার করুন</item>
+        <item>প্রাথমিক চিকিৎসা ও ব্যবস্থাপনা প্রদান করে তারপর রেফার  করুন</item>
+    </string-array>
+
+    <string-array name="PM_Refer_Reason_DropDown">
+        <item></item>
+        <item>অপারেশন স্থানে বা অন্ডথলিতে সংক্রমণ</item>
+        <item>অন্যান্য </item>
+    </string-array>
+
+
+    <string-array name="Permanent_Method_Provider_Doctor_Designation_DropDown">
+        <item></item>
+        <item>ডিস্ট্রিক্ট/রিজিওনাল কনসালটান্ট (এফপিসিএস-কিউআইটি)</item>
+        <item>মেডিকেল অফিসার (এমসিএইচ-এফপি)</item>
+        <item>মেডিকেল অফিসার (ক্লিনিক)</item>
+        <item>অন্যান্য</item>
+    </string-array>
+
+    <string-array name="Permanent_Method_Companion_Designation_DropDown">
+        <item></item>
+        <item>পরিবার কল্যাণ সহকারী</item>
+        <item>কমিউনিটি ভলান্টিয়ার</item>
+        <item>অন্যান্য</item>
+
+    </string-array>
+
+    <string-array name="Permanent_Method_Followup_Reason_DropDown">
+        <item></item>
+        <item>অপারেশন স্থানে সংক্রমণ</item>
+        <item>সেলাই কাটা </item>
+        <item>এক সপ্তাহের মধ্যে খুব জ্বর (৩৮˚ সে. বা ১০১˚ ফা. এর বেশি)</item>
+        <item>অপারেশনের স্থানে ব্যাথা</item>
+        <item>অপারেশনের স্থান দিয়ে পুঁজ বা রক্ত পরা</item>
+        <item>অপারেশনের স্থান ফুলে যাওয়া</item>
+        <item>তলপেটে খুব ব্যাথা</item>
+        <item>মুখ খুলতে বা হা করতে অসুবিধা অথবা চোয়াল লেগে আসা</item>
+        <item>অন্যান্য</item>
+    </string-array>
+
+
+    <string-array name="PM_FacilityType_DropDown">
+        <item></item>
+        <item> মেডিকেল কলেজ হাসপাতাল </item>
+        <item> জেলা সদর হাসপাতাল </item>
+        <item> মা ও শিশু কল্যাণ কেন্দ্র </item>
+        <item> উপজেলা স্বাস্থ্য কমপ্লেক্স </item>
+        <item> ইউনিয়ন স্বাস্থ্য ও পরিবার কল্যান কেন্দ্র </item>
+        <item> অন্যান্য</item>
+    </string-array>
+
+    <string-array name="Satellite_Count_DropDown">
+        <item></item>
+        <item> ১টি  </item>
+        <item> ২টি  </item>
+    </string-array>
+
+</resources>

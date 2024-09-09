@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layoutHome"
+    android:fillViewport="true"
+    android:background="@drawable/background">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:orientation="vertical"
+        tools:context=".SecondActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5sp"
+            android:paddingBottom="5sp"
+            android:layout_marginBottom="2sp"
+            android:background="@color/skyblue">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/logout_icon"
+                android:layout_alignParentRight="true"
+                android:text="@string/exit"
+                android:textStyle="bold"
+                android:textColor="@color/crimson"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:id="@+id/textViewLogout"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/text_color"
+                android:id="@+id/fwc_heading"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@id/textViewLogout"
+                android:layout_toStartOf="@id/textViewLogout"
+                android:layout_toRightOf="@+id/imageViewHome"/>
+
+            <ImageView
+                android:id="@+id/imageViewHome"
+                android:paddingLeft="8dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/home1"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:text="@string/search_here"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:id="@+id/textViewSearch"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="3dp">
+
+                <Spinner
+                    android:id="@+id/ClientsIdentityDropdown"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:drawSelectorOnTop="true"
+                    android:layout_weight="2"
+                    android:background="@drawable/gradient_spinner"
+                    android:layout_gravity="right|top" />
+                <EditText
+                    android:id="@+id/searchableTextId"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="2sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:ellipsize="start"
+                    android:inputType="number"
+                    android:background="@drawable/edittext_round"
+                    android:layout_gravity="center|top"/>
+
+                <ImageButton
+                    android:id="@+id/searchButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center|top"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_style"
+                    android:ellipsize="start"
+                    android:src="@drawable/search"
+                    android:onClick="startSearch"
+                    android:text="Search" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragment_dashboard_scroll" >
+
+            <fragment
+                android:id="@+id/fragment_dashboard"
+                android:name="org.sci.rhis.fwc.DashboardFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:layout="@layout/fragment_dashboard" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/fragment_client_intro_scroll" >
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hzScrollClientIntro"
+                android:fillViewport="true">
+                <fragment
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:name="org.sci.rhis.fwc.ClientIntroFragment"
+                    android:id="@+id/fragment_client_intro"
+                    tools:layout="@layout/fragment_client_intro"
+                    android:orientation="vertical"/>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+            <TableLayout
+                android:id="@+id/serviceHeaderLayout"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10sp"
+                style="@style/rowStyle0"
+                android:background="@drawable/fragmentborder"
+                android:visibility="gone">
+                <TableRow
+                    android:id="@+id/Type_tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:text="@string/MNCHservice"
+                        android:layout_margin="2sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30sp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:padding="3dp"
+                        android:background="@drawable/button_style"
+                        android:id="@+id/MNCHButton"
+                        android:onClick="showMNCH"/>
+
+                    <Button
+                        android:text="@string/FPservice"
+                        android:layout_margin="2sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30sp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:padding="3dp"
+                        android:background="@drawable/button_style"
+                        android:id="@+id/FPButton"
+                        android:onClick="showFP"/>
+
+                    <Button
+                        android:text="@string/GPservice"
+                        android:layout_margin="2sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30sp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:padding="3dp"
+                        android:background="@drawable/button_style"
+                        android:id="@+id/GPButton"
+                        android:onClick="startGeneralPatient"/>
+
+                    <Button
+                        android:id="@+id/zerototwomonthButton"
+                        android:layout_margin="2sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30sp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:padding="3dp"
+                        android:background="@drawable/button_style"
+                        android:text="শিশু সেবা"
+                        android:visibility="gone"
+                        android:onClick="start0to2MonthService"/>
+
+                    <Button
+                        android:text="@string/death_service"
+                        android:layout_margin="2sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30sp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:padding="3dp"
+                        android:background="@drawable/button_style"
+                        android:id="@+id/DeathButton"
+                        android:onClick="startDeath"/>
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:visibility="gone"
+            android:id="@+id/fragment_client_info_scroll" >
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hzScrollClientInfo">
+                <fragment
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_fragment_client_info"
+                    android:name="org.sci.rhis.fwc.ClientInfoFragment"
+                    tools:layout="@layout/fragment_client_info"
+                    android:orientation="vertical"/>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:visibility="gone"
+            android:id="@+id/fragment_fp_startup_scroll" >
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hzScrollFPStartup"
+                android:fillViewport="true"  >
+                <fragment
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fpStartupFragment"
+                    android:name="org.sci.rhis.fwc.FPStartupFragment"
+                    tools:layout="@layout/fragment_fp_startup"
+                    android:orientation="vertical"/>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/mnchServicesLayout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            style="@style/rowStyle0"
+            android:background="@drawable/fragmentborder"
+            android:visibility="gone">
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:text="@string/anc_service"
+                    android:layout_margin="2sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30sp"
+                    android:textAlignment="center"
+                    android:padding="3dp"
+                    android:background="@drawable/button_style"
+                    android:id="@+id/ancButton"
+                    android:onClick="startANC"/>
+
+                <Button
+                    android:text="@string/delivery_service"
+                    android:layout_margin="2sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30sp"
+                    android:textAlignment="center"
+                    android:padding="3dp"
+                    android:background="@drawable/button_style"
+                    android:id="@+id/deliveryButton"
+                    android:onClick="startDelivery"/>
+
+                <Button
+                    android:text="@string/pnc_service"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="2sp"
+                    android:layout_height="30sp"
+                    android:textAlignment="center"
+                    android:padding="3dp"
+                    android:background="@drawable/button_style"
+                    android:id="@+id/pncButton"
+                    android:onClick="startPNC"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:text="@string/pac_service"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="2sp"
+                    android:layout_height="30sp"
+                    android:padding="3dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/button_style"
+                    android:id="@+id/pacButton"
+                    android:onClick="startPAC" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

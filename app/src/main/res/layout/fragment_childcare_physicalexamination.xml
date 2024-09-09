@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/childcare_fragment_physicalexaminationLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/layoutbordersimple"
+    android:orientation="vertical"
+    android:padding="2sp"
+    android:tag="0to2"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bce8f1"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/psbiPhysicalExamination"
+            android:textColor="@color/text_color"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/physicalexaminationLayoutScrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/containerPhysicalExamination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/physicalexaminationContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <!--PSBI Visit Date-->
+                <LinearLayout
+                    android:id="@+id/psbiVisitingDateSegment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/layoutborderblack"
+                    android:orientation="vertical"
+                    android:padding="2sp">
+
+                    <TextView
+                        android:id="@+id/psbiVisitingDateLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#92b6dc"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/service_date"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/psbiVisitingDateValueEditText"
+                            android:layout_width="120sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:hint="dd/mm/yyyy"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/edittext_round"
+                            android:inputType="date"
+                            android:enabled="false"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"/>
+
+                        <ImageButton
+                            android:id="@+id/psbiVisitingDatePicker"
+                            android:layout_marginLeft="10sp"
+                            android:layout_width="35sp"
+                            android:layout_height="35sp"
+                            android:layout_toRightOf="@id/psbiVisitingDateValueEditText"
+                            android:src="@drawable/calendar_icon"
+                            android:layout_gravity="center" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--Temperature segment...........................................-->
+                <LinearLayout
+                    android:id="@+id/psbiTemperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/layoutborderblack"
+                    android:orientation="vertical"
+                    android:padding="2sp">
+
+                    <TextView
+                        android:id="@+id/psbiTemperatureLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#92b6dc"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/temperature_mandatory"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/psbiTemperatureValueEditText"
+                            android:layout_width="120sp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="false"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:paddingLeft="2sp"
+                            android:background="@drawable/edittext_round"
+                            android:inputType="numberDecimal"
+                            android:maxLength="3"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/psbiTemperatureUnitLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/psbiTemperatureValueEditText"
+                            android:text=" &#176;ফা ("
+                            android:textColor="@color/text_color"
+                            android:textSize="20sp" />
+
+
+                        <TextView
+                            android:id="@+id/psbiTemperatureCelciousUnitLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/psbiTemperatureUnitLabel"
+                            android:text=" &#176;সে "
+                            android:textColor="@color/text_color"
+                            android:textSize="20sp" />
+
+
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!-- weight segment.............................-->
+                <LinearLayout
+                    android:id="@+id/psbiWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/layoutborderblack"
+                    android:orientation="vertical"
+                    android:padding="2sp">
+
+                    <TextView
+                        android:id="@+id/psbiWeightLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#92b6dc"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/weight_gram_mandatory"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/psbiWeightValueEditText"
+                            android:layout_width="120sp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="false"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/edittext_round"
+                            android:inputType="number"
+                            android:paddingLeft="2sp"
+                            android:maxLength="5"
+                            android:textSize="20sp" />
+
+
+                        <TextView
+                            android:id="@+id/psbiWeightKgUnitLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/psbiWeightValueEditText"
+                            android:text=""
+                            android:textColor="@color/text_color"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:id="@+id/buttonChildKgEntry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="15dp"
+                            android:text="কেজিতে এন্ট্রি" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- breath segment.............................-->
+                <LinearLayout
+                    android:id="@+id/psbiBreath"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/layoutborderblack"
+                    android:orientation="vertical"
+                    android:padding="2sp">
+
+                    <TextView
+                        android:id="@+id/psbiBreathLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#92b6dc"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/breath_per_minute_mandatory"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/psbiBreathValueEditText"
+                        android:layout_width="120sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="2sp"
+                        android:background="@drawable/edittext_round"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <!--Syndrome start Date Segment-->
+                <LinearLayout
+                    android:id="@+id/psbiSyndromeSegment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/layoutborderblack"
+                    android:orientation="vertical"
+                    android:padding="2sp">
+
+                    <TextView
+                        android:id="@+id/psbiSymptomStartDateLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#92b6dc"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/symptomStartDate_mandatory"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/sympdomstartdateValueEditText"
+                            android:layout_width="120sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:hint="dd/mm/yyyy"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/edittext_round"
+                            android:inputType="date"
+                            android:enabled="false"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"/>
+
+                        <ImageButton
+                            android:id="@+id/sympdomstartdatePicker"
+                            android:layout_marginLeft="10sp"
+                            android:layout_width="35sp"
+                            android:layout_height="35sp"
+                            android:layout_toRightOf="@id/sympdomstartdateValueEditText"
+                            android:src="@drawable/calendar_icon"
+                            android:layout_gravity="center" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <!--button segment.............................-->
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="35dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnPhysicalExaminationPrevious"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:visibility="gone"
+                        android:layout_alignParentRight="false"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/button_style_moderateblue"
+                        android:text="Previous"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/btnPhysicalExaminationNext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/button_style_moderateblue"
+                        android:text="Next"
+                        android:textColor="#ffffff" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

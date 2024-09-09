@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/pmsServiceMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/client_info_title"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@style/rowHeading">
+
+        <TextView
+            android:id="@+id/RegLabel"
+            android:gravity="start"
+            android:text="@string/reg_no"
+            android:layout_width="0sp"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/pmsRegNoTextView"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="1sp"
+            android:textSize="20sp"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/TextViewClient_info_tab"
+            android:gravity="center"
+            android:text="@string/permanent_method_service"
+            android:layout_width="0sp"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/pmsLayoutScrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/pmsServiceLayout"
+            android:layout_marginLeft="2sp"
+            android:layout_marginRight="2sp"
+            android:layout_marginTop="5sp"
+            android:paddingBottom="5sp"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fragmentborder">
+
+            <LinearLayout
+                android:id="@+id/pmsClientChildInfoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:background="@drawable/layoutbordersimple"
+                android:orientation="horizontal"
+                android:padding="2sp">
+
+                <TextView
+                    android:id="@+id/pmsClientChildInfoTextView"
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/living_child_numer"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/pmsClientMaleChildInfoTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/child_male"
+                    android:layout_marginLeft="45dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/pmsClientMaleChildInfoEdittext"
+                    android:enabled="false"
+                    android:paddingLeft="2sp"
+                    android:layout_width="35sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_round"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/pmsClientFemaleChildInfoTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/child_female"
+                    android:textColor="@color/text_color"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/pmsClientFemaleChildInfoEdittext"
+                    android:enabled="false"
+                    android:paddingLeft="2sp"
+                    android:layout_width="35sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_round"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+
+            <!--PMS Implantation date segment...........................................-->
+            <LinearLayout
+                android:id="@+id/pmsImplantDateLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:padding="2sp">
+                <TextView
+                    android:id="@+id/pmsImplantDateTextView"
+                    android:text="@string/permanant_method_implemantation_date"
+                    android:textSize="20sp"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:layout_gravity="center" />
+                <EditText
+                    android:id="@+id/pmsImplantDateEditText"
+                    android:enabled="false"
+                    android:hint="dd/mm/yyyy"
+                    android:paddingLeft="2sp"
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_round"
+                    android:inputType="date"
+                    android:layout_gravity="center" />
+
+                <ImageButton
+                    android:id="@+id/pmsImplantDatePickerButton"
+                    android:layout_marginLeft="10sp"
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:onClick="pickDate"
+                    android:src="@drawable/calendar_icon"
+                    android:layout_gravity="center" />
+
+
+            </LinearLayout>
+
+            <!--PMS Operation Type segment...........................................-->
+            <LinearLayout
+                android:id="@+id/pmsOperationTypeLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:padding="2sp">
+                <TextView
+                    android:id="@+id/pmsOperationTypeTextView"
+                    android:text="@string/operation_type"
+                    android:textSize="20sp"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:layout_gravity="center" />
+
+
+                <Spinner
+                    android:id="@+id/pmsOperationTypeDropdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="2sp"
+                    android:background="@drawable/gradient_spinner"/>
+
+
+            </LinearLayout>
+
+            <!--PMS date segment...........................................-->
+            <LinearLayout
+                android:id="@+id/pmsImpTimeLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:padding="2sp">
+                <TextView
+                    android:id="@+id/pmsImpDateTextView"
+                    android:text="@string/operation_date"
+                    android:textSize="20sp"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:layout_gravity="center" />
+
+
+                <Spinner
+                    android:id="@+id/pmsOperationTimeDropdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="2sp"
+                    android:entries="@array/PM_Operation_Time_Female_DropDown"
+                    android:background="@drawable/gradient_spinner"/>
+
+
+            </LinearLayout>
+
+            <!--Doctor Name Layout-->
+            <LinearLayout
+                android:id="@+id/pmsDoctorDetails"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+                <TextView
+                    android:id="@+id/id_attendantDoctorName"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="@string/operative_doctor_name"
+                    android:textSize="20sp"
+                    android:textColor="@color/text_color" />
+
+                <EditText
+                    android:id="@+id/pmsAttendantDoctorNameEditText"
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/edittext_round"/>
+            </LinearLayout>
+
+            <!--Doctor Designation Layout-->
+            <LinearLayout
+                android:id="@+id/pmsDoctorDesignationLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+                <TextView
+                    android:id="@+id/pmsDoctorDesignation"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="@string/operative_doctor_designation"
+                    android:textSize="20sp"
+                    android:textColor="@color/text_color"/>
+
+                <Spinner
+                    android:id="@+id/pmsDoctorDesignationDropdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="2sp"
+                    android:entries="@array/Permanent_Method_Provider_Doctor_Designation_DropDown"
+                    android:background="@drawable/gradient_spinner"/>
+
+            </LinearLayout>
+
+            <!--treatment name segment.............................-->
+            <LinearLayout
+                android:id="@+id/pmsTreatmentLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+
+                <TextView
+                    android:id="@+id/pmsTreatmentTextView"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0sp"
+                    android:text="@string/pms_treatment"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <org.sci.rhis.fwc.MultiSelectionSpinner
+                    android:id="@+id/pmsMedicineListView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0sp"
+                    android:background="@drawable/gradient_spinner"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <!--complicacy segment.............................-->
+            <LinearLayout
+                android:id="@+id/pmsComplicacyLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+
+                <TextView
+                    android:id="@+id/pmsComplicacyTextView"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0sp"
+                    android:text="@string/difficulty"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <org.sci.rhis.fwc.MultiSelectionSpinner
+                    android:id="@+id/pmsComplicacySpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0sp"
+                    android:background="@drawable/gradient_spinner"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <!--management name segment.............................-->
+            <LinearLayout
+                android:id="@+id/pmsManagement"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+
+                <TextView
+                    android:id="@+id/pmsManagementLabel"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0sp"
+                    android:text="@string/pms_management"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <org.sci.rhis.fwc.MultiSelectionSpinner
+                    android:id="@+id/pmsManagementSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0sp"
+                    android:background="@drawable/gradient_spinner"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <!--Advice name segment.............................-->
+            <LinearLayout
+                android:id="@+id/pmsAdvice"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+
+                <TextView
+                    android:id="@+id/pmsAdviceLabel"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0sp"
+                    android:text="@string/advice_pms"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <org.sci.rhis.fwc.MultiSelectionSpinner
+                    android:id="@+id/pmsAdviceSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0sp"
+                    android:background="@drawable/gradient_spinner"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <!--Client Came Alone Segment-->
+            <LinearLayout
+                android:id="@+id/pmsClientComingLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:padding="2sp">
+
+                <CheckBox
+                    android:id="@+id/pmsClientComeAloneCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="@string/cilent_came_alone"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <!--companion segment...........................................-->
+            <LinearLayout
+                android:id="@+id/pmsCompanionNameLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:padding="2sp">
+                <TextView
+                    android:id="@+id/pmsCompanionNameTextViewf"
+                    android:text="@string/iud_companion_name"
+                    android:textSize="20sp"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:layout_gravity="center" />
+                <EditText
+                    android:id="@+id/pmsCompanionNameEditText"
+                    android:paddingLeft="2sp"
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapCharacters"
+                    android:background="@drawable/edittext_round"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+
+            <!--Companion Designation Layout-->
+            <LinearLayout
+                android:id="@+id/pmsCompanionDesignationLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+                <TextView
+                    android:id="@+id/pmsCompanionDesignation"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="@string/companion_designation"
+                    android:textSize="20sp"
+                    android:textColor="@color/text_color"/>
+
+                <Spinner
+                    android:id="@+id/pmsCompanionDesignationDropdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="2sp"
+                    android:entries="@array/Permanent_Method_Companion_Designation_DropDown"
+                    android:background="@drawable/gradient_spinner"/>
+
+            </LinearLayout>
+
+            <!--Companion Address Segment-->
+            <LinearLayout
+                android:id="@+id/pmsCompanionAddressLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:padding="2sp">
+                <TextView
+                    android:id="@+id/pmsCompanionAddressTextView"
+                    android:text="@string/iud_companion_address"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_color"
+                    android:gravity="center" />
+
+                <RelativeLayout android:id="@+id/pmsCompanionAddressInnerLayout"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/fragmentborder">
+                    <LinearLayout
+                        android:id="@+id/pms_companion_zila_upazila"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/layoutbordersimple">
+
+                        <TextView
+                            android:textSize="20sp"
+                            android:layout_marginTop="10sp"
+                            android:id="@+id/pmsCompanionDistTextView"
+                            android:text="@string/ClientsDist"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color"/>
+
+                        <Spinner
+                            android:layout_marginTop="10sp"
+                            android:drawSelectorOnTop="true"
+                            android:textSize="20sp"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/gradient_spinner"
+                            android:id="@+id/pmsCompanionZilaSpinner"
+                            android:paddingLeft="2sp"/>
+
+                        <TextView
+                            android:textSize="20sp"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginLeft="25sp"
+                            android:id="@+id/pmsCompanionUpazilaTextView"
+                            android:text="@string/ClientsUpazila"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color"/>
+
+                        <Spinner
+                            android:layout_marginTop="10sp"
+                            android:ellipsize="start"
+                            android:inputType="text"
+                            android:textSize="20sp"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/gradient_spinner"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:id="@+id/pmsCompanionUpazilaSpinner"
+                            android:paddingLeft="2sp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/pms_companion_union_village"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/pms_companion_zila_upazila"
+                        android:background="@drawable/layoutbordersimple">
+
+                        <TextView
+                            android:textSize="20sp"
+                            android:layout_marginTop="10sp"
+                            android:id="@+id/pmsCompanionUnionTextView"
+                            android:text="@string/ClientsUnion"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color"/>
+
+                        <Spinner
+                            android:layout_marginTop="10sp"
+                            android:drawSelectorOnTop="true"
+                            android:textSize="20sp"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/gradient_spinner"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:id="@+id/pmsCompanionUnionSpinner"
+                            android:paddingLeft="2sp"/>
+
+                        <TextView
+                            android:textSize="20sp"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginLeft="25sp"
+                            android:id="@+id/pmsCompanionVillageTextView"
+                            android:text="@string/ClientsVillage"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color"/>
+
+                        <Spinner
+                            android:layout_marginTop="10sp"
+                            android:drawSelectorOnTop="true"
+                            android:textSize="20sp"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/gradient_spinner"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:id="@+id/pmsCompanionVillageSpinner"
+                            android:paddingLeft="2sp"/>
+
+
+                    </LinearLayout>
+
+                    <!--<LinearLayout-->
+                        <!--android:id="@+id/pms_companion_unit_village"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@id/pms_companion_union_ward"-->
+                        <!--android:background="@drawable/layoutbordersimple">-->
+
+                        <!--<TextView-->
+                            <!--android:textSize="20sp"-->
+                            <!--android:layout_marginTop="10sp"-->
+                            <!--android:id="@+id/pmsCompanionUnitTextView"-->
+                            <!--android:text="@string/ClientsUniteNo"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_weight="2"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="@color/text_color"/>-->
+
+                        <!--<Spinner-->
+                            <!--android:layout_marginTop="10sp"-->
+                            <!--android:drawSelectorOnTop="true"-->
+                            <!--android:textSize="20sp"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_weight="2"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/gradient_spinner"-->
+                            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                            <!--android:id="@+id/pmsCompanionUnitSpinner"-->
+                            <!--android:paddingLeft="2sp"/>-->
+
+                        <!--<TextView-->
+                            <!--android:textSize="20sp"-->
+                            <!--android:layout_marginTop="10sp"-->
+                            <!--android:layout_marginLeft="25sp"-->
+                            <!--android:id="@+id/pmsCompanionWardTextView"-->
+                            <!--android:text="@string/ClientsWordNo"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_weight="2"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="@color/text_color"/>-->
+
+                        <!--<Spinner-->
+                            <!--android:layout_marginTop="10sp"-->
+                            <!--android:drawSelectorOnTop="true"-->
+                            <!--android:textSize="20sp"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_weight="2"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/gradient_spinner"-->
+                            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                            <!--android:id="@+id/pmsCompanionWardSpinner"-->
+                            <!--android:paddingLeft="2sp"/>-->
+
+                        <!---->
+                    <!--</LinearLayout>-->
+
+                    <LinearLayout
+                        android:id="@+id/pms_companion_mobile"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/pms_companion_union_village"
+                        android:background="@drawable/layoutbordersimple">
+
+                        <TextView
+                            android:textSize="20sp"
+                            android:layout_marginTop="10sp"
+                            android:id="@+id/TextViewCompanionMobileNo"
+                            android:text="@string/ClientsMobileNo"
+                            android:layout_width="105sp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color"/>
+
+                        <EditText
+                            android:layout_marginTop="10sp"
+                            android:textSize="20sp"
+                            android:layout_width="130sp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_round"
+                            android:id="@+id/Companion_Mobile_no"
+                            android:paddingLeft="2sp"
+                            style="@style/styleEdittext"
+                            android:inputType="phone"
+                            android:padding="2dp"
+                            android:ems="10"
+                            android:maxLength="11"
+                            android:maxLines="1"
+                            android:minLines="1"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--Client Allowance Segment-->
+            <LinearLayout
+                android:id="@+id/pmsCompanionAllowanceLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:padding="2sp">
+
+                <CheckBox
+                    android:id="@+id/pmsCompanionAllowanceGivenCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="@string/companion_allowance_given_pms"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <!--Client Allowance Segment-->
+            <LinearLayout
+                android:id="@+id/pmsClientAllowanceLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:padding="2sp">
+
+                <CheckBox
+                    android:id="@+id/pmsClientAllowanceGivenCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="@string/client_allowance_given_pms"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <!--Client Cloth Segment-->
+            <LinearLayout
+                android:id="@+id/pmsClientClothLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:padding="2sp">
+
+                <CheckBox
+                    android:id="@+id/pmsClientClothGivenCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="@string/sharee_given"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <!--Refer Layout-->
+            <LinearLayout
+                android:id="@+id/pmsReferLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+
+                <TextView
+                    android:id="@+id/pmsReferTextView"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0sp"
+                    android:text="@string/refer"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/pmsReferCheckBox"
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0sp"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <!--Refer Center Name Layout-->
+            <LinearLayout
+                android:id="@+id/pmsReferCenterNameLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+
+                <TextView
+                    android:id="@+id/pmsReferCenterNameTextView"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0sp"
+                    android:text="@string/center_name"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/pmsReferCenterNameSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0sp"
+                    android:background="@drawable/gradient_spinner"
+                    android:entries="@array/PM_FacilityType_DropDown"
+                    android:inputType="text"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <!--Refer Reason Layout-->
+            <LinearLayout
+                android:id="@+id/pmsReasonLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+
+                <TextView
+                    android:id="@+id/pmsReferReasonLabel"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0sp"
+                    android:text="@string/reason"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+                <org.sci.rhis.fwc.MultiSelectionSpinner
+                    android:id="@+id/pmsReferReasonSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0sp"
+                    android:background="@drawable/gradient_spinner"
+                    android:inputType="text"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <!--pms button segment.............................-->
+            <LinearLayout android:id="@+id/injectableButtonLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+                <Button
+                    android:id="@+id/pmsSaveButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_color"
+                    android:onClick="onClick"/>
+                <Button
+                    android:id="@+id/pmsAddNewButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add New"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_color"
+                    android:visibility="gone"
+                    android:onClick="onClick"/>
+                <Button
+                    android:id="@+id/pmsFollowupButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Follow-Up"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_color"
+                    android:visibility="gone"
+                    android:onClick="onClick"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_pneumonia_7_to_59_days"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/layoutborderblack"
+    android:orientation="vertical">
+
+    <!--Symptom 18 Segment-->
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/childcaresymptom18checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:clickable="false"
+        android:enabled="false"
+        android:text="@string/childcaresymptom18"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

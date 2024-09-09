@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/layout_very_dangerous_two_months"
+    android:tag="PSBI"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/layoutborderblack"
+    android:layout_margin="5dp"
+    >
+
+    <!--Symptom 49 Segment-->
+    <RelativeLayout
+        android:id="@+id/childcaresymptom49Segement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/childcaresymptom49checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/childcaresymptom49TextviewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/childcaresymptom49"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_toRightOf="@id/childcaresymptom49checkbox"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+    <!--Symptom 50 Segment-->
+    <RelativeLayout
+        android:id="@+id/childcaresymptom50Segement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/childcaresymptom50checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/childcaresymptom50TextviewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/childcaresymptom50"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_toRightOf="@id/childcaresymptom50checkbox"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+    <!--Symptom 51 Segment-->
+    <RelativeLayout
+        android:id="@+id/childcaresymptom51Segement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/childcaresymptom51checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/childcaresymptom51TextviewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/childcaresymptom51"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_toRightOf="@id/childcaresymptom51checkbox"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+    <!--Symptom 52 Segment-->
+    <RelativeLayout
+        android:id="@+id/childcaresymptom52Segement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/childcaresymptom52checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/childcaresymptom52TextviewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/childcaresymptom52"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_toRightOf="@id/childcaresymptom52checkbox"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+    <!--Symptom 53 Segment-->
+    <RelativeLayout
+        android:id="@+id/childcaresymptom53Segement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/childcaresymptom53checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/childcaresymptom53TextviewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/childcaresymptom53"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_toRightOf="@id/childcaresymptom53checkbox"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

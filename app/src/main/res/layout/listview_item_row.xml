@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fragmentborder">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="35dp"
+        android:padding="5dp">
+
+        <ImageView android:id="@+id/imgIcon"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"/>
+
+    </RelativeLayout>
+
+    <TextView android:id="@+id/advSearch_healthId"
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="#000000"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#FAAC58"/>
+
+    <TextView android:id="@+id/advSearch_name"
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="#000000"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#FAAC58"/>
+
+    <TextView android:id="@+id/advSearch_husbandName"
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="#000000" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#FAAC58"/>
+
+    <TextView android:id="@+id/advSearch_fatherName"
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="#000000" />
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_other_symptom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/layoutborderblack"
+    android:orientation="vertical">
+
+    <!--Symptom 88 Segment-->
+
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/childcaresymptom21checkbox"
+            android:background="#92b6dc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/childcaresymptom21"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"/>
+
+        <!--Symptom 21 Segment-->
+        <!--<TextView
+            android:id="@+id/childcaresymptom21TextviewLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_toRightOf="@id/childcaresymptom21checkbox"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/childcaresymptom21"
+            android:textColor="@color/text_color"
+            android:textSize="20sp" />-->
+
+
+
+    <EditText
+        android:id="@+id/childcaresymptom21EditText"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/edittext_round"
+        android:inputType="text"
+        android:visibility="gone"
+        android:maxLines="3"
+        android:textSize="20sp" />
+
+</LinearLayout>

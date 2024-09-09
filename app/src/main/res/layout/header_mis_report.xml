@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="15"
+    android:id="@+id/misReportHeaderLayout"
+    android:background="@color/palegoldenrod"
+    android:visibility="gone">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:padding="2dp"
+        android:background="@drawable/border_black"/>
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:padding="2dp"
+        android:text="@string/mis_service_type_text"
+        android:id="@+id/textView"
+        android:gravity="center_horizontal"
+        android:background="@drawable/border_black"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="2dp"
+        android:text="@string/mis_fwc_text"
+        android:id="@+id/textView2"
+        android:background="@drawable/border_black"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="2dp"
+        android:text="@string/mis_satelite_text"
+        android:id="@+id/textView3"
+        android:background="@drawable/border_black"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:text="@string/mis_total_text"
+        android:id="@+id/textView4"
+        android:background="@drawable/border_black"/>
+</LinearLayout>

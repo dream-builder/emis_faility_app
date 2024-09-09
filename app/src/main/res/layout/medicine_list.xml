@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/medicineTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/layoutbordersimple"
+        android:orientation="horizontal"
+        android:padding="2sp"
+        android:tag="0to2"
+        android:layout_weight="7">
+
+        <CheckBox
+            android:id="@+id/medicineCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/medicineTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:text="Medicine title"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:layout_weight="6"/>
+
+        <EditText
+            android:id="@+id/medicineValueEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edittext_round"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:paddingLeft="2sp"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_diarrhoea_2_months"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/layoutborderblack"
+    android:orientation="vertical">
+
+    <!--Symptom 58 Segment-->
+    <LinearLayout
+        android:id="@+id/childcaresymptom58MasterSegement"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/childcaresymptom58TextviewLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/childcaresymptom58"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
+
+        <!--Symptom 111 Answer Segment-->
+        <RelativeLayout
+            android:id="@+id/childcaresymptom111AnswerOptionOneSegement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/childcaresymptom111AnswerOptionOnecheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/childcaresymptom111AnswerOptionOneLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/childcaresymptom59"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_toRightOf="@id/childcaresymptom111AnswerOptionOnecheckbox"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+        <!--Symptom 112 Answer Segment-->
+        <RelativeLayout
+            android:id="@+id/childcaresymptom112AnswerOptionOneSegement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/childcaresymptom112AnswerOptionOnecheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/childcaresymptom112AnswerOptionOneLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/childcaresymptom60"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_toRightOf="@id/childcaresymptom112AnswerOptionOnecheckbox"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+        <!--Symptom 113 Answer Segment-->
+        <RelativeLayout
+            android:id="@+id/childcaresymptom113AnswerOptionOneSegement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/childcaresymptom113AnswerOptionOnecheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/childcaresymptom113AnswerOptionOneLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/childcaresymptom61"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_toRightOf="@id/childcaresymptom113AnswerOptionOnecheckbox"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+        <!--Symptom 114 Answer Segment-->
+        <RelativeLayout
+            android:id="@+id/childcaresymptom114AnswerOptionOneSegement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/childcaresymptom114AnswerOptionOnecheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/childcaresymptom114AnswerOptionOneLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/childcaresymptom62"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_toRightOf="@id/childcaresymptom114AnswerOptionOnecheckbox"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <!--Symptom 63 Segment-->
+    <LinearLayout
+        android:id="@+id/childcaresymptom63MasterSegement"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/childcaresymptom63TextviewLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/childcaresymptom63"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
+
+        <!--Symptom 63 Answer Segment-->
+        <RelativeLayout
+            android:id="@+id/childcaresymptom63AnswerOptionOneSegement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/childcaresymptom63AnswerOptionOnecheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/childcaresymptom63AnswerOptionOneLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/childcaresymptom64"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_toRightOf="@id/childcaresymptom63AnswerOptionOnecheckbox"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/childcaresymptom63AnswerOptionTwoSegement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/childcaresymptom63AnswerOptionTwocheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/childcaresymptom63AnswerOptionTwoLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/childcaresymptom65"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_toRightOf="@id/childcaresymptom63AnswerOptionTwocheckbox"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/childcaresymptom63AnswerOptionThreeSegement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/childcaresymptom63AnswerOptionThreecheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/childcaresymptom63AnswerOptionThreeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/childcaresymptom66"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_toRightOf="@id/childcaresymptom63AnswerOptionThreecheckbox"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/childcaresymptom63AnswerOptionFourSegement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/childcaresymptom63AnswerOptionFourcheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/childcaresymptom63AnswerOptionFourLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/childcaresymptom60"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_toRightOf="@id/childcaresymptom63AnswerOptionFourcheckbox"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--Symptom 67 Segment-->
+    <LinearLayout
+        android:id="@+id/childcaresymptom67MasterSegement"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/childcaresymptom67TextviewLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/childcaresymptom67"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
+
+        <!--Symptom 67 Answer Segment-->
+        <RelativeLayout
+            android:id="@+id/childcaresymptom67AnswerOptionOneSegement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/childcaresymptom67AnswerOptionOnecheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/childcaresymptom67AnswerOptionOneLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/childcaresymptom68"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_toRightOf="@id/childcaresymptom67AnswerOptionOnecheckbox"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--Symptom 69 Segment-->
+    <LinearLayout
+        android:id="@+id/childcaresymptom69MasterSegement"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/childcaresymptom69TextviewLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/childcaresymptom69"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
+
+        <!--Symptom 69 Answer Segment-->
+        <RelativeLayout
+            android:id="@+id/childcaresymptom69AnswerOptionOneSegement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/childcaresymptom69AnswerOptionOnecheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/childcaresymptom69AnswerOptionOneLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/childcaresymptom70"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_toRightOf="@id/childcaresymptom69AnswerOptionOnecheckbox"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--Symptom 71 Segment-->
+    <LinearLayout
+        android:id="@+id/childcaresymptom71MasterSegement"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/childcaresymptom71TextviewLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/childcaresymptom71"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
+
+        <!--Symptom 71 Answer Segment-->
+        <RelativeLayout
+            android:id="@+id/childcaresymptom71AnswerOptionOneSegement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/childcaresymptom71AnswerOptionOnecheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/childcaresymptom71AnswerOptionOneLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/childcaresymptom72"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_toRightOf="@id/childcaresymptom71AnswerOptionOnecheckbox"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--Symptom 73 Segment-->
+    <LinearLayout
+        android:id="@+id/childcaresymptom73MasterSegement"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/childcaresymptom73TextviewLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/childcaresymptom73"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
+
+        <!--Symptom 73 Answer Segment-->
+        <RelativeLayout
+            android:id="@+id/childcaresymptom73AnswerOptionOneSegement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/childcaresymptom73AnswerOptionOnecheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/childcaresymptom73AnswerOptionOneLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/childcaresymptom74"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_toRightOf="@id/childcaresymptom73AnswerOptionOnecheckbox"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

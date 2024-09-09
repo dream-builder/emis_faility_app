@@ -1,0 +1,1287 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_child_register"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layoutLastLogin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/login_bg">
+
+        <TextView
+            android:id="@+id/tvLoginLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="সর্বশেষ অনলাইন লগিনের তথ্য অনুপস্থিত!"
+            android:textColor="@color/darkcyan"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/layout_round_edge_mnc">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/notice"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="আপনার ট্যাবে দূরপাঠ (মুডল) ইন্সটল করে শিশু ই-রেজিস্টার এর অনলাইন কোর্সটি সম্পন্ন করুন"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/noticeTextView"
+            android:textColor="@color/chocolate"/>
+    </LinearLayout>
+
+    <!--Dashboard Action Segment-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="4"
+        android:padding="5dp">
+
+
+        <!--Center Layout-->
+        <RelativeLayout
+            android:id="@+id/button_layoutAssesment"
+
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@color/mediumseagreen">
+
+            <ImageView
+                android:id="@+id/imgAssesment"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/center_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_below="@+id/imgAssesment"
+                android:layout_centerInParent="true"
+                android:text="কেন্দ্র যাচাই"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <!--Action Tools Layout: on click will open & hide report_layout_container (কর্মসহায়ক টুলস)-->
+        <RelativeLayout
+            android:id="@+id/layout_report_action_tool"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@color/mediumseagreen">
+
+            <ImageView
+                android:id="@+id/img_action_tool"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/job_aid_tool" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_below="@+id/img_action_tool"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:text="@string/report_action_tools"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_action_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dip"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/down_arrow"
+                android:tint="@color/white"/>
+
+        </RelativeLayout>
+
+        <!--Report Layout-->
+        <RelativeLayout
+            android:id="@+id/button_layoutMIS3"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@color/mediumseagreen">
+
+            <ImageView
+                android:id="@+id/imgMIS3"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/report_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_below="@+id/imgMIS3"
+                android:layout_centerInParent="true"
+                android:text="রিপোর্ট"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <!--satellite Layout-->
+        <RelativeLayout
+            android:id="@+id/button_layoutSatellite"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:background="@color/mediumseagreen">
+
+            <ImageView
+                android:id="@+id/imgSatellite"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/satelite_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_below="@+id/imgSatellite"
+                android:gravity="center_horizontal"
+                android:text="স্যাটেলাইট ক্লিনিক প্ল্যানিং"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- কর্মসহায়ক টুলস (Report Layout Container) -->
+    <LinearLayout
+        android:id="@+id/report_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="4"
+        android:padding="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/layout_round_edge_mnc"
+        android:visibility="visible">
+
+
+
+        <!--Distribution Report Layout-->
+        <RelativeLayout
+            android:id="@+id/button_layout_meeting_minutes"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@color/mediumseagreen">
+
+            <ImageView
+                android:id="@+id/img_meeting_minutes"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/meeting_minute" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_below="@+id/img_meeting_minutes"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:text="@string/meeting_notice"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <!--Distribution Report Layout-->
+        <RelativeLayout
+            android:id="@+id/button_layout_distribution"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@color/mediumseagreen">
+
+            <ImageView
+                android:id="@+id/img_distribution"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/vaccines_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_below="@+id/img_distribution"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:text="@string/distribution_report"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <!--E-Ticket Layout-->
+        <RelativeLayout
+            android:id="@+id/layoutETicketing"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@color/mediumseagreen">
+
+            <ImageView
+                android:id="@+id/img_support"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="8dp"
+                android:src="@android:drawable/ic_menu_help" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_below="@+id/img_support"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:text="@string/support_ticket"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--Monthly Service Data-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:background="@drawable/layout_round_edge_gp">
+
+        <!--Monthly Service Statistics Label-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#2A7FAC"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/tvServiceStatisticsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:text="মাসিক সেবার পরিসংখ্যান"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:background="@drawable/layout_round_edge_mnc"
+            android:id="@+id/linearLayoutTableViewMNC">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:id="@+id/tableLayoutTableView">
+
+                <TableRow android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                    <TextView
+                        android:text=""
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#f2f2f2"
+                        android:padding="5dp"
+                        android:layout_weight="1"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#f2f2f2"
+                        android:text="পরিদর্শন ১"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:text="পরিদর্শন ২"
+                        android:background="#f2f2f2"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_column="3" />
+
+                    <TextView
+                        android:text="পরিদর্শন ৩"
+                        android:background="#f2f2f2"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_column="4" />
+                    <TextView
+                        android:text="পরিদর্শন ৪"
+                        android:background="#f2f2f2"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_column="5" />
+                </TableRow>
+                <TableRow android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#ffffff" >
+                    <TextView
+                        android:text="এএনসি"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/tvANCVisit1"
+                        android:text="0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_column="2" />
+                    <TextView
+                        android:id="@+id/tvANCVisit2"
+                        android:text="0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_column="3" />
+
+                    <TextView
+                        android:id="@+id/tvANCVisit3"
+                        android:text="0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_column="4" />
+                    <TextView
+                        android:id="@+id/tvANCVisit4"
+                        android:text="0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_column="5" />
+                </TableRow>
+                <TableRow android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#ffffff" >
+                    <TextView
+                        android:text="পিএনসি(মা)"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/tvPNCMVisit1"
+                        android:text="0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_column="2" />
+                    <TextView
+                        android:id="@+id/tvPNCMVisit2"
+                        android:text="0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_column="3" />
+
+                    <TextView
+                        android:id="@+id/tvPNCMVisit3"
+                        android:text="0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_column="4" />
+                    <TextView
+                        android:id="@+id/tvPNCMVisit4"
+                        android:text="0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_column="5" />
+                </TableRow>
+                <TableRow android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#ffffff" >
+                    <TextView
+                        android:text="পিএনসি(ন)"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/tvPNCNVisit1"
+                        android:text="0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_column="2" />
+                    <TextView
+                        android:id="@+id/tvPNCNVisit2"
+                        android:text="0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_column="3" />
+
+                    <TextView
+                        android:id="@+id/tvPNCNVisit3"
+                        android:text="0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_column="4" />
+                    <TextView
+                        android:id="@+id/tvPNCNVisit4"
+                        android:text="0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_column="5" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <!--Delivery & GP Segment-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/mncServicesLayout">
+
+            <!--Delivery Count Segment-->
+            <RelativeLayout
+                android:id="@+id/layoutDeliveryStatistics"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:elevation="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/layout_round_edge">
+
+                <!--Delivery Count Number-->
+                <TextView
+                    android:id="@+id/tvDeliveryData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="#FFF"
+                    android:textSize="45dp"
+                    android:textStyle="bold" />
+
+                <!--Delivery Label-->
+                <TextView
+                    android:id="@+id/deliveryCountLabelText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDeliveryData"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/delivery_service"
+                    android:textColor="#FFF"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <!--GP Count Segment-->
+            <RelativeLayout
+                android:id="@+id/layoutGPStatistics"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/layout_round_edge">
+
+                <!--GP Count Text-->
+                <TextView
+                    android:id="@+id/tvGPData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="#FFF"
+                    android:textSize="45dp"
+                    android:textStyle="bold" />
+
+                <!--GP Label-->
+                <TextView
+                    android:id="@+id/gpCountLabelText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvGPData"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/GPservice"
+                    android:textColor="#FFF"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <!--Child Count Segment-->
+            <RelativeLayout
+                android:id="@+id/layoutChildStatistics"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/layout_round_edge">
+
+                <!--GP Count Text-->
+                <TextView
+                    android:id="@+id/tvChildData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="#FFF"
+                    android:textSize="45dp"
+                    android:textStyle="bold" />
+
+                <!--GP Label-->
+                <TextView
+                    android:id="@+id/childCountLabelText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvChildData"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/ChildCareservice"
+                    android:textColor="#FFF"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--FP 1 Segment-->
+        <LinearLayout
+            android:id="@+id/layoutPcInjectionStatistics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!--Pill Condom Segment-->
+            <LinearLayout
+                android:id="@+id/layoutPCStatistics"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:background="@drawable/layout_round_edge_fp_1">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_pc"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvPCData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:textColor="@color/navy"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <!--Injectables Segment-->
+            <LinearLayout
+                android:id="@+id/layoutInjectablesStatistics"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:background="@drawable/layout_round_edge_fp_2">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_injectables"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvInjectableData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:textColor="@color/navy"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--FP 2 Segment-->
+        <LinearLayout
+            android:id="@+id/layoutIudAllStatistics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!--IUD Segment-->
+            <LinearLayout
+                android:id="@+id/layoutIUDStatistics"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:background="@drawable/layout_round_edge_fp_3">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/topTextIudService"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvIUDData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:textColor="@color/navy"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <!--IUD FOllowup Segment-->
+            <LinearLayout
+                android:id="@+id/layoutIUDFollowupStatistics"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:background="@drawable/layout_round_edge_fp_3">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/topTextIudFollowup"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvIUDFollowupData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:textColor="@color/navy"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--FP 3 Segment-->
+        <LinearLayout
+            android:id="@+id/layoutImplantAllStatistics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!--Implant Segment-->
+            <LinearLayout
+                android:id="@+id/layoutImplantStatistics"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:background="@drawable/layout_round_edge_fp_4">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_Implant"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvImplantData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:textColor="@color/navy"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <!--Implant Followup Segment-->
+            <LinearLayout
+                android:id="@+id/layoutImplantFollowupStatistics"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:background="@drawable/layout_round_edge_fp_4">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/implant_followup_service"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvImplantFollowupData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:textColor="@color/navy"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--FP 4 Segment-->
+        <LinearLayout
+            android:id="@+id/layoutPMAllStatistics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!--PM Segment-->
+            <LinearLayout
+                android:id="@+id/layoutPMStatistics"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:background="@drawable/layout_round_edge_fp_5">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/permanent_method_service"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvPMData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:textColor="@color/navy"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <!--PM Followup Segment-->
+            <LinearLayout
+                android:id="@+id/layoutPMFOllowupStatistics"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:background="@drawable/layout_round_edge_fp_5">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pms_follow_up_label"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvPMFollowupData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:textColor="@color/navy"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--Follow Up Segment-->
+    <LinearLayout
+        android:id="@+id/layoutDashboardFollowups"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:background="@drawable/layout_round_edge_mnc">
+
+
+
+        <!--Follow Up service Label-->
+        <RelativeLayout
+            android:id="@+id/layoutDashboardFollowupHeader"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#2A7FAC"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/textViewFollowupServicesLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:text="ফলোআপ সেবাসমূহ"
+                android:gravity="center"
+                android:drawableRight="@android:drawable/ic_menu_more"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+
+
+        <!--Follow Up Services-->
+        <LinearLayout
+            android:id="@+id/layoutFollowupServiceNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="3">
+
+            <!--ANC Follow Up-->
+            <RelativeLayout
+                android:id="@+id/badge_layout1"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/layout_round_edgsummary">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/anc"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:id="@+id/badge_notification_1_1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/badge_item_count"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="#FFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"/>
+
+                <TextView
+                    android:id="@+id/badge_notification_1_2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:background="@drawable/badge_item_count_green"
+                    android:text="0"
+                    android:textColor="#FFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    />
+
+            </RelativeLayout>
+
+            <!--IUD Follow Up-->
+            <RelativeLayout
+                android:id="@+id/badge_layout3"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/layout_round_edgsummary">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/iud_a"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:id="@+id/badge_notification_3_1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/badge_item_count"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="#FFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"/>
+
+                <TextView
+                    android:id="@+id/badge_notification_3_2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:background="@drawable/badge_item_count_green"
+                    android:text="0"
+                    android:textColor="#FFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"/>
+
+            </RelativeLayout>
+
+            <!--Implant Follow Up Service-->
+            <RelativeLayout
+                android:id="@+id/badge_layout4"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/layout_round_edgsummary">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/implant"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:id="@+id/badge_notification_4_1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/badge_item_count"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="#FFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"/>
+
+                <TextView
+                    android:id="@+id/badge_notification_4_2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:background="@drawable/badge_item_count_green"
+                    android:text="0"
+                    android:textColor="#FFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--Follow Up Service Details-->
+        <LinearLayout
+            android:id="@+id/layoutDashboardLabels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:background="@drawable/layout_round_edge_followup">
+
+            <!--Green Icon Details-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/green"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewGreenNotificationExplanationLabel"
+                    android:text="@string/green_notification_explanation"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+            <!--Red Icon Details-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/red"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/textViewRedNotificationExplanationLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/red_notification_explanation"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

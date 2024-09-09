@@ -1,0 +1,2103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutSateliteSessionPlanning"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/client_info_title"
+        style="@style/rowHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/TextViewClient_info_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/topTextSatelliteSessionPlanning"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <!--Satellite Year-->
+    <LinearLayout
+        android:id="@+id/LinearLayoutSatelliteYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/fragmentborder"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutAddSatelliteYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewEnterSatelliteYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="@string/satellitePlanningYear"
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/satelliteYearSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="5"
+                android:background="@drawable/gradient_spinner"
+                android:inputType="text"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/satelliteLayoutScrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!--Weekly Satelite Day Selection Segment-->
+            <LinearLayout
+                android:id="@+id/LinearLayoutSatelliteCountPerWeekEntry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/fragmentborder"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutAddSatelliteCountCountPerWeek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewEnterSatellinteCountPerWeek"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/satelliteCountPerWeek"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <Spinner
+                        android:id="@+id/satelliteCountSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/gradient_spinner"
+                        android:entries="@array/Satellite_Count_DropDown"
+                        android:inputType="text"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Day List to select on which they will plan satelite-->
+            <LinearLayout
+                android:id="@+id/satelliteDaySelectorLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/fragmentborder"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutDaySelectorLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewDaySelectorLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/satelliteDaysPerWeek"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/ButtonSat"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle"
+                        android:onClick="onClick"
+                        android:tag="7"
+                        android:text="@string/saturday"
+                        android:textSize="30sp" />
+
+
+                    <Button
+                        android:id="@+id/ButtonSun"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle"
+                        android:onClick="onClick"
+                        android:text="@string/sunday"
+                        android:textSize="30sp" />
+
+
+                    <Button
+                        android:id="@+id/ButtonMon"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle"
+                        android:onClick="onClick"
+                        android:text="@string/monday"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/ButtonTue"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle"
+                        android:onClick="onClick"
+                        android:text="@string/tuesday"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/ButtonWed"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle"
+                        android:onClick="onClick"
+                        android:text="@string/wednesday"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/ButtonThu"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle"
+                        android:onClick="onClick"
+                        android:text="@string/thursday"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--Satelite Center Name entry segment-->
+            <LinearLayout
+                android:id="@+id/LinearLayoutSatelliteEntry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/fragmentborder"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textViewEnterSatellinteNames"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/satelliteNames"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutShowSatelliteNames"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <!--Satellite Details 1-->
+                    <LinearLayout
+                        android:id="@+id/linearLayoutSatelliteName01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutSatelliteNameDay01"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="onClick"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/textViewSatelliteName01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="5"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:drawableRight="@android:drawable/arrow_down_float"
+                                android:layout_marginRight="10dp"
+                                android:layout_centerInParent="true"/>
+                        </LinearLayout>
+
+                        <!--Satellite Details-->
+                        <LinearLayout
+                            android:id="@+id/linearLayoutSatelliteNameContainer01"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+
+
+                            <!--Village Dropdown-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutVillageName01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/TextViewClientsVillage01"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/ClientsVillage"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp" />
+
+                                <Spinner
+                                    android:id="@+id/Clients_Village01"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:background="@drawable/gradient_spinner"
+                                    android:drawSelectorOnTop="true"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <!--Satellite center Name-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutSatelliteNames01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/textViewSatelliteNameLable01"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/satelliteName"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextSatelliteName01"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:background="@drawable/edittext_round"
+                                    android:ellipsize="start"
+                                    android:paddingLeft="5dp"
+                                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                    android:inputType="textCapCharacters"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <!--Attending FWA Name-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutFWAName01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/textViewFWAName01"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/fwaName"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextFWAName01"
+                                    style="@style/styleEdittext"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:background="@drawable/edittext_round"
+                                    android:dropDownVerticalOffset="5dp"
+                                    android:ellipsize="start"
+                                    android:paddingLeft="5dp"
+                                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                    android:inputType="textCapCharacters"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <!--Attending FWA ID-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutFWAId01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/textViewFWAId01"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/providerLabel"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextFWAId01"
+                                    style="@style/styleEdittext"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:maxLength="6"
+                                    android:background="@drawable/edittext_round"
+                                    android:dropDownVerticalOffset="5dp"
+                                    android:ellipsize="start"
+                                    android:paddingLeft="5dp"
+                                    android:inputType="number"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--Satellite Details 2-->
+                    <LinearLayout
+                        android:id="@+id/linearLayoutSatelliteName02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutSatelliteNameDay02"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="onClick"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/textViewSatelliteName02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="5"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:drawableRight="@android:drawable/arrow_down_float"
+                                android:layout_marginRight="10dp"
+                                android:layout_centerInParent="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutSatelliteNameContainer02"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <!--Village Dropdown-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutVillageName02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/TextViewClientsVillage02"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/ClientsVillage"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp" />
+
+                                <Spinner
+                                    android:id="@+id/Clients_Village02"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:background="@drawable/gradient_spinner"
+                                    android:drawSelectorOnTop="true"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <!--Satellite Name-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutSatelliteNames02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/textViewSatelliteNameLable02"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/satelliteName"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextSatelliteName02"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:background="@drawable/edittext_round"
+                                    android:ellipsize="start"
+                                    android:paddingLeft="5dp"
+                                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                    android:inputType="textCapCharacters"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <!--FWA Name-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutFWAName02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/textViewFWAName02"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/fwaName"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextFWAName02"
+                                    style="@style/styleEdittext"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:background="@drawable/edittext_round"
+                                    android:dropDownVerticalOffset="5dp"
+                                    android:ellipsize="start"
+                                    android:paddingLeft="5dp"
+                                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                    android:inputType="textCapCharacters"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <!--FWA ID-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutFWAId02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/textViewFWAId02"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/providerLabel"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextFWAId02"
+                                    style="@style/styleEdittext"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:maxLength="6"
+                                    android:background="@drawable/edittext_round"
+                                    android:dropDownVerticalOffset="5dp"
+                                    android:ellipsize="start"
+                                    android:paddingLeft="5dp"
+                                    android:inputType="number"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--Satellite Details 3-->
+                    <LinearLayout
+                        android:id="@+id/linearLayoutSatelliteName03"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutSatelliteNameDay03"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="onClick"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/textViewSatelliteName03"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="5"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:drawableRight="@android:drawable/arrow_down_float"
+                                android:layout_marginRight="10dp"
+                                android:layout_centerInParent="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutSatelliteNameContainer03"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <!--Village Dropdown-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutVillageName03"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/TextViewClientsVillage03"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/ClientsVillage"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp" />
+
+                                <Spinner
+                                    android:id="@+id/Clients_Village03"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:background="@drawable/gradient_spinner"
+                                    android:drawSelectorOnTop="true"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <!--Satellite Name-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutSatelliteNames03"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/textViewSatelliteNameLable03"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/satelliteName"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextSatelliteName03"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:background="@drawable/edittext_round"
+                                    android:ellipsize="start"
+                                    android:paddingLeft="5dp"
+                                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                    android:inputType="textCapCharacters"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <!--FWA Name-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutFWAName03"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/textViewFWAName03"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/fwaName"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextFWAName03"
+                                    style="@style/styleEdittext"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:background="@drawable/edittext_round"
+                                    android:dropDownVerticalOffset="5dp"
+                                    android:ellipsize="start"
+                                    android:paddingLeft="5dp"
+                                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                    android:inputType="textCapCharacters"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <!--FWA ID-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutFWAId03"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/textViewFWAId03"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/providerLabel"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextFWAId03"
+                                    style="@style/styleEdittext"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:maxLength="6"
+                                    android:background="@drawable/edittext_round"
+                                    android:dropDownVerticalOffset="5dp"
+                                    android:ellipsize="start"
+                                    android:paddingLeft="5dp"
+                                    android:inputType="number"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--Satellite Details 4-->
+                    <LinearLayout
+                        android:id="@+id/linearLayoutSatelliteName04"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutSatelliteNameDay04"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="onClick"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/textViewSatelliteName04"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="5"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:drawableRight="@android:drawable/arrow_down_float"
+                                android:layout_marginRight="10dp"
+                                android:layout_centerInParent="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutSatelliteNameContainer04"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <!--Village Dropdown-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutVillageName04"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/TextViewClientsVillage04"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/ClientsVillage"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp" />
+
+                                <Spinner
+                                    android:id="@+id/Clients_Village04"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:background="@drawable/gradient_spinner"
+                                    android:drawSelectorOnTop="true"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <!--Satellite Name-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutSatelliteNames04"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/textViewSatelliteNameLable04"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/satelliteName"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextSatelliteName04"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:background="@drawable/edittext_round"
+                                    android:ellipsize="start"
+                                    android:paddingLeft="5dp"
+                                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                    android:inputType="textCapCharacters"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <!--FWA Name-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutFWAName04"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/textViewFWAName04"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/fwaName"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextFWAName04"
+                                    style="@style/styleEdittext"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:background="@drawable/edittext_round"
+                                    android:dropDownVerticalOffset="5dp"
+                                    android:ellipsize="start"
+                                    android:paddingLeft="5dp"
+                                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                    android:inputType="textCapCharacters"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <!--FWA ID-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutFWAId04"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/textViewFWAId04"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/providerLabel"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextFWAId04"
+                                    style="@style/styleEdittext"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:maxLength="6"
+                                    android:background="@drawable/edittext_round"
+                                    android:dropDownVerticalOffset="5dp"
+                                    android:ellipsize="start"
+                                    android:paddingLeft="5dp"
+                                    android:inputType="number"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--Satellite Details 5-->
+                    <LinearLayout
+                        android:id="@+id/linearLayoutSatelliteName05"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutSatelliteNameDay05"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="onClick"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/textViewSatelliteName05"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="5"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:drawableRight="@android:drawable/arrow_down_float"
+                                android:layout_marginRight="10dp"
+                                android:layout_centerInParent="true"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutSatelliteNameContainer05"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <!--Village Dropdown-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutVillageName05"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/TextViewClientsVillage05"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/ClientsVillage"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp" />
+
+                                <Spinner
+                                    android:id="@+id/Clients_Village05"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:background="@drawable/gradient_spinner"
+                                    android:drawSelectorOnTop="true"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <!--Satellite Name-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutSatelliteNames05"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/textViewSatelliteNameLable05"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/satelliteName"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextSatelliteName05"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:background="@drawable/edittext_round"
+                                    android:ellipsize="start"
+                                    android:paddingLeft="5dp"
+                                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                    android:inputType="textCapCharacters"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <!--FWA Name-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutFWAName05"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/textViewFWAName05"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/fwaName"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextFWAName05"
+                                    style="@style/styleEdittext"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:background="@drawable/edittext_round"
+                                    android:dropDownVerticalOffset="5dp"
+                                    android:ellipsize="start"
+                                    android:paddingLeft="5dp"
+                                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                    android:inputType="textCapCharacters"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <!--FWA ID-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutFWAId05"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/textViewFWAId05"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/providerLabel"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextFWAId05"
+                                    style="@style/styleEdittext"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:maxLength="6"
+                                    android:background="@drawable/edittext_round"
+                                    android:dropDownVerticalOffset="5dp"
+                                    android:ellipsize="start"
+                                    android:paddingLeft="5dp"
+                                    android:inputType="number"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--Satellite Details 6-->
+                    <LinearLayout
+                        android:id="@+id/linearLayoutSatelliteName06"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutSatelliteNameDay06"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="onClick"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/textViewSatelliteName06"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="5"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:drawableRight="@android:drawable/arrow_down_float"
+                                android:layout_marginRight="10dp"
+                                android:layout_centerInParent="true"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutSatelliteNameContainer06"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <!--Village Dropdown-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutVillageName06"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/TextViewClientsVillage06"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/ClientsVillage"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp" />
+
+                                <Spinner
+                                    android:id="@+id/Clients_Village06"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:background="@drawable/gradient_spinner"
+                                    android:drawSelectorOnTop="true"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <!--Satellite Name-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutSatelliteNames06"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/textViewSatelliteNameLable06"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/satelliteName"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextSatelliteName06"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:background="@drawable/edittext_round"
+                                    android:ellipsize="start"
+                                    android:paddingLeft="5dp"
+                                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                    android:inputType="textCapCharacters"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <!--FWA Name-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutFWAName06"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/textViewFWAName06"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/fwaName"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextFWAName06"
+                                    style="@style/styleEdittext"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:background="@drawable/edittext_round"
+                                    android:dropDownVerticalOffset="5dp"
+                                    android:ellipsize="start"
+                                    android:paddingLeft="5dp"
+                                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                    android:inputType="textCapCharacters"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <!--FWA ID-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutFWAId06"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/textViewFWAId06"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/providerLabel"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextFWAId06"
+                                    style="@style/styleEdittext"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:maxLength="6"
+                                    android:background="@drawable/edittext_round"
+                                    android:dropDownVerticalOffset="5dp"
+                                    android:ellipsize="start"
+                                    android:paddingLeft="5dp"
+                                    android:inputType="number"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--Satellite Details 7-->
+                    <LinearLayout
+                        android:id="@+id/linearLayoutSatelliteName07"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutSatelliteNameDay07"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:onClick="onClick"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/textViewSatelliteName07"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="5"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:drawableRight="@android:drawable/arrow_down_float"
+                                android:layout_marginRight="10dp"
+                                android:layout_centerInParent="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutSatelliteNameContainer07"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <!--Village Dropdown-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutVillageName07"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/TextViewClientsVillage07"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/ClientsVillage"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp" />
+
+                                <Spinner
+                                    android:id="@+id/Clients_Village07"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:background="@drawable/gradient_spinner"
+                                    android:drawSelectorOnTop="true"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <!--Satellite Name-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutSatelliteNames07"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/textViewSatelliteNameLable07"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/satelliteName"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextSatelliteName07"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:background="@drawable/edittext_round"
+                                    android:ellipsize="start"
+                                    android:paddingLeft="5dp"
+                                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                    android:inputType="textCapCharacters"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <!--FWA Name-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutFWAName07"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/textViewFWAName07"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/fwaName"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextFWAName07"
+                                    style="@style/styleEdittext"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:background="@drawable/edittext_round"
+                                    android:dropDownVerticalOffset="5dp"
+                                    android:ellipsize="start"
+                                    android:paddingLeft="5dp"
+                                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                    android:inputType="textCapCharacters"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <!--FWA ID-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutFWAId07"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/textViewFWAId07"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/providerLabel"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextFWAId07"
+                                    style="@style/styleEdittext"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:maxLength="6"
+                                    android:background="@drawable/edittext_round"
+                                    android:dropDownVerticalOffset="5dp"
+                                    android:ellipsize="start"
+                                    android:paddingLeft="5dp"
+                                    android:inputType="number"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--Satellite Details 8-->
+                    <LinearLayout
+                        android:id="@+id/linearLayoutSatelliteName08"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fragmentborder"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutSatelliteNameDay08"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="onClick"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/textViewSatelliteName08"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="5"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:drawableRight="@android:drawable/arrow_down_float"
+                                android:layout_marginRight="10dp"
+                                android:layout_centerInParent="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutSatelliteNameContainer08"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <!--Village Dropdown-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutVillageName08"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/TextViewClientsVillage08"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/ClientsVillage"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp" />
+
+                                <Spinner
+                                    android:id="@+id/Clients_Village08"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:background="@drawable/gradient_spinner"
+                                    android:drawSelectorOnTop="true"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <!--Satellite Name-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutSatelliteNames08"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/textViewSatelliteNameLable08"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/satelliteName"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextSatelliteName08"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:background="@drawable/edittext_round"
+                                    android:ellipsize="start"
+                                    android:paddingLeft="5dp"
+                                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                    android:inputType="textCapCharacters"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <!--FWA Name-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutFWAName08"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/textViewFWAName08"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/fwaName"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextFWAName08"
+                                    style="@style/styleEdittext"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:background="@drawable/edittext_round"
+                                    android:dropDownVerticalOffset="5dp"
+                                    android:ellipsize="start"
+                                    android:paddingLeft="5dp"
+                                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                    android:inputType="textCapCharacters"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <!--FWA ID-->
+                            <LinearLayout
+                                android:id="@+id/linearLayoutFWAId08"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fragmentborder"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/textViewFWAId08"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="5"
+                                    android:text="@string/providerLabel"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <EditText
+                                    android:id="@+id/editTextFWAId08"
+                                    style="@style/styleEdittext"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:maxLength="6"
+                                    android:background="@drawable/edittext_round"
+                                    android:dropDownVerticalOffset="5dp"
+                                    android:ellipsize="start"
+                                    android:paddingLeft="5dp"
+                                    android:inputType="number"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonGenerate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:background="@drawable/button_style"
+                    android:onClick="onClick"
+                    android:text="GENERATE &#38; SAVE"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+            <!--Edit and Delete Satelite planning instruction-->
+            <LinearLayout
+                android:id="@+id/linearLayoutSatelliteHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/fragmentborder"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textSatelliteHint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="@string/SatellitePlanningAddInfo"/>
+
+            </LinearLayout>
+
+            <!--Editing Satellite Session Planning-->
+            <LinearLayout
+                android:id="@+id/layoutEditSatellitePlanning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:background="@drawable/fragmentborder"
+                android:layout_margin="2dp">
+
+                <Switch
+                    android:id="@+id/switchEditSatellite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="স্যাটেলাইট এডিট মোড"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+            <!--Satelite Planning Showing on Calendar-->
+            <LinearLayout
+                android:id="@+id/linearLayoutSatelliteCalendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/fragmentborder"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <org.sci.rhis.fwc.CalendarCustomView
+                    android:id="@+id/custom_calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="580dp"
+                    android:layout_weight="1"></org.sci.rhis.fwc.CalendarCustomView>
+
+
+            </LinearLayout>
+
+            <!--Button Segment-->
+            <LinearLayout
+                android:id="@+id/linearLayoutSaveSubmitSatelliteButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <!--<Button
+                    android:id="@+id/buttonSaveSatelliteSessionPlanning"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/button_style"
+                    android:onClick="onClick"
+                    android:text="SAVE"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+
+                <Button
+                    android:id="@+id/buttonUpdateSatelliteSessionPlanning"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/button_style"
+                    android:onClick="onClick"
+                    android:text="UPDATE"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/buttonCancelSatelliteSessionPlanning"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/button_style"
+                    android:onClick="onClick"
+                    android:text="CANCEL"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"
+                    android:visibility="gone" />-->
+
+                <Button
+                    android:id="@+id/buttonSubmitSatelliteSessionPlanning"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/button_style"
+                    android:onClick="onClick"
+                    android:text="SUBMIT"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

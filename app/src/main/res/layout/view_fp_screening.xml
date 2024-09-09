@@ -1,0 +1,1626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/screening_fp"
+    android:background="@drawable/fragmentborder">
+
+        <TextView
+            android:id="@+id/screeningTextView"
+            android:text="@string/screening"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            style="@style/rowHeading"
+            android:textSize="24sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fpQuestionnaireContainer"
+            android:orientation="vertical">
+            <!--q1-->
+            <LinearLayout
+                android:id="@+id/squestion1Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="FEMALE"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion1TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq1"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion1radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion1radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion1radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q2-->
+            <LinearLayout
+                android:id="@+id/squestion2Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="FEMALE"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion2TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq2"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion2radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion2radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion2radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q3-->
+            <LinearLayout
+                android:id="@+id/squestion3Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="FEMALE"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion3TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq3"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion3radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion3radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion3radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q4-->
+            <LinearLayout
+                android:id="@+id/squestion4Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="FEMALE"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion4TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq4"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion4radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion4radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion4radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q5-->
+            <LinearLayout
+                android:id="@+id/squestion5Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="FEMALE"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion5TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq5"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion5radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion5radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion5radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q6-->
+            <LinearLayout
+                android:id="@+id/squestion6Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="FEMALE"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion6TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq6"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion6radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion6radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion6radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q7-->
+            <LinearLayout
+                android:id="@+id/squestion7Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="FEMALE"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion7TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq7"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion7radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion7radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion7radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q8-->
+            <LinearLayout
+                android:id="@+id/squestion8Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="FEMALE"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion8TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq8"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion8radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion8radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion8radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q9-->
+            <LinearLayout
+                android:id="@+id/squestion9Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="BOTH"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion9TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq9"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion9radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion9radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion9radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q10-->
+            <LinearLayout
+                android:id="@+id/squestion10Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="BOTH"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion10TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq10"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion10radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion10radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion10radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q11-->
+            <LinearLayout
+                android:id="@+id/squestion11Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="FEMALE"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion11TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq11"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion11radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion11radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion11radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q12-->
+            <LinearLayout
+                android:id="@+id/squestion12Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="FEMALE"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion12TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq12"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion12radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion12radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion12radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q13-->
+            <LinearLayout
+                android:id="@+id/squestion13Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="FEMALE"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion13TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq13"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion13radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion13radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion13radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q14-->
+            <LinearLayout
+                android:id="@+id/squestion14Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="FEMALE"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion14TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq14"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion14radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion14radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion14radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q15-->
+            <LinearLayout
+                android:id="@+id/squestion15Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="FEMALE"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion15TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq15"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion15radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion15radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion15radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q16-->
+            <LinearLayout
+                android:id="@+id/squestion16Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="BOTH"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion16TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq16"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion16radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion16radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion16radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q17-->
+            <LinearLayout
+                android:id="@+id/squestion17Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="FEMALE"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion17TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq17"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion17radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion17radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion17radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q18-->
+            <LinearLayout
+                android:id="@+id/squestion18Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="FEMALE"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion18TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq18"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion18radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion18radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion18radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q19-->
+            <LinearLayout
+                android:id="@+id/squestion19Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="FEMALE"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion19TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq19"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion19radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion19radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion19radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q20-->
+            <LinearLayout
+                android:id="@+id/squestion20Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="FEMALE"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion20TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq20"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion20radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion20radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion20radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q21-->
+            <LinearLayout
+                android:id="@+id/squestion21Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="FEMALE"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion21TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq21"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion21radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion21radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion21radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q22-->
+            <LinearLayout
+                android:id="@+id/squestion22Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="BOTH"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion22TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq22"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion22radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion22radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion22radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q23-->
+            <LinearLayout
+                android:id="@+id/squestion23Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="BOTH"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion23TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq23"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion23radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion23radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion23radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q24-->
+            <LinearLayout
+                android:id="@+id/squestion24Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="BOTH"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion24TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq24"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion24radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion24radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion24radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q25-->
+            <LinearLayout
+                android:id="@+id/squestion25Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="FEMALE"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion25TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq25"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion25radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion25radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion25radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q26-->
+            <LinearLayout
+                android:id="@+id/squestion26Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="FEMALE"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion26TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq26"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion26radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion26radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion26radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q27-->
+            <LinearLayout
+                android:id="@+id/squestion27Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="MALE"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion27TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq27"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion27radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion27radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion27radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q28-->
+            <LinearLayout
+                android:id="@+id/squestion28Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="MALE"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion28TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq28"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion28radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion28radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion28radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--q29-->
+            <LinearLayout
+                android:id="@+id/squestion29Layout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:tag="BOTH"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squestion29TextLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sq29"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squestion29radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes"
+                        android:id="@+id/squestion29radioButtonYes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no"
+                        android:id="@+id/squestion29radioButtonNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:id="@+id/screeningSubmitButton"
+                    android:padding="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/button_style" />
+
+                <!--<Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:id="@+id/cancelScreeningButton"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/button_style"/>-->
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

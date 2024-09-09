@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_measles_2_months"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/layoutborderblack"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/childcaresymptom91TextviewLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#92b6dc"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/childcaresymptom91"
+        android:textColor="@color/text_color"
+        android:textSize="20sp" />
+
+    <!--Symptom 95 Segment-->
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/childcaresymptom95checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/childcaresymptom92"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <!--Symptom 96 Segment-->
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/childcaresymptom96checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/childcaresymptom93"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <!--Symptom 97 Segment-->
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/childcaresymptom97checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/childcaresymptom94"
+        android:textSize="18sp" />
+
+    <!--Symptom 98 Segment-->
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/severeMeaslesCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/childcaresymptom95"
+        android:textSize="18sp" />
+
+
+    <!--Symptom 99 Segment-->
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/nonSevereMeaslesCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/childcaresymptom96"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/childcaresymptom99TextviewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/severeSyndrome"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+</LinearLayout>

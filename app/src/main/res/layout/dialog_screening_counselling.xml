@@ -1,0 +1,1346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fragmentborder"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/screeningTitleLayout"
+            style="@style/rowHeading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp">
+
+            <TextView
+                android:id="@+id/screeningTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/screening_counselling"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <!--implant segment...........................................-->
+        <LinearLayout
+            android:id="@+id/layoutFPScreeningImplant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="5sp"
+            android:background="@drawable/fragmentborder"
+            android:orientation="vertical"
+            android:padding="5sp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textViewFPScreeningImplant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/implant"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!--imp_q1-->
+            <LinearLayout
+                android:id="@+id/impCounselling1Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:background="@drawable/layoutbordersimple"
+                android:orientation="horizontal"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:id="@+id/impCounselling1TextLayout"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/imp1"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/impCounselling1radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/impCounselling1radioButtonYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes" />
+
+                    <RadioButton
+                        android:id="@+id/impCounselling1radioButtonNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--imp_q2-->
+            <LinearLayout
+                android:id="@+id/impCounselling2Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:background="@drawable/layoutbordersimple"
+                android:orientation="horizontal"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:id="@+id/impCounselling2TextLayout"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/imp2"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/impCounselling2radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/impCounselling2radioButtonYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes" />
+
+                    <RadioButton
+                        android:id="@+id/impCounselling2radioButtonNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--imp_q3-->
+            <LinearLayout
+                android:id="@+id/impCounselling3Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:background="@drawable/layoutbordersimple"
+                android:orientation="horizontal"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:id="@+id/impCounselling3TextLayout"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/imp3"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/impCounselling3radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/impCounselling3radioButtonYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes" />
+
+                    <RadioButton
+                        android:id="@+id/impCounselling3radioButtonNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--imp_q4-->
+            <LinearLayout
+                android:id="@+id/impCounselling4Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:background="@drawable/layoutbordersimple"
+                android:orientation="horizontal"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:id="@+id/impCounselling4TextLayout"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/imp4"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/impCounselling4radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/impCounselling4radioButtonYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes" />
+
+                    <RadioButton
+                        android:id="@+id/impCounselling4radioButtonNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--imp_q5-->
+            <LinearLayout
+                android:id="@+id/impCounselling5Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:background="@drawable/layoutbordersimple"
+                android:orientation="horizontal"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:id="@+id/impCounselling5TextLayout"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/imp5"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/impCounselling5radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/impCounselling5radioButtonYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes" />
+
+                    <RadioButton
+                        android:id="@+id/impCounselling5radioButtonNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--imp_q6-->
+            <LinearLayout
+                android:id="@+id/impCounselling6Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:background="@drawable/layoutbordersimple"
+                android:orientation="horizontal"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:id="@+id/impCounselling6TextLayout"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/imp6"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/impCounselling6radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/impCounselling6radioButtonYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes" />
+
+                    <RadioButton
+                        android:id="@+id/impCounselling6radioButtonNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--imp_q7-->
+            <LinearLayout
+                android:id="@+id/impCounselling7Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:background="@drawable/layoutbordersimple"
+                android:orientation="horizontal"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:id="@+id/impCounselling7TextLayout"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/imp7"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/impCounselling7radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/impCounselling7radioButtonYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes" />
+
+                    <RadioButton
+                        android:id="@+id/impCounselling7radioButtonNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--iud segment...........................................-->
+        <LinearLayout
+            android:id="@+id/layoutFPScreeningIUD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="5sp"
+            android:background="@drawable/fragmentborder"
+            android:orientation="vertical"
+            android:padding="5sp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textViewFPScreeningIUD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/iud"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!--iud q1-->
+            <LinearLayout
+                android:id="@+id/iudCounselling1Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:background="@drawable/layoutbordersimple"
+                android:orientation="horizontal"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:id="@+id/iudCounselling1TextLayout"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/iud1"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/iudCounselling1radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/iudCounselling1radioButtonYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes" />
+
+                    <RadioButton
+                        android:id="@+id/iudCounselling1radioButtonNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--iud_q2-->
+            <LinearLayout
+                android:id="@+id/iudCounselling2Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:background="@drawable/layoutbordersimple"
+                android:orientation="horizontal"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:id="@+id/iudCounselling2TextLayout"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/iud2"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/iudCounselling2radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/iudCounselling2radioButtonYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes" />
+
+                    <RadioButton
+                        android:id="@+id/iudCounselling2radioButtonNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--iud_q3-->
+            <LinearLayout
+                android:id="@+id/iudCounselling3Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:background="@drawable/layoutbordersimple"
+                android:orientation="horizontal"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:id="@+id/iudCounselling3TextLayout"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/iud3"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/iudCounselling3radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/iudCounselling3radioButtonYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes" />
+
+                    <RadioButton
+                        android:id="@+id/iudCounselling3radioButtonNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--injection segment...........................................-->
+        <LinearLayout
+            android:id="@+id/layoutFPScreeningInjection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="5sp"
+            android:background="@drawable/fragmentborder"
+            android:orientation="vertical"
+            android:padding="5sp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textViewFPScreeningInjection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/injection"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!--inj_q1-->
+            <LinearLayout
+                android:id="@+id/injCounselling1Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:background="@drawable/layoutbordersimple"
+                android:orientation="horizontal"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:id="@+id/injCounselling1TextLayout"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/inj1"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/injCounselling1radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/injCounselling1radioButtonYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes" />
+
+                    <RadioButton
+                        android:id="@+id/injCounselling1radioButtonNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--inj_q2-->
+            <LinearLayout
+                android:id="@+id/injCounselling2Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:background="@drawable/layoutbordersimple"
+                android:orientation="horizontal"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:id="@+id/injCounselling2TextLayout"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/inj2"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/injCounselling2radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/injCounselling2radioButtonYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes" />
+
+                    <RadioButton
+                        android:id="@+id/injCounselling2radioButtonNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--inj_q3-->
+            <LinearLayout
+                android:id="@+id/injCounselling3Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:background="@drawable/layoutbordersimple"
+                android:orientation="horizontal"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:id="@+id/injCounselling3TextLayout"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/inj3"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/injCounselling3radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/injCounselling3radioButtonYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes" />
+
+                    <RadioButton
+                        android:id="@+id/injCounselling3radioButtonNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--inj_q4-->
+            <LinearLayout
+                android:id="@+id/injCounselling4Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:background="@drawable/layoutbordersimple"
+                android:orientation="horizontal"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:id="@+id/injCounselling4TextLayout"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/inj4"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/injCounselling4radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/injCounselling4radioButtonYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes" />
+
+                    <RadioButton
+                        android:id="@+id/injCounselling4radioButtonNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--inj_q5-->
+            <LinearLayout
+                android:id="@+id/injCounselling5Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:background="@drawable/layoutbordersimple"
+                android:orientation="horizontal"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:id="@+id/injCounselling5TextLayout"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/inj5"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/injCounselling5radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/injCounselling5radioButtonYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes" />
+
+                    <RadioButton
+                        android:id="@+id/injCounselling5radioButtonNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--inj_q6-->
+            <LinearLayout
+                android:id="@+id/injCounselling6Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:background="@drawable/layoutbordersimple"
+                android:orientation="horizontal"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:id="@+id/injCounselling6TextLayout"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/inj6"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/injCounselling6radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/injCounselling6radioButtonYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes" />
+
+                    <RadioButton
+                        android:id="@+id/injCounselling6radioButtonNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--Apon segment...........................................-->
+        <LinearLayout
+            android:id="@+id/layoutFPScreeningApon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="5sp"
+            android:background="@drawable/fragmentborder"
+            android:orientation="vertical"
+            android:padding="5sp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textViewFPScreeningApon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pill_apon"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!--apon_q1-->
+            <LinearLayout
+                android:id="@+id/apCounselling1Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:background="@drawable/layoutbordersimple"
+                android:orientation="horizontal"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:id="@+id/apCounselling1TextLayout"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/ap"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/apCounselling1radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/apCounselling1radioButtonYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes" />
+
+                    <RadioButton
+                        android:id="@+id/apCounselling1radioButtonNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--Sukhi segment...........................................-->
+        <LinearLayout
+            android:id="@+id/layoutFPScreeningSukhi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="5sp"
+            android:background="@drawable/fragmentborder"
+            android:orientation="vertical"
+            android:padding="5sp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/injectablePVSegmentLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pill_sukhi"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!--su_q1-->
+            <LinearLayout
+                android:id="@+id/suCounselling1Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:background="@drawable/layoutbordersimple"
+                android:orientation="horizontal"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:id="@+id/squestion1TextLayout"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/su"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/suCounselling1radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/suCounselling1radioButtonYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes" />
+
+                    <RadioButton
+                        android:id="@+id/suCounselling1radioButtonNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--Permanent Method Female segment...........................................-->
+        <LinearLayout
+            android:id="@+id/layoutFPScreeningPermanentMethodFemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="5sp"
+            android:background="@drawable/fragmentborder"
+            android:orientation="vertical"
+            android:padding="5sp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/pmSegmentLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pm_female"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!--pm_q1-->
+            <LinearLayout
+                android:id="@+id/pmCounselling1Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:background="@drawable/layoutbordersimple"
+                android:orientation="horizontal"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:id="@+id/pmquestion1TextLayout"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/pm1"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/pmCounselling1radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/pmCounselling1radioButtonYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes" />
+
+                    <RadioButton
+                        android:id="@+id/pmCounselling1radioButtonNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--pm_q2-->
+            <LinearLayout
+                android:id="@+id/pmCounselling2Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:background="@drawable/layoutbordersimple"
+                android:orientation="horizontal"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:id="@+id/pmquestion2TextLayout"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/pm2"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/pmCounselling2radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/pmCounselling2radioButtonYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes" />
+
+                    <RadioButton
+                        android:id="@+id/pmCounselling2radioButtonNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Permanent Method Male segment...........................................-->
+        <LinearLayout
+            android:id="@+id/layoutFPScreeningPermanentMethodMale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="5sp"
+            android:background="@drawable/fragmentborder"
+            android:orientation="vertical"
+            android:padding="5sp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/pmSegmentLabelMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pm_male"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!--pm_q1-->
+            <LinearLayout
+                android:id="@+id/pmMaleCounselling1Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:background="@drawable/layoutbordersimple"
+                android:orientation="horizontal"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:id="@+id/pmMalequestion1TextLayout"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/pm1"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/pmMaleCounselling1radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/pmMaleCounselling1radioButtonYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes" />
+
+                    <RadioButton
+                        android:id="@+id/pmMaleCounselling1radioButtonNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--pm_q2-->
+            <LinearLayout
+                android:id="@+id/pmMaleCounselling2Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:background="@drawable/layoutbordersimple"
+                android:orientation="horizontal"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:id="@+id/pmMalequestion2TextLayout"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/pm2"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/pmMaleCounselling2radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/pmMaleCounselling2radioButtonYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/general_yes" />
+
+                    <RadioButton
+                        android:id="@+id/pmMaleCounselling2radioButtonNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonFPCounselling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_style"
+                android:padding="10dp"
+                android:text="Next" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+

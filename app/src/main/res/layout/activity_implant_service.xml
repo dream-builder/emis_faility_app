@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/client_info_title"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@style/rowHeading">
+
+        <TextView
+            android:id="@+id/RegLabel"
+            android:gravity="start"
+            android:text="@string/reg_no"
+            android:layout_width="0sp"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/implantRegNoTextView"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="1sp"
+            android:textSize="20sp"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/TextViewClient_info_tab"
+            android:gravity="center"
+            android:text="@string/topTextImplantService"
+            android:layout_width="0sp"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/injectLayoutScrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/implantServiceLayout"
+            android:layout_marginLeft="2sp"
+            android:layout_marginRight="2sp"
+            android:layout_marginTop="5sp"
+            android:paddingBottom="5sp"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fragmentborder">
+
+            <!--LMP date segment...........................................-->
+            <LinearLayout
+                android:id="@+id/implantAfterDeliveryLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:padding="2sp">
+                <CheckBox
+                    android:id="@+id/implantDeliveryTagCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="0sp"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/implantDeliveryTagTextView"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0sp"
+                    android:text="@string/implant_is_after_delivery"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <!--implant type segment.............................-->
+            <LinearLayout
+                android:id="@+id/implantTypeLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+
+                <TextView
+                    android:id="@+id/implantTypeTextView"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/implant_type"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/implantTypeSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/gradient_spinner"
+                    android:entries="@array/Implant_Name_DropDown"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+
+            <!--Implantation date segment...........................................-->
+            <LinearLayout
+                android:id="@+id/implantImplantDateLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:padding="2sp">
+                <TextView
+                    android:id="@+id/implantImplantDateTextView"
+                    android:text="@string/implant_implant_date"
+                    android:textSize="20sp"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:layout_gravity="center" />
+                <EditText
+                    android:id="@+id/implantImplantDateEditText"
+                    android:enabled="false"
+                    android:hint="dd/mm/yyyy"
+                    android:paddingLeft="2sp"
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_round"
+                    android:layout_gravity="center" />
+
+                <ImageButton
+                    android:id="@+id/implantImplantDatePickerButton"
+                    android:layout_marginLeft="10sp"
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:onClick="pickDate"
+                    android:src="@drawable/calendar_icon"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/implantClientAllowanceLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:padding="2sp">
+
+                <CheckBox
+                    android:id="@+id/implantClientAllowanceGivenCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="@string/client_allowance_given"
+                    android:textSize="20sp" />
+
+                <!--<TextView
+                    android:id="@+id/implantClientAllowanceTextView"
+                    android:text="@string/implant_client_allowance"
+                    android:textSize="20sp"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:layout_gravity="center" />
+                <EditText
+                    android:id="@+id/implantClientAllowanceEditText"
+                    android:paddingLeft="2sp"
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_round"
+                    android:layout_gravity="center" />-->
+            </LinearLayout>
+
+            <!--treatment name segment.............................-->
+            <LinearLayout
+                android:id="@+id/implantTreatmentLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+
+                <TextView
+                    android:id="@+id/implantTreatmentTextView"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0sp"
+                    android:text="@string/treatment"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <org.sci.rhis.fwc.MultiSelectionSpinner
+                    android:id="@+id/implantTreatmentSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0sp"
+                    android:background="@drawable/gradient_spinner"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/implantMyselfLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@drawable/layoutbordersimple">
+
+                <TextView
+                    android:id="@+id/implantMyselfLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="@string/implant_attendant_myself"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/implantMyselfCheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/implantAttendantDetails"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+
+                <TextView
+                    android:id="@+id/id_attendantNameLabel"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="@string/implant_attendant_name"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/implantAttendantNameEditText"
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:paddingLeft="2sp"
+                    android:background="@drawable/edittext_round"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/implantAttendantDesignationLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+                <TextView
+                    android:id="@+id/implantAttendantDesignation"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="@string/implant_attendant_designation"
+                    android:textSize="20sp"
+                    android:textColor="@color/text_color"/>
+
+                <Spinner
+                    android:id="@+id/implantAttendantDesignationDropdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="2sp"
+                    android:entries="@array/ImplantRemoverDesignation_DropDown"
+                    android:background="@drawable/gradient_spinner"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/implantAttendantAllowanceLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple"
+                android:layout_gravity="center_horizontal"
+                android:padding="2sp">
+
+                <CheckBox
+                    android:id="@+id/implantAttendantAllowanceGivenCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="@string/attendant_allowance_given"
+                    android:textSize="20sp" />
+                <!--<TextView
+                    android:id="@+id/implantAttendantAllowanceTextViewf"
+                    android:text="@string/implant_attendant_allowance"
+                    android:textSize="20sp"
+                    android:layout_width="220sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:layout_gravity="center" />
+                <EditText
+                    android:id="@+id/implantAttendantAllowanceEditText"
+                    android:paddingLeft="2sp"
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_round"
+                    android:layout_gravity="center" />-->
+            </LinearLayout>
+
+            <!--implant button segment.............................-->
+            <LinearLayout android:id="@+id/injectableButtonLayout"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbordersimple">
+                <Button
+                    android:id="@+id/implantSaveButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_color"
+                    android:onClick="onClick"/>
+                <Button
+                    android:id="@+id/implantAddNewButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add New"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_color"
+                    android:visibility="gone"
+                    android:onClick="onClick"/>
+                <Button
+                    android:id="@+id/implantFollowupButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Follow-Up"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_color"
+                    android:visibility="gone"
+                    android:onClick="onClick"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
